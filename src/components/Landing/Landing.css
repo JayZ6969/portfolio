@@ -120,6 +120,37 @@
     }
 }
 
+@media screen and (min-width: 530px) and (max-width: 600px) {
+    .landing-content .title-container h3 {
+        font-size: 32px;
+    }
+
+    .landing-content .title-container h1 {
+        font-size: 96px;
+    }
+
+    .sections-container button {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+}
+
+@media screen and (min-width: 430px) and (max-width: 530px) {
+    .landing-content .title-container h3 {
+        font-size: 28px;
+    }
+
+    .landing-content .title-container h1 {
+        font-size: 84px;
+    }
+
+    .sections-container button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
 @media screen and (max-width: 430px) {
     .landing-content {
         padding: 20px;
