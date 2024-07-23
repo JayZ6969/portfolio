@@ -9,7 +9,7 @@
 }
 @font-face {
     font-family: 'PPEditorialNew-Itlaic';
-    src: url(../../assets/fonts/PPEditorialNew-Itlaic.ttf);
+    src: url(../../assets/fonts/PPEditorialNew-Italic.otf);
 }
 
 /* COLORS */
@@ -18,4 +18,31 @@
     --white-color: #ffffff;
     --grey-color: #7C7C83;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* LANDING */
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    color: var(--white-color);
+}
+
+
+
+.landing-container h3 {
+    font-family: 'PPMori-Regular';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
 

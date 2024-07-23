@@ -19,6 +19,12 @@
     --grey-color: #7C7C83;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* NAVBAR */
 .navbar-container {
     display: flex;
