@@ -26,12 +26,11 @@
     align-items: center;
     padding: 60px 60px 0px 60px;
     background-color: var(--black-color);
-    color: var(--white-color);
-    font-family: 'PPMori-Regular';
 }
 
 h1 {
     font-family: 'PPMori-Regular';
+    color: var(--white-color);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -55,7 +54,11 @@ h1 {
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 430px) and (max-width: 768px) {
+    .navbar-container {
+        padding: 40px 40px 0px 40px;
+    }
+
     .navbar-links {
         position: fixed;
 		top: -100vh;
@@ -66,9 +69,9 @@ h1 {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		gap: 1.5rem;
+		gap: 24px;
 		background-color: var(--grey-color);
-		transition: 0.8s;
+		transition: 0.5 s;
     }
 
     .show-hamburger-menu {
@@ -82,8 +85,8 @@ h1 {
 
     .ham-close-btn {
 		position: absolute;
-		top: 60px;
-		right: 60px;
+		top: 40px;
+		right: 40px;
 	}
 
     .navbar-links .ham-btn img {
@@ -98,17 +101,43 @@ h1 {
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 22px;
+    }
+
+    .navbar-links {
+        position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 24px;
+		background-color: var(--grey-color);
+		transition: 0.5s;
+    }
+
+    .show-hamburger-menu {
+		transform: translateY(100vh);
+	}
+
+    .ham-btn {
+        display: block;
+        cursor: pointer;
+        width: 28px;
+        height: 28px;
     }
 
     .ham-close-btn {
-        top: 30px;
-        right: 30px;
-    }
+		position: absolute;
+		top: 30px;
+		right: 30px;
+	}
 
-    .navbar-container .ham-btn {
-        width: 32px;
-        height: 32px;
+    .navbar-links .ham-btn img {
+        width: 28px;
+        height: 28px;
     }
-
 }
