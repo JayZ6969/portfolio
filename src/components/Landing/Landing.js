@@ -10,9 +10,15 @@ const Landing = () => {
     <div className="landing-container">
       <Navbar />
       <div className="landing-content">
-        <h3>Jayasheel Vinay J</h3>
-        <h1>Full Stack Developer</h1>
-        <Link to="/Engineering"><button>Engineering</button></Link>
+        <div className="title-container">
+          <h3>Hi, I am</h3>
+          <h1>Jayasheel</h1>
+        </div>
+        <div className="sections-container">
+          <Link to="/Engineer"><button>Engineer</button></Link>
+          <Link to="/Photography"><button>Photographer</button></Link>
+          <Link to="/Musician"><button>Musician</button></Link>
+        </div>     
       </div>
       <Footer />
     </div>
