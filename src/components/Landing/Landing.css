@@ -1,0 +1,21 @@
+/*FONTS*/
+@font-face {
+    font-family: 'PPMori-Regular';
+    src: url(../../assets/fonts/PPMori-Regular.otf);
+}
+@font-face {
+    font-family: 'PPMori-SemiBold';
+    src: url(../../assets/fonts/PPMori-SemiBold.otf);
+}
+@font-face {
+    font-family: 'PPEditorialNew-Itlaic';
+    src: url(../../assets/fonts/PPEditorialNew-Itlaic.ttf);
+}
+
+/* COLORS */
+:root {
+    --black-color: #101010;
+    --white-color: #ffffff;
+    --grey-color: #7C7C83;
+}
+

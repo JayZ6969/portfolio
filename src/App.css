@@ -1,38 +1,26 @@
-.App {
-  text-align: center;
+/*FONTS*/
+@font-face {
+  font-family: 'PPMori-Regular';
+  src: url(assets/fonts/PPMori-Regular.otf);
+}
+@font-face {
+  font-family: 'PPMori-SemiBold';
+  src: url(assets/fonts/PPMori-SemiBold.otf);
+}
+@font-face {
+  font-family: 'PPEditorialNew-Itlaic';
+  src: url(assets/fonts/PPEditorialNew-Italic.otf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* COLORS */
+:root {
+  --black-color: #101010;
+  --white-color: #ffffff;
+  --grey-color: #7C7C83;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--black-color);
 }
