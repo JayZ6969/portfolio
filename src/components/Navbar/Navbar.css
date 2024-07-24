@@ -52,7 +52,7 @@ h1 {
 .navbar-links a img {
     width: 42px;
     height: 42px;
-    transition: transform 0.2s ease-out;
+    transition: transform 0.15s ease-out;
 }
 
 .navbar-container a:hover img {
@@ -81,7 +81,7 @@ h1 {
 		justify-content: center;
 		gap: 24px;
 		background-color: var(--grey-color);
-		transition: 0.5 s;
+		transition: 0.5s;
     }
 
     .show-hamburger-menu {

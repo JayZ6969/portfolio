@@ -87,37 +87,53 @@
   border-radius: 44px;
   border: none;
   cursor: pointer;
-  transition: transform 0.3s ease-out, background-color 0.3s ease; /* Updated */
-  position: relative;
-  overflow: hidden;
-  display: inline-block; /* Ensure the button is only as wide as its content */
 }
 
-.sections-container button span { /* New */
-  position: relative;
-  display: inline-block;
-}
-
-.sections-container button::after {
-  content: '';
-  position: absolute;
-  bottom: -2px; /* Adjusted to ensure it's directly under the text */
-  left: 50%;
-  width: 0%; /* Start with no width */
-  height: 2px;
-  background-color: currentColor;
-  transform: translateX(-50%);
-  transition: width 0.3s ease-out; /* Animate width instead of scaleX */
-}
-
-.sections-container button:hover::after {
-  width: 100%; /* Full width on hover */
-  left: 0;
-  transform: translateX(0%);
-}
-
-.sections-container button:hover {
-  transform: translateY(-10px); /* Subtle shift upwards */
+@media screen and (min-width: 1024px) {
+  .sections-container button {
+    font-family: 'PPMori-SemiBold';
+    color: var(--black-color);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: var(--white-color);
+    padding: 10px 45px;
+    border-radius: 44px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-out, background-color 0.3s ease; /* Updated */
+    position: relative;
+    overflow: hidden;
+    display: inline-block; /* Ensure the button is only as wide as its content */
+  }
+  
+  .sections-container button span { /* New */
+    position: relative;
+    display: inline-block;
+  }
+  
+  .sections-container button::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Adjusted to ensure it's directly under the text */
+    left: 50%;
+    width: 0%; /* Start with no width */
+    height: 2px;
+    background-color: currentColor;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-out; /* Animate width instead of scaleX */
+  }
+  
+  .sections-container button:hover::after {
+    width: 100%; /* Full width on hover */
+    left: 0;
+    transform: translateX(0%);
+  }
+  
+  .sections-container button:hover {
+    transform: translateY(-10px); /* Subtle shift upwards */
+  } 
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -186,6 +202,7 @@
 }
 
 @media screen and (max-width: 430px) {
+  
   .landing-content {
     padding: 20px;
   }
