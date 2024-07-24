@@ -1,0 +1,59 @@
+.BG-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+/* ELLIPSE */
+.ellipse-1,
+.ellipse-2,
+.ellipse-3,
+.ellipse-4,
+.ellipse-5,
+.ellipse-6,
+.ellipse-7,
+.ellipse-8 {
+  position: absolute;
+  z-index: -1;
+}
+
+.ellipse-1 {
+  left: 139px;
+  top: 238px;
+}
+
+.ellipse-2 {
+  left: 260px;
+  top: 160px;
+}
+
+.ellipse-3 {
+  left: 327px;
+  top: 102px;
+}
+
+.ellipse-4 {
+  top: 139px;
+  right: 222px;
+}
+
+.ellipse-5 {
+  right: 140px;
+  top: 204px;
+}
+
+.ellipse-6 {
+  right: 121px;
+  top: 291px;
+}
+
+.ellipse-7 {
+  right: 85px;
+  bottom: 260px;
+}
+
+.ellipse-8 {
+  right: 275px;
+  bottom: 193px;
+}

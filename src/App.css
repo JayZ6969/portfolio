@@ -12,6 +12,55 @@
   src: url(assets/fonts/PPEditorialNew-Italic.otf);
 }
 
+
+/* Scrollbar Styling */
+/* Customizes the whole scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: 1439px) {
+  ::-webkit-scrollbar {
+      width: 0.694vw;
+      height: 0.694vw;
+  }
+}
+
+@media (max-width: 865px) {
+  ::-webkit-scrollbar {
+      display: none;
+  }
+}
+
+/* Customizes the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #2e2e2e;
+}
+
+/* Customizes the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 25px;
+}
+
+@media (max-width: 1439px) {
+  ::-webkit-scrollbar-thumb {
+      border-radius: 1.736vw;
+  }
+}
+
+/* Customizes the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #2e2e2e;
+}
+
 /* COLORS */
 :root {
   --black-color: #101010;

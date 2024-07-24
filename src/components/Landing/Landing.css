@@ -1,176 +1,183 @@
 /*FONTS*/
 @font-face {
-    font-family: 'PPMori-Regular';
-    src: url(../../assets/fonts/PPMori-Regular.otf);
+  font-family: 'PPMori-Regular';
+  src: url(../../assets/fonts/PPMori-Regular.otf);
 }
+
 @font-face {
-    font-family: 'PPMori-SemiBold';
-    src: url(../../assets/fonts/PPMori-SemiBold.otf);
+  font-family: 'PPMori-SemiBold';
+  src: url(../../assets/fonts/PPMori-SemiBold.otf);
 }
+
 @font-face {
-    font-family: 'PPEditorialNew-Itlaic';
-    src: url(../../assets/fonts/PPEditorialNew-Italic.otf);
+  font-family: 'PPEditorialNew-Itlaic';
+  src: url(../../assets/fonts/PPEditorialNew-Italic.otf);
 }
 
 /* COLORS */
 :root {
-    --black-color: #101010;
-    --white-color: #ffffff;
-    --grey-color: #7C7C83;
+  --black-color: #101010;
+  --white-color: #ffffff;
+  --grey-color: #7C7C83;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* LANDING */
 .landing-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 100svh;
 }
 
 .landing-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 60px;
 }
 
 .title-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .landing-content .title-container h3 {
-    font-family: 'PPMori-Regular';
-    color: var(--white-color);
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+  font-family: 'PPMori-Regular';
+  color: var(--white-color);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .landing-content .title-container h1 {
-    font-family: 'PPEditorialNew-Itlaic';
-    font-size: 192px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
+  font-family: 'PPEditorialNew-Itlaic';
+  font-size: 192px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .sections-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .sections-container button {
-    font-family: 'PPMori-SemiBold';
-    color: var(--black-color);
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    background-color: var(--white-color);
-    padding: 10px 45px;
-    border-radius: 44px;
-    border: none;
-    cursor: pointer;
+  font-family: 'PPMori-SemiBold';
+  color: var(--black-color);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background-color: var(--white-color);
+  padding: 10px 45px;
+  border-radius: 44px;
+  border: none;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .landing-content .title-container h3 {
-        font-size: 48px;
-    }
+  .landing-content .title-container h3 {
+    font-size: 48px;
+  }
 
-    .landing-content .title-container h1 {
-        font-size: 144px;
-    }
+  .landing-content .title-container h1 {
+    font-size: 144px;
+  }
 
-    .sections-container button {
-        font-size: 36px;
-        padding: 10px 35px;
-    }
+  .sections-container button {
+    font-size: 36px;
+    padding: 10px 35px;
+  }
 }
 
 @media screen and (min-width: 430px) and (max-width: 768px) {
-    .landing-content {
-        padding: 40px;
-    }
+  .landing-content {
+    padding: 40px;
+  }
 
-    .landing-content .title-container h3 {
-        font-size: 36px;
-    }
+  .landing-content .title-container h3 {
+    font-size: 36px;
+  }
 
-    .landing-content .title-container h1 {
-        font-size: 108px;
-    }
+  .landing-content .title-container h1 {
+    font-size: 108px;
+  }
 
-    .sections-container button {
-        font-size: 24px;
-        padding: 10px 25px;
-    }
+  .sections-container button {
+    font-size: 24px;
+    padding: 10px 25px;
+  }
 }
 
 @media screen and (min-width: 530px) and (max-width: 600px) {
-    .landing-content .title-container h3 {
-        font-size: 32px;
-    }
+  .landing-content .title-container h3 {
+    font-size: 32px;
+  }
 
-    .landing-content .title-container h1 {
-        font-size: 96px;
-    }
+  .landing-content .title-container h1 {
+    font-size: 96px;
+  }
 
-    .sections-container button {
-        font-size: 20px;
-        padding: 10px 20px;
-    }
+  .sections-container button {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
 
 }
 
 @media screen and (min-width: 430px) and (max-width: 530px) {
-    .landing-content .title-container h3 {
-        font-size: 28px;
-    }
+  .landing-content .title-container h3 {
+    font-size: 28px;
+  }
 
-    .landing-content .title-container h1 {
-        font-size: 84px;
-    }
+  .landing-content .title-container h1 {
+    font-size: 84px;
+  }
 
-    .sections-container button {
-        font-size: 18px;
-        padding: 10px 20px;
-    }
+  .sections-container button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
 }
 
 @media screen and (max-width: 430px) {
-    .landing-content {
-        padding: 20px;
-    }
+  .landing-content {
+    padding: 20px;
+  }
 
-    .landing-content .title-container h3 {
-        font-size: 24px;
-    }
+  .landing-content .title-container h3 {
+    font-size: 24px;
+  }
 
-    .landing-content .title-container h1 {
-        font-size: 72px;
-    }
+  .landing-content .title-container h1 {
+    font-size: 72px;
+  }
 
-    .sections-container {
-        flex-direction: column;
-    }
+  .sections-container {
+    flex-direction: column;
+  }
 
-    .sections-container button {
-        font-size: 18px;
-        padding: 10px 20px;
-    }
+  .sections-container button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
 }
+
+
+
+
 

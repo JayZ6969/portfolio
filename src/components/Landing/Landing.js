@@ -2,12 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
+import BG from '../BG/BG'
 import './Landing.css'
-
 
 const Landing = () => {
   return (
     <div className="landing-container">
+      <BG />
       <Navbar />
       <div className="landing-content">
         <div className="title-container">
@@ -25,4 +26,4 @@ const Landing = () => {
   )
 }
 
-export default Landing  
+export default Landing   
