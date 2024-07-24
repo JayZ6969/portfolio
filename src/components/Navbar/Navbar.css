@@ -52,6 +52,11 @@ h1 {
 .navbar-links a img {
     width: 42px;
     height: 42px;
+    transition: transform 0.2s ease-out;
+}
+
+.navbar-container a:hover img {
+    transform: translateY(-5px); 
 }
 
 .ham-btn {
