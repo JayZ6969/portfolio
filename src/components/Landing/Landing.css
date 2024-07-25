@@ -102,7 +102,7 @@
     border-radius: 44px;
     border: none;
     cursor: pointer;
-    transition: transform 0.3s ease-out, background-color 0.3s ease; /* Updated */
+    transition: transform 0.2s ease-out, background-color 0.2s ease; /* Updated */
     position: relative;
     overflow: hidden;
     display: inline-block; /* Ensure the button is only as wide as its content */
@@ -122,7 +122,7 @@
     height: 2px;
     background-color: currentColor;
     transform: translateX(-50%);
-    transition: width 0.3s ease-out; /* Animate width instead of scaleX */
+    transition: width 0.2s ease-out; /* Animate width instead of scaleX */
   }
   
   .sections-container button:hover::after {
