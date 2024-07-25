@@ -8,7 +8,7 @@ import './Landing.css'
 const Landing = () => {
   return (
     <div className="landing-container">
-      <BG />
+      {/* <BG /> */}
       <Navbar />
       <div className="landing-content">
         <div className="title-container">
