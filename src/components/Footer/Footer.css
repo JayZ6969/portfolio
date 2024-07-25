@@ -30,12 +30,15 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 60px 60px 60px;
+    padding-left: clamp(30px, 4.167vw, 60px);
+    padding-right: clamp(30px, 4.167vw, 60px);
+    padding-bottom: clamp(30px, 4.167vw, 60px);
 }
 
 .recent-experience ,
 .location {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     gap: 8px;
 }
@@ -44,7 +47,7 @@ footer {
 .location .p1 {
     font-family: 'PPMori-SemiBold';
     color: var(--white-color);
-    font-size: 24px;
+    font-size: clamp(18px, 1.667vw, 24px);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -54,27 +57,20 @@ footer {
 .location .p2 {
     font-family: 'PPMori-Regular';
     color: var(--grey-color);
-    font-size: 20px;
+    font-size: clamp(16px, 1.389vw, 20px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.location img {
-    width: 24px;
-    height: 24px;
+.location img,
+.recent-experience img {
+    width: clamp(20px, 1,667vw, 24px);
+    height: clamp(20px, 1.667vw, 24px);
 }
 
-.recent-experience img {
-    width: 24px;
-    height: 23px;
-}
 
 @media screen and (min-width: 430px) and (max-width: 768px) {
-    footer {
-        padding: 0px 40px 40px 40px;
-    }
-
     .recent-experience,
     .location {
         gap: 6px;
@@ -82,7 +78,7 @@ footer {
 
     .recent-experience .p1,
     .location .p1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .recent-experience .p2,
@@ -102,10 +98,6 @@ footer {
 }
 
 @media screen and (max-width: 430px) {
-    footer {
-        padding: 0px 30px 30px 30px;
-    }
-
     .recent-experience,
     .location {
         gap: 4px;

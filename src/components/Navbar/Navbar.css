@@ -30,13 +30,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 60px 0px 60px;
+    padding-top: clamp(30px, 3.472vw, 60px);
+    padding-left: clamp(30px, 4.167vw, 60px);
+    padding-right: clamp(30px, 4.167vw, 60px);
 }
 
 h1 {
     font-family: 'PPMori-Regular';
     color: var(--white-color);
-    font-size: 24px;
+    font-size: clamp(18px, 1.667vw, 24px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -47,12 +49,12 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 42px;
+    gap: clamp(32px, 2.917vw, 42px);
 }
 
 .navbar-links a img {
-    width: 42px;
-    height: 42px;
+    width: clamp(32px, 2.917vw, 42px);
+    height: clamp(32px, 2.917vw, 42px); 
 }
 
 .ham-btn {
@@ -76,10 +78,6 @@ h1 {
 }
 
 @media screen and (min-width: 430px) and (max-width: 768px) {
-    .navbar-container {
-        padding: 40px 40px 0px 40px;
-    }
-
     .ham-btn {
         display: block;
         cursor: pointer;
@@ -90,38 +88,35 @@ h1 {
     }
 
 
-    .ham-btn img {
-        width: 32px;
-        height: 32px;
+    .ham-btn {
+        width: clamp(24px, 2.222vw, 32px);
+        height: clamp(24px, 2.222vw, 32px);
     }
 }
 
 @media screen and (max-width: 430px) {
-    .navbar-container {
-        padding: 30px 30px 0px 30px;
-    }
 
     h1 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .ham-btn {
         display: block;
         cursor: pointer;
-        width: 26px;
-        height: 26px;
+        width: 24px;
+        height: 24px;
     }
 
     .navbar-links {
         display: none;
-    }
-
-    .ham-btn img {
-        width: 28px;
-        height: 28px;
     }
 }
 
 .ham-menu-items {
     text-decoration: none;
+}
+
+.ham-menu-items img {
+    width: clamp(32px, 2.917vw, 48px);
+    height: clamp(32px, 2.917vw, 48px);
 }

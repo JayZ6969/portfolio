@@ -42,7 +42,10 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
-  padding: 60px;
+  padding-top: clamp(30px, 4.167vw, 60px);
+  padding-left: clamp(30px, 4.167vw, 60px);
+  padding-right: clamp(30px, 4.167vw, 60px);
+  padding-bottom: clamp(30px, 4.167vw, 60px);
 }
 
 .title-container {
@@ -54,7 +57,7 @@
 .landing-content .title-container h3 {
   font-family: 'PPMori-Regular';
   color: var(--white-color);
-  font-size: 64px;
+  font-size: clamp(42px, 4.444vw, 64px);
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -62,7 +65,7 @@
 
 .landing-content .title-container h1 {
   font-family: 'PPEditorialNew-Itlaic';
-  font-size: 192px;
+  font-size: clamp(124px, 13.333vw, 192px);
   font-style: italic;
   font-weight: 400;
   line-height: normal;
@@ -78,41 +81,33 @@
 .sections-container button {
   font-family: 'PPMori-SemiBold';
   color: var(--black-color);
-  font-size: 48px;
+  font-size: clamp(32px, 3.333vw, 48px);
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   background-color: var(--white-color);
-  padding: 10px 45px;
-  border-radius: 44px;
+  padding-top: clamp(10px, 0.694vw, 10px);
+  padding-bottom: clamp(10px, 0.694vw, 10px);
+  padding-left: clamp(35px, 3.125vw, 45px);
+  padding-right: clamp(35px, 3.125vw, 45px);
+  border-radius: clamp(35px, 3.125vw, 44px);
   border: none;
   cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
   .sections-container button {
-    font-family: 'PPMori-SemiBold';
-    color: var(--black-color);
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    background-color: var(--white-color);
-    padding: 10px 45px;
-    border-radius: 44px;
-    border: none;
-    cursor: pointer;
     transition: transform 0.2s ease-out, background-color 0.2s ease; /* Updated */
     position: relative;
     overflow: hidden;
     display: inline-block; /* Ensure the button is only as wide as its content */
   }
-  
+
   .sections-container button span { /* New */
     position: relative;
     display: inline-block;
   }
-  
+
   .sections-container button::after {
     content: '';
     position: absolute;
@@ -124,30 +119,15 @@
     transform: translateX(-50%);
     transition: width 0.2s ease-out; /* Animate width instead of scaleX */
   }
-  
+
   .sections-container button:hover::after {
     width: 100%; /* Full width on hover */
     left: 0;
     transform: translateX(0%);
   }
-  
+
   .sections-container button:hover {
     transform: translateY(-10px); /* Subtle shift upwards */
-  } 
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .landing-content .title-container h3 {
-    font-size: 48px;
-  }
-
-  .landing-content .title-container h1 {
-    font-size: 144px;
-  }
-
-  .sections-container button {
-    font-size: 36px;
-    padding: 10px 35px;
   }
 }
 
@@ -202,7 +182,7 @@
 }
 
 @media screen and (max-width: 430px) {
-  
+
   .landing-content {
     padding: 20px;
   }

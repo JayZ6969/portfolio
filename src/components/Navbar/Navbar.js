@@ -90,6 +90,7 @@ const Navbar = () => {
                       <ListItemText primary={option.name} 
                       sx={{
                         color: 'white',
+                        fontSize: '20px'
                       }}/>
                     </ListItemButton>
                   </a>
