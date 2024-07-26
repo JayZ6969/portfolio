@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
-import BG from '../BG/BG'
+// import BG from '../BG/BG'
 import './Landing.css'
 
 const Landing = () => {

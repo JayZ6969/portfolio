@@ -1,0 +1,27 @@
+.box-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-big {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 850px;
+    height: 600px;
+    color: var(--grey-color);
+}
+
+.box-small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 370px;
+    height: 600px;
+    color: var(--grey-color);
+}
+
