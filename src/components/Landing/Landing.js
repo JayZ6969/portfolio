@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 // import BG from '../BG/BG'
@@ -17,7 +17,7 @@ const Landing = () => {
         </div>
         <div className="sections-container">
           <Link to="/Engineer"><button>Engineer</button></Link>
-          <Link to="/Photography"><button>Photographer</button></Link>
+          <Link to="/Photographer"><button>Photographer</button></Link>
           <Link to="/Musician"><button>Musician</button></Link>
         </div>     
       </div>

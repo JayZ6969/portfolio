@@ -78,3 +78,9 @@ body {
   background-color: var(--black-color);
   vertical-align: middle;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

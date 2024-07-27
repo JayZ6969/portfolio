@@ -1,0 +1,25 @@
+.sections-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 22px 30px;
+  position: fixed;
+  top: 38px;
+  z-index: 100;
+  border-radius: 44px;
+  background: linear-gradient(83deg, rgba(255, 255, 255, 0.10) 28.78%, rgba(255, 255, 255, 0.40) 55.78%), linear-gradient(277deg, rgba(255, 255, 255, 0.10) 27.09%, rgba(255, 255, 255, 0.40) 55.08%);
+  backdrop-filter: blur(20px);
+}
+
+.sections-navbar button {
+  font-family: 'PPMori-SemiBold';
+  color: var(--black-color);
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 44px;
+  background-color: var(--white-color);
+  border: none;
+  cursor: pointer;
+}

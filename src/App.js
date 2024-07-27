@@ -12,9 +12,9 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Landing />}></Route> 
-        <Route path="/engineer" element={<Engineer />}></Route>
-        <Route path="/photographer" element={Photographer}></Route>
-        <Route path="/musician" element={Musician}></Route>
+        <Route path="/Engineer" element={<Engineer />}></Route>
+        <Route path="/Photographer" element={<Photographer />}></Route>
+        <Route path="/Musician" element={<Musician />}></Route>
       </Routes>
     </div>
   );

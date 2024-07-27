@@ -1,4 +1,5 @@
 import React from 'react'
+import './BoxContainer.css'
 
 const BoxContainer = ({ box1Content, box2Content, box1ClassName, box2ClassName }) => {
   return (
