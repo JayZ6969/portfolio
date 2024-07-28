@@ -5,11 +5,11 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 150px;
-  padding-bottom: 70px;
-  padding-left: 70px;
-  padding-right: 70px;
-  gap: 16px;
+  padding-top: clamp(80px, 10.417vw, 150px);
+  padding-bottom: clamp(18px, 4.861vw, 70px);
+  padding-left: clamp(18px, 4.861vw, 70px);
+  padding-right: clamp(18px, 4.861vw, 70px);
+  gap: clamp(8px, 1.111vw, 16px);
 }
 
 .content-main {
@@ -18,13 +18,13 @@
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
-  gap: 24px;
+  gap: clamp(12px, 1.667vw, 24px);
 }
 
 .content-main h1 {
   font-family: 'PPMori-Regular';
   color: var(--white-color);
-  font-size: 64px;
+  font-size: clamp(32px,4.444vw, 64px);
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -35,6 +35,6 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding-bottom: 32px;
-  gap: 80px;
+  padding-bottom: clamp(16px, 2.222vw, 32px);
+  gap: clamp(32px, 5.556vw, 80px);
 }

@@ -3,26 +3,26 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 16px;
+    gap: clamp(8px, 1.111vw, 16px);
 }
 
 .socials-component-container h1 {
     font-family: 'PPMori-Regular';
     color: var(--white-color);
-    font-size: 64px;
+    font-size: clamp(32px, 4.444vw, 64px);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
 
 .socials-component-container .a1 img {
-    width: 48px
+    width: clamp(14px, 3.333vw, 48px);
 }
 
 .socials-main {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding-left: 32px;
-    gap: 32px;
+    padding-left: clamp(16px, 2.222vw, 32px);
+    gap: clamp(16px, 2.222vw, 32px);
 }
