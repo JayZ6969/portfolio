@@ -5,10 +5,10 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: clamp(100px, 10.417vw, 150px);
-  padding-bottom: clamp(35px, 4.861vw, 70px);
-  padding-left: clamp(35px, 4.861vw, 70px);
-  padding-right: clamp(35px, 4.861vw, 70px);
+  padding-top: clamp(80px, 10.417vw, 150px);
+  padding-bottom: clamp(18px, 4.861vw, 70px);
+  padding-left: clamp(18px, 4.861vw, 70px);
+  padding-right: clamp(18px, 4.861vw, 70px);
   gap: clamp(8px, 1.111vw, 16px);
 }
 

@@ -8,6 +8,8 @@ import linkedin from '../../assets/icons/linkedin.svg'
 import google from '../../assets/icons/google.svg'
 import instagram from '../../assets/icons/instagram.svg'
 import behance from '../../assets/icons/behance.svg'
+import image1 from '../../assets/images/1.JPG'
+import image2 from '../../assets/images/2.JPG'
 
 const Photographer = () => {
 
@@ -43,8 +45,16 @@ const Photographer = () => {
       <div className="content-main">
         <h1>Work</h1>
         <div className='content-container1'>
-          <BoxContainer box1ClassName="box-big" box2ClassName="box-small"/>
-          <BoxContainer box2ClassName="box-big" box1ClassName="box-small"/>
+          <BoxContainer 
+            box1ClassName="box-big"
+            box1Content={image1}
+            box2ClassName="box-small"
+            box2Content={image2}
+          />
+          <BoxContainer 
+            box2ClassName="box-big"
+            box2Content="../../assets/images/4.JPG"
+          />
           <TextComponent1 Header={header1} Points={points1}/>
           <SocialsComponent Socials={
             socials.map((social, index) => (

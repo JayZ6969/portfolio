@@ -14,7 +14,11 @@
   width: clamp(425px, 59.028vw, 850px);
   height: clamp(300px, 41.667vw, 600px);
   border-radius: clamp(16px, 3.333vw, 48px);
-  background-color: var(--grey-color);
+}
+
+.box-big img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .box-small {
@@ -26,7 +30,11 @@
   width: clamp(185px, 25.694vw, 370px);
   height: clamp(300px, 41.667vw, 600px);
   border-radius: clamp(16px, 3.333vw, 48px);
-  background-color: var(--grey-color);
+}
+
+.box-small img {
+    width: 100%;
+    object-fit: cover;
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
