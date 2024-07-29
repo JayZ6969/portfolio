@@ -36,5 +36,5 @@
   align-items: flex-start;
   justify-content: center;
   padding-bottom: clamp(16px, 2.222vw, 32px);
-  gap: clamp(32px, 5.556vw, 80px);
+  gap: clamp(16px, 5.556vw, 80px);
 }

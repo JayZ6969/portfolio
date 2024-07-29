@@ -11,14 +11,16 @@
   align-items: center;
   justify-content: center;
   gap: clamp(8px, 1.111vw, 16px);
-  width: clamp(425px, 59.028vw, 850px);
-  height: clamp(300px, 41.667vw, 600px);
-  border-radius: clamp(16px, 3.333vw, 48px);
+  width: clamp(225px, 59.028vw, 850px);
+  height: clamp(150px, 41.667vw, 600px);
+  
 }
 
 .box-big img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: clamp(16px, 2.222vw, 32px);
+  object-fit: cover;
 }
 
 .box-small {
@@ -27,41 +29,103 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
-  width: clamp(185px, 25.694vw, 370px);
-  height: clamp(300px, 41.667vw, 600px);
-  border-radius: clamp(16px, 3.333vw, 48px);
+  width: clamp(95px, 25.694vw, 370px);
+  height: clamp(150px, 41.667vw, 600px);
+  
 }
 
 .box-small img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: clamp(16px, 2.222vw, 32px);
+  object-fit: cover;
+}
+
+.box-equal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: clamp(185px, 26.042vw, 375px);
+  height: clamp(300px, 41.667vw, 600px);
+}
+
+.box-equal img {
+  width: 100%;
+  height: 100%;
+  border-radius: clamp(16px, 2.222vw, 32px);
+  object-fit: cover;
+}
+
+.display-none {
+  display: none;
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
   .box-big {
-    width: clamp(200px, 59.028vw, 425px);
-    height: clamp(150px, 41.667vw, 300px);
+    
+    gap: (16px, 5.556vw, 80px);
   }
 
   .box-small {
-    width: clamp(95px, 25.694vw, 185px);
-    height: clamp(150px, 41.667vw, 300px);
+    
+    gap: (16px, 5.556vw, 80px);
+  }
+
+  .box-equal {
+    
+    gap: (16px, 5.556vw, 80px);
   }
 }
 
 @media screen and (min-width: 430px) and (max-width: 600px) {
   .box-container {
     flex-direction: column;
-    gap: 16px;
+    width: 100%;
+    gap: clamp(16px, 5.556vw, 80px);
   }
 
   .box-big {
-    width: clamp(150px, 59.028vw, 300px);
-    height: clamp(100px, 41.667vw, 200px);
+    width: 100%;
+    height: auto;
+    gap: (16px, 5.556vw, 80px);
   }
 
   .box-small {
-    width: clamp(75px, 25.694vw, 150px);
-    height: clamp(100px, 41.667vw, 200px);
+    width: 100%;
+    height: auto;
+    gap: (16px, 5.556vw, 80px);
+  }
+
+  .box-equal {
+    width: 100%;
+    height: auto;
+    gap: (16px, 5.556vw, 80px);
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .box-container {
+    flex-direction: column;
+    gap: clamp(16px, 5.556vw, 80px);
+  }
+
+  .box-big {
+    width: 100%;
+    height: auto;
+    gap: (16px, 5.556vw, 80px);
+  }
+
+  .box-small {
+    width: 100%;
+    height: auto;
+    gap: (16px, 5.556vw, 80px);
+  }
+
+  .box-equal {
+    width: 100%;
+    height: auto;
+    gap: (16px, 5.556vw, 80px);
   }
 }

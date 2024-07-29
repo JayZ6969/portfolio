@@ -10,6 +10,25 @@ import instagram from '../../assets/icons/instagram.svg'
 import behance from '../../assets/icons/behance.svg'
 import image1 from '../../assets/images/1.JPG'
 import image2 from '../../assets/images/2.JPG'
+import image3 from '../../assets/images/3.JPG'
+import image4 from '../../assets/images/4.JPG'
+import image5 from '../../assets/images/5.JPG'
+import image6 from '../../assets/images/6.JPG'
+import image7 from '../../assets/images/7.JPG'
+import image8 from '../../assets/images/8.JPG'
+import image9 from '../../assets/images/9.JPG'
+import image10 from '../../assets/images/10.JPG'
+import image11 from '../../assets/images/11.JPG'
+import image12 from '../../assets/images/12.JPG'
+import image13 from '../../assets/images/13.JPG'
+import image14 from '../../assets/images/14.JPG'
+import image15 from '../../assets/images/15.JPG'
+import image16 from '../../assets/images/16.JPG'
+import image17 from '../../assets/images/17.JPG'
+import image18 from '../../assets/images/18.JPG'
+import image19 from '../../assets/images/19.JPG'
+import image20 from '../../assets/images/20.JPG'
+
 
 const Photographer = () => {
 
@@ -53,7 +72,55 @@ const Photographer = () => {
           />
           <BoxContainer 
             box2ClassName="box-big"
-            box2Content="../../assets/images/4.JPG"
+            box2Content={image4}
+            box1ClassName="box-small"
+            box1Content={image3}
+          />
+          <BoxContainer 
+            box1ClassName="box-big"
+            box1Content={image5}
+            box2ClassName="box-small"
+            box2Content={image6}
+          />
+          <BoxContainer 
+            box2ClassName="box-big"
+            box2Content={image8}
+            box1ClassName="box-small"
+            box1Content={image7}
+          />
+          <BoxContainer 
+            box1ClassName="box-big"
+            box1Content={image9}
+            box2ClassName="box-small"
+            box2Content={image10}
+          />
+          <BoxContainer 
+            box2ClassName="box-big"
+            box2Content={image12}
+            box1ClassName="box-small"
+            box1Content={image11}
+          />
+          <BoxContainer 
+            box1ClassName="box-big"
+            box1Content={image13}
+            box2ClassName="box-small"
+            box2Content={image14}
+          />
+          <BoxContainer 
+            box1ClassName="box-equal"
+            box1Content={image15}
+            box2ClassName="box-equal"
+            box2Content={image16}
+            box3ClassName="box-equal"
+            box3Content={image17}
+          />
+          <BoxContainer 
+            box1ClassName="box-equal"
+            box1Content={image18}
+            box2ClassName="box-equal"
+            box2Content={image19}
+            box3ClassName="box-equal"  
+            box3Content={image20}
           />
           <TextComponent1 Header={header1} Points={points1}/>
           <SocialsComponent Socials={

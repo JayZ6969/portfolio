@@ -16,7 +16,7 @@
 }
 
 .socials-component-container .a1 img {
-    width: clamp(14px, 3.333vw, 48px);
+    width: clamp(32px, 3.333vw, 48px);
 }
 
 .socials-main {
