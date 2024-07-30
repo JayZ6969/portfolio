@@ -10,21 +10,31 @@ import google from '../../assets/icons/google.svg'
 import instagram from '../../assets/icons/instagram.svg'
 import codechef from '../../assets/icons/codechef.svg'
 import leetcode from '../../assets/icons/leetcode.svg'
-
-
+import image20 from '../../assets/images/20.JPG'
+import image21 from '../../assets/images/21.JPG'
 
 const Engineer = () => {
 
   const header1 = "Skills";
   const points1 = [
-    "UI/UX Design",
-    "Front-End Development",
-    "IoT/KiCAD PCB Design"
+    "Programming Languages: C/C++, Python, MATLAB",
+    "Database: Oracle MySql",
+    "Web Development: HTML, CSS, JavaScript, React.JS, Node.JS",
+    "Tools: Docker, Git, GitHub, Figma, KiCAD, NI Mulisim, Arduino IDE",
   ];
-  const header2 = "Education";
+  const header2 = "Certifications";
   const points2 = [
-    "B. Tech in Electronics & Communication Engineeering, REVA Universty, Bengaluru",
-    "10+2 PCM+CS, Kendriya Vidyalaya No.2 AFS Jalahalli (E), Bengaluru"
+    "Introduction to Front-End Development - Meta (Coursera)",
+    "Python for AI, Data Science & Development - IBM (Coursera)",
+    "Introduction to Machine Learning - Kaggle",
+    "Writing, Running and Fixing Code in C - Duke University (Coursera)",
+    "Programming Fundamentals - Duke University (Coursera)",
+    "Business Ethics Certification- Saylor Academy"
+  ];
+  const header3 = "Education";
+  const points3 = [
+    "2022-2026: B. Tech in Electronics & Communication Engineeering, REVA Universty, Bengaluru",
+    "2009-2021: 10+2 PCM+CS, Kendriya Vidyalaya No.2 AFS Jalahalli (E), Bengaluru"
   ];
 
 
@@ -58,12 +68,21 @@ const Engineer = () => {
 
   const boxprops = [
     {
-      box1ClassName: 'box1',
-      box1Content: 'UI/UX Design',
-      box2ClassName: 'box2',
-      box2Content: 'Front-End Development',
-      box3ClassName: 'box3',
-      box3Content: 'IoT/KiCAD PCB'
+      box1ClassName: "box-big",
+      box1Content: image20,
+      box2ClassName: "box-small",
+      box2Content: "FM Radio Receiver: An FM Radio Receiver designed using KiCAD, which uses the RDA5807FP Radio IC and can receive signals from 76MHz to 108MHz",
+      box2ContentType: "text",
+      box3ClassName: "display-none"
+    },
+    {
+      box1ClassName: "box-small box-small-right",
+      box1Content: "Electric Guitar OverDrive Effect Pedal: An OverDrive Effect Pedal designed using KiCAD, which uses two 1N4148 clipping diodes to introduce the characteristic distortion and the TL082 Dual Op-Amp IC for audio amplification. This can be used to distort the sound of an electric guitar", 
+      box1ContentType: "text",
+      box2ClassName: "box-big",
+      box2Content: image21,
+      box2ContentType: "image",
+      box3ClassName: "display-none"
     }
   ]
 
@@ -79,10 +98,13 @@ const Engineer = () => {
               {
                 box1ClassName: boxprop.box1ClassName, 
                 box1Content: boxprop.box1Content, 
+                box1ContentType: boxprop.box1ContentType,
                 box2ClassName: boxprop.box2ClassName, 
                 box2Content: boxprop.box2Content,
+                box2ContentType: boxprop.box2ContentType,
                 box3ClassName: boxprop.box3ClassName,
-                box3Content: boxprop.box3Content
+                box3Content: boxprop.box3Content,
+                box3ContentType: boxprop.box3ContentType
               }
             ))
           }/>
@@ -93,6 +115,10 @@ const Engineer = () => {
           <TextComponent1 
             Header={header2} 
             Points={points2}
+          />
+          <TextComponent1 
+            Header={header3} 
+            Points={points3}
           />
           <SocialsComponent Socials={
             socials.map((social, index) => (
