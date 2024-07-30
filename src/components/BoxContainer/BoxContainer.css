@@ -47,8 +47,8 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
-  width: clamp(185px, 26.042vw, 375px);
-  height: clamp(300px, 41.667vw, 600px);
+  width: clamp(95px, 26.042vw, 375px);
+  height: clamp(150px, 41.667vw, 600px);
 }
 
 .box-equal img {
@@ -64,17 +64,14 @@
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
   .box-big {
-    
     gap: (16px, 5.556vw, 80px);
   }
 
   .box-small {
-    
     gap: (16px, 5.556vw, 80px);
   }
 
   .box-equal {
-    
     gap: (16px, 5.556vw, 80px);
   }
 }
@@ -108,6 +105,7 @@
 @media screen and (max-width: 430px) {
   .box-container {
     flex-direction: column;
+    width: 100%;
     gap: clamp(16px, 5.556vw, 80px);
   }
 
