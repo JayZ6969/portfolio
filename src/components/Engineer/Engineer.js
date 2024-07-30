@@ -15,7 +15,7 @@ import leetcode from '../../assets/icons/leetcode.svg'
 
 const Engineer = () => {
 
-  const header1 = "Experience";
+  const header1 = "Skills";
   const points1 = [
     "UI/UX Design",
     "Front-End Development",
