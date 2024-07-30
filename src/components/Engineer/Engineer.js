@@ -56,6 +56,17 @@ const Engineer = () => {
 
   ]
 
+  const boxprops = [
+    {
+      box1ClassName: 'box1',
+      box1Content: 'UI/UX Design',
+      box2ClassName: 'box2',
+      box2Content: 'Front-End Development',
+      box3ClassName: 'box3',
+      box3Content: 'IoT/KiCAD PCB'
+    }
+  ]
+
 
   return (
     <div className="main-container">
@@ -63,11 +74,32 @@ const Engineer = () => {
       <div className="content-main">
         <h1>Projects</h1>
         <div className='content-container1'>
-          <TextComponent1 Header={header1} Points={points1}/>
-          <TextComponent1 Header={header2} Points={points2}/>
+        <BoxContainer BoxProps={
+            boxprops.map((boxprop, index) => (
+              {
+                box1ClassName: boxprop.box1ClassName, 
+                box1Content: boxprop.box1Content, 
+                box2ClassName: boxprop.box2ClassName, 
+                box2Content: boxprop.box2Content,
+                box3ClassName: boxprop.box3ClassName,
+                box3Content: boxprop.box3Content
+              }
+            ))
+          }/>
+          <TextComponent1 
+            Header={header1} 
+            Points={points1}
+          />
+          <TextComponent1 
+            Header={header2} 
+            Points={points2}
+          />
           <SocialsComponent Socials={
             socials.map((social, index) => (
-              {socialsicon: social.socialsicon, socialslink: social.socialslink}
+              {
+                socialsicon: social.socialsicon, 
+                socialslink: social.socialslink
+              }
             ))
           }/>
         </div>

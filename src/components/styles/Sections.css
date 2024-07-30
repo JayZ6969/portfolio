@@ -38,3 +38,62 @@
   padding-bottom: clamp(16px, 2.222vw, 32px);
   gap: clamp(16px, 5.556vw, 80px);
 }
+
+.video-player-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  gap: clamp(16px, 5.556vw, 80px);
+}
+
+.video-player {
+  width: clamp(225px, 59.028vw, 850px);
+  height: clamp(150px, 41.667vw, 600px);
+  border-radius: clamp(16px, 2.222vw, 32px);
+}
+
+.video-player-container p {
+  width: clamp(95px, 25.694vw, 370px);
+  height: clamp(150px, 41.667vw, 600px); 
+  font-family: 'PPMori-Regular';
+  color: var(--white-color);
+  font-size: clamp(16px, 1.944vw, 28px);
+  font-style: normal;
+  line-height: normal;
+}
+
+.video-text-right {
+  align-items: flex-end;
+  text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+  .video-player-container {
+    flex-direction: column;
+    width: 100%;
+    gap: clamp(8px, 5.556vw, 80px);
+  }
+
+  .video-player {
+    width: 100%;
+    height: clamp(150px, 59.028vw, 600px);
+  }
+
+  .video-player-reverse-flex {
+    flex-direction: column-reverse;
+  }
+  
+  .video-player-container br {
+    display: none;
+  }
+
+  .video-player-container p {
+    width: 100%;
+    height: auto;
+    font-size: clamp(12px, 1.111vw, 16px);
+  }
+}
+
+
+
