@@ -1,5 +1,5 @@
 import React from 'react'
-import './Engineer.css'
+import '../styles/Sections.css'
 import BoxContainer from '../BoxContainer/BoxContainer'
 import SectionsNavbar from '../SectionsNavbar/SectionsNavbar'
 import TextComponent1 from '../TextComponent1/TextComponent1'
@@ -58,13 +58,11 @@ const Engineer = () => {
 
 
   return (
-    <div className="engineer-container">
+    <div className="main-container">
       <SectionsNavbar />
       <div className="content-main">
         <h1>Projects</h1>
         <div className='content-container1'>
-          <BoxContainer box1ClassName="box-big" box2ClassName="box-small"/>
-          <BoxContainer box2ClassName="box-big" box1ClassName="box-small"/>
           <TextComponent1 Header={header1} Points={points1}/>
           <TextComponent1 Header={header2} Points={points2}/>
           <SocialsComponent Socials={

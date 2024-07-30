@@ -1,5 +1,5 @@
 import React from 'react'
-import './Photographer.css'
+import '../styles/Sections.css'
 import BoxContainer from '../BoxContainer/BoxContainer'
 import SectionsNavbar from '../SectionsNavbar/SectionsNavbar'
 import TextComponent1 from '../TextComponent1/TextComponent1'
@@ -127,7 +127,7 @@ const Photographer = () => {
   ]
 
   return (
-    <div className='photographer-container'>
+    <div className='main-container'>
       <SectionsNavbar />
       <div className="content-main">
         <h1>Work</h1>
