@@ -58,70 +58,92 @@ const Photographer = () => {
     }
   ]
 
+  const boxprops = [
+    {
+      box1ClassName: "box-big",
+      box1Content: image1,
+      box2ClassName: "box-small",
+      box2Content: image2,
+      box3ClassName: "display-none"
+    },
+    {
+      box2ClassName: "box-big",
+      box2Content: image4,
+      box1ClassName: "box-small",
+      box1Content: image3,
+      box3ClassName: "display-none"
+    },
+    {
+      box1ClassName: "box-big",
+      box1Content: image5,
+      box2ClassName: "box-small",
+      box2Content: image6,
+      box3ClassName: "display-none"
+    },
+    {
+      box2ClassName: "box-big",
+      box2Content: image8,
+      box1ClassName: "box-small",
+      box1Content: image7,
+      box3ClassName: "display-none"
+    },
+    {
+      box1ClassName: "box-big",
+      box1Content: image9,
+      box2ClassName: "box-small",
+      box2Content: image10,
+      box3ClassName: "display-none"
+    },
+    {
+      box2ClassName: "box-big",
+      box2Content: image12,
+      box1ClassName: "box-small",
+      box1Content: image11,
+      box3ClassName: "display-none"
+    },
+    {
+      box1ClassName: "box-big",
+      box1Content: image13,
+      box2ClassName: "box-small",
+      box2Content: image14,
+      box3ClassName: "display-none"
+    },
+    {
+      box1ClassName: "box-equal",
+      box1Content: image15,
+      box2ClassName: "box-equal",
+      box2Content: image16,
+      box3ClassName: "box-equal",
+      box3Content: image17
+    },
+    {
+      box1ClassName: "box-equal",
+      box1Content: image18,
+      box2ClassName: "box-equal",
+      box2Content: image19,
+      box3ClassName: "box-equal",
+      box3Content: image20
+    }
+  ]
+
   return (
     <div className='photographer-container'>
       <SectionsNavbar />
       <div className="content-main">
         <h1>Work</h1>
         <div className='content-container1'>
-          <BoxContainer 
-            box1ClassName="box-big"
-            box1Content={image1}
-            box2ClassName="box-small"
-            box2Content={image2}
-          />
-          <BoxContainer 
-            box2ClassName="box-big"
-            box2Content={image4}
-            box1ClassName="box-small"
-            box1Content={image3}
-          />
-          <BoxContainer 
-            box1ClassName="box-big"
-            box1Content={image5}
-            box2ClassName="box-small"
-            box2Content={image6}
-          />
-          <BoxContainer 
-            box2ClassName="box-big"
-            box2Content={image8}
-            box1ClassName="box-small"
-            box1Content={image7}
-          />
-          <BoxContainer 
-            box1ClassName="box-big"
-            box1Content={image9}
-            box2ClassName="box-small"
-            box2Content={image10}
-          />
-          <BoxContainer 
-            box2ClassName="box-big"
-            box2Content={image12}
-            box1ClassName="box-small"
-            box1Content={image11}
-          />
-          <BoxContainer 
-            box1ClassName="box-big"
-            box1Content={image13}
-            box2ClassName="box-small"
-            box2Content={image14}
-          />
-          <BoxContainer 
-            box1ClassName="box-equal"
-            box1Content={image15}
-            box2ClassName="box-equal"
-            box2Content={image16}
-            box3ClassName="box-equal"
-            box3Content={image17}
-          />
-          <BoxContainer 
-            box1ClassName="box-equal"
-            box1Content={image18}
-            box2ClassName="box-equal"
-            box2Content={image19}
-            box3ClassName="box-equal"  
-            box3Content={image20}
-          />
+          <BoxContainer BoxProps={
+            boxprops.map((boxprop, index) => (
+              {
+                box1ClassName: boxprop.box1ClassName, 
+                box1Content: boxprop.box1Content, 
+                box2ClassName: boxprop.box2ClassName, 
+                box2Content: boxprop.box2Content,
+                box3ClassName: boxprop.box3ClassName,
+                box3Content: boxprop.box3Content
+              }
+            ))
+          }/>
           <TextComponent1 Header={header1} Points={points1}/>
           <SocialsComponent Socials={
             socials.map((social, index) => (

@@ -1,18 +1,22 @@
 import React from 'react'
 import './BoxContainer.css'
 
-const BoxContainer = ({ box1ClassName, box1Content, box2ClassName, box2Content, box3ClassName, box3Content  }) => {
+const BoxContainer = ({ BoxProps = [] }) => {
   return (
     <div className="box-container">
-      <div className={box1ClassName}>
-        <img src={box1Content} alt="" />
-      </div>
-      <div className={box2ClassName}>
-        <img src={box2Content} alt="" />
-      </div>
-      <div className={box3ClassName ? box3ClassName : 'display-none'}>
-        <img src={box3Content} alt="" />
-      </div>
+      {BoxProps.map((box, index) => (
+        <div className="box-main" key={index}>
+          <div className={box.box1ClassName}>
+            <img src={box.box1Content} alt="" />
+          </div>
+          <div className={box.box2ClassName}>
+            <img src={box.box2Content} alt="" />
+          </div>
+          <div className={box.box3ClassName ? box.box3ClassName : 'display-none' } >
+            <img src={box.box3Content} alt="" />
+          </div>
+        </div>
+      ))}
     </div>
   )
 }
