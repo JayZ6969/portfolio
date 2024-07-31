@@ -12,6 +12,7 @@ import codechef from '../../assets/icons/codechef.svg'
 import leetcode from '../../assets/icons/leetcode.svg'
 import image20 from '../../assets/images/20.JPG'
 import image21 from '../../assets/images/21.JPG'
+import image22 from '../../assets/images/22.JPG'
 
 const Engineer = () => {
 
@@ -71,17 +72,25 @@ const Engineer = () => {
       box1ClassName: "box-big",
       box1Content: image20,
       box2ClassName: "box-small",
-      box2Content: "FM Radio Receiver: An FM Radio Receiver designed using KiCAD, which uses the RDA5807FP Radio IC and can receive signals from 76MHz to 108MHz",
+      box2Content: "FORCE - Forum Website: A website for the Forum of School of ECE, designed using Figma and built using React.JS fr Front-End & Firebase for Backend. This website allows us to post information about our event and participant registration for our events",
       box2ContentType: "text",
       box3ClassName: "display-none"
     },
     {
       box1ClassName: "box-small box-small-right",
-      box1Content: "Electric Guitar OverDrive Effect Pedal: An OverDrive Effect Pedal designed using KiCAD, which uses two 1N4148 clipping diodes to introduce the characteristic distortion and the TL082 Dual Op-Amp IC for audio amplification. This can be used to distort the sound of an electric guitar", 
+      box1Content: "FM Radio Receiver: An FM Radio Receiver designed using KiCAD, which uses the RDA5807FP Radio IC and can receive signals from 76MHz to 108MHz", 
       box1ContentType: "text",
       box2ClassName: "box-big",
       box2Content: image21,
       box2ContentType: "image",
+      box3ClassName: "display-none"
+    },
+    {
+      box1ClassName: "box-big",
+      box1Content: image22,
+      box2ClassName: "box-small",
+      box2Content: "Electric Guitar OverDrive Effect Pedal: An OverDrive Effect Pedal designed using KiCAD, which uses two 1N4148 clipping diodes to introduce the characteristic distortion and the TL082 Dual Op-Amp IC for audio amplification. This can be used to distort the sound of an electric guitar",
+      box2ContentType: "text",
       box3ClassName: "display-none"
     }
   ]
