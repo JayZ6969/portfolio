@@ -25,11 +25,12 @@ const Engineer = () => {
   ];
   const header2 = "Certifications";
   const points2 = [
-    "Introduction to Front-End Development - Meta (Coursera)",
+    "Programming Fundamentals - Duke University (Coursera)",
+    "Writing, Running and Fixing Code in C - Duke University (Coursera)",
     "Python for AI, Data Science & Development - IBM (Coursera)",
     "Introduction to Machine Learning - Kaggle",
-    "Writing, Running and Fixing Code in C - Duke University (Coursera)",
-    "Programming Fundamentals - Duke University (Coursera)",
+    "Prompt Design in Vertex AI Skill Badge - Google Cloud",
+    "Introduction to Front-End Development - Meta (Coursera)",
     "Business Ethics Certification- Saylor Academy"
   ];
   const header3 = "Education";
