@@ -73,7 +73,7 @@ const Engineer = () => {
       box1ClassName: "box-big",
       box1Content: image20,
       box2ClassName: "box-small",
-      box2Content: "FORCE - Forum Website: A website for the Forum of School of ECE, designed using Figma and built using React.JS fr Front-End & Firebase for Backend. This website allows us to post information about our event and participant registration for our events",
+      box2Content: "FORCE - Forum Website: A website for the Forum of School of ECE, designed using Figma and built using React.JS for Front-End & Firebase for Backend. This website allows us to post information about our event and participant registration for our events",
       box2ContentType: "text",
       box3ClassName: "display-none"
     },
