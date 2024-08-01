@@ -3,13 +3,13 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: clamp(8px, 1.111vw, 16px);
+    gap: clamp(0.5rem, 1.111vw, 1rem);
 }
 
 .text-component1-container h1 {
     font-family: 'PPMori-Regular';
     color: var(--white-color);
-    font-size: clamp(32px, 4.444vw, 64px);
+    font-size: clamp(2rem, 4.444vw, 4rem);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -18,7 +18,7 @@
 .text-component1-container .li1 {
     font-family: 'PPMori-Regular';
     color: var(--white-color);
-    font-size: clamp(16px, 2.222vw, 32px);
+    font-size: clamp(1rem, 2.222vw, 2rem);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -26,9 +26,9 @@
 
 .text-component1-container ul {
     list-style-type: disc;
-    padding-left: clamp(24px, 3.333vw, 48px);
+    padding-left: clamp(1.5rem, 3.333vw, 3rem);
   }
 
   .text-component1-container li {
-    margin-bottom: clamp(5px, 0.694vw, 10px);
+    margin-bottom: clamp(0.313rem, 0.694vw, 0.625rem);
   }

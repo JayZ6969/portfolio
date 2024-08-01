@@ -58,7 +58,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className='navbar-container'>
-        <h1>Jayasheel Vinay J</h1>
+        <h1>My Portfolio</h1>
         <div className='navbar-links'>
           <a href='https://www.linkedin.com/in/jayasheelvinayj/' target="_blank" rel="noreferrer"><img src={linkedin} alt="" /></a>
           <a href='https://github.com/JayZ6969/' target="_blank" rel="noreferrer"><img src={github} alt="" /></a>

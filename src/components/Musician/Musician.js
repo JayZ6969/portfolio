@@ -91,10 +91,10 @@ const Musician = () => {
               className="video-player"
               src="https://www.youtube.com/embed/WxmxyDozFE8?si=JRsbHn_wwmlJRyEM"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullscreen
             />
             <p>
               This is a piano cover <br />
@@ -119,10 +119,10 @@ const Musician = () => {
               className="video-player"
               src="https://www.youtube.com/embed/eTJX2Pi5mkk?si=mH0ekqCxeVC6QNOb"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullscreen
             />
           </div>
           <TextComponent1 Header={header1} Points={points1} />

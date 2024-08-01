@@ -3,15 +3,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: clamp(30px, 3.472vw, 60px);
-    padding-left: clamp(30px, 4.167vw, 60px);
-    padding-right: clamp(30px, 4.167vw, 60px);
+    padding-top: clamp(1.875rem, 3.472vw, 3.75rem); 
+    padding-left: clamp(1.875rem, 4.167vw, 3.75rem); 
+    padding-right: clamp(1.875rem, 4.167vw, 3.75rem);
 }
 
 h1 {
     font-family: 'PPMori-Regular';
     color: var(--white-color);
-    font-size: clamp(18px, 1.667vw, 24px);
+    font-size: clamp(1.125rem, 1.667vw, 1.5rem); 
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -22,12 +22,12 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: clamp(32px, 2.917vw, 42px);
+    gap: clamp(2rem, 2.917vw, 2.625rem); 
 }
 
 .navbar-links a img {
-    width: clamp(32px, 2.917vw, 42px);
-    height: clamp(32px, 2.917vw, 42px); 
+    width: clamp(2rem, 2.917vw, 2.625rem); 
+    height: clamp(2rem, 2.917vw, 2.625rem); 
 }
 
 .ham-btn {
@@ -62,22 +62,22 @@ h1 {
 
 
     .ham-btn {
-        width: clamp(24px, 2.222vw, 32px);
-        height: clamp(24px, 2.222vw, 32px);
+        width: clamp(1.5rem, 2.222vw, 2rem);
+        height: clamp(1.5rem, 2.222vw, 2rem);
     }
 }
 
 @media screen and (max-width: 430px) {
 
     h1 {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .ham-btn {
         display: block;
         cursor: pointer;
-        width: 24px;
-        height: 24px;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     .navbar-links {
@@ -90,6 +90,6 @@ h1 {
 }
 
 .ham-menu-items img {
-    width: clamp(32px, 2.917vw, 48px);
-    height: clamp(32px, 2.917vw, 48px);
+    width: clamp(2rem, 2.917vw, 3rem);
+    height: clamp(2rem, 2.917vw, 3rem);
 }

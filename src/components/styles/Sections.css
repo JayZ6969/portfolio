@@ -5,11 +5,11 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: clamp(80px, 10.417vw, 150px);
-  padding-bottom: clamp(18px, 4.861vw, 70px);
-  padding-left: clamp(18px, 4.861vw, 70px);
-  padding-right: clamp(18px, 4.861vw, 70px);
-  gap: clamp(8px, 1.111vw, 16px);
+  padding-top: clamp(5rem, 10.417vw, 9.375rem); 
+  padding-bottom: clamp(1.125rem, 4.861vw, 4.375rem); 
+  padding-left: clamp(1.125rem, 4.861vw, 4.375rem);
+  padding-right: clamp(1.125rem, 4.861vw, 4.375rem); 
+  gap: clamp(0.5rem, 1.111vw, 1rem); 
 }
 
 .content-main {
@@ -18,25 +18,26 @@
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
-  gap: clamp(12px, 1.667vw, 24px);
+  gap: clamp(0.75rem, 1.667vw, 1.5rem); /* 12px to 24px */
 }
 
 .content-main h1 {
   font-family: 'PPMori-Regular';
   color: var(--white-color);
-  font-size: clamp(32px,4.444vw, 64px);
+  font-size: clamp(2rem, 4.444vw, 4rem); /* 32px to 64px */
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
+
 
 .content-container1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding-bottom: clamp(16px, 2.222vw, 32px);
-  gap: clamp(16px, 5.556vw, 80px);
+  padding-bottom: clamp(1rem, 2.222vw, 2rem); 
+  gap: clamp(1rem, 5.556vw, 5rem); 
 }
 
 .video-player-container {
@@ -44,21 +45,21 @@
   justify-content: space-between;
   align-items: stretch;
   width: 100%;
-  gap: clamp(16px, 5.556vw, 80px);
+  gap: clamp(1rem, 5.556vw, 5rem); 
 }
 
 .video-player {
-  width: clamp(225px, 59.028vw, 850px);
-  height: clamp(150px, 41.667vw, 600px);
-  border-radius: clamp(16px, 2.222vw, 32px);
+  width: clamp(14.063rem, 59.028vw, 53.125rem); 
+  height: clamp(9.375rem, 41.667vw, 37.5rem); 
+  border-radius: clamp(1rem, 2.222vw, 2rem); 
 }
 
 .video-player-container p {
-  width: clamp(95px, 25.694vw, 370px);
-  height: clamp(150px, 41.667vw, 600px); 
+  width: clamp(5.938rem, 25.694vw, 23.125rem);
+  height: clamp(9.375rem, 41.667vw, 37.5rem); 
   font-family: 'PPMori-Regular';
   color: var(--white-color);
-  font-size: clamp(16px, 1.944vw, 28px);
+  font-size: clamp(1rem, 1.944vw, 1.75rem); 
   font-style: normal;
   line-height: normal;
 }
@@ -72,12 +73,12 @@
   .video-player-container {
     flex-direction: column;
     width: 100%;
-    gap: clamp(8px, 5.556vw, 80px);
+    gap: clamp(0.5rem, 5.556vw, 5rem);
   }
 
   .video-player {
     width: 100%;
-    height: clamp(150px, 59.028vw, 600px);
+    height: clamp(9.375rem, 59.028vw, 3.5rem);
   }
 
   .video-player-reverse-flex {
@@ -91,7 +92,7 @@
   .video-player-container p {
     width: 100%;
     height: auto;
-    font-size: clamp(12px, 1.111vw, 16px);
+    font-size: clamp(0.75rem, 1.111vw, 1rem);
   }
 }
 

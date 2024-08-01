@@ -2,29 +2,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: clamp(5px, 0.694vw, 10px);
-  padding-top: clamp(10px, 1.528vw, 22px);
-  padding-bottom: clamp(10px, 1.528vw, 22px);
-  padding-left: clamp(18px, 2.083vw, 30px);
-  padding-right: clamp(18px, 2.083vw, 30px);
+  gap: clamp(0.313rem, 0.694vw, 0.625rem); 
+  padding-top: clamp(0.625rem, 1.528vw, 1.375rem); 
+  padding-bottom: clamp(0.625rem, 1.528vw, 1.375rem); 
+  padding-left: clamp(1.125rem, 2.083vw, 1.875rem); 
+  padding-right: clamp(1.125rem, 2.083vw, 1.875rem); 
   position: fixed;
-  top: clamp(16px,2.693vw,38px);
+  top: clamp(1rem, 2.693vw, 2.375rem); 
   z-index: 100;
-  border-radius: 44px;
+  border-radius: 2.75rem; 
   background: linear-gradient(83deg, rgba(255, 255, 255, 0.10) 28.78%, rgba(255, 255, 255, 0.40) 55.78%), linear-gradient(277deg, rgba(255, 255, 255, 0.10) 27.09%, rgba(255, 255, 255, 0.40) 55.08%);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(0.5rem); 
 }
 
 .sections-navbar button {
   font-family: 'PPMori-SemiBold';
   color: var(--black-color);
-  font-size: clamp(12px, 1.667vw, 24px);
+  font-size: clamp(0.75rem, 1.667vw, 1.5rem); 
   font-weight: 600;
-  padding-top: clamp(5px, 0.694vw, 10px);
-  padding-bottom: clamp(5px, 0.694vw, 10px);
-  padding-left: clamp(10px, 1.736vw, 25px);
-  padding-right: clamp(10px, 1.736vw, 25px);
-  border-radius: 44px;
+  padding-top: clamp(0.313rem, 0.694vw, 0.625rem);
+  padding-bottom: clamp(0.313rem, 0.694vw, 0.625rem); 
+  padding-left: clamp(0.625rem, 1.736vw, 1.563rem); 
+  padding-right: clamp(0.625rem, 1.736vw, 1.563rem); 
+  border-radius: 2.75rem; 
   background-color: var(--white-color);
   border: none;
   cursor: pointer;

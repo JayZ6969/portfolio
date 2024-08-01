@@ -4,7 +4,7 @@
   align-items: stretch;
   flex-direction: column;
   width: 100%;
-  gap: clamp(16px, 5.556vw, 80px);
+  gap: clamp(1rem, 5.556vw, 5rem);
 }
 
 .box-main {
@@ -19,22 +19,22 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: clamp(8px, 1.111vw, 16px);
-  width: clamp(225px, 59.028vw, 850px);
-  height: clamp(150px, 41.667vw, 600px);
+  gap: clamp(0.5rem, 1.111vw, 1rem);
+  width: clamp(14.063rem, 59.028vw, 53.125rem);
+  height: clamp(9.375, 41.667vw, 37.5rem);
 }
 
 .box-big img {
   width: 100%;
   height: 100%;
-  border-radius: clamp(16px, 2.222vw, 32px);
+  border-radius: clamp(1rem, 2.222vw, 2rem);
   object-fit: cover;
 }
 
 .box-big p {
   font-family: 'PPMori-Regular';
   color: var(--white-color);
-  font-size: clamp(16px, 1.944vw, 28px);
+  font-size: clamp(1rem, 1.944vw, 1.75rem);
   font-style: normal;
   line-height: normal;
 }
@@ -52,22 +52,22 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: left;
-  gap: 16px;
-  width: clamp(95px, 25.694vw, 370px);
-  height: clamp(150px, 41.667vw, 600px); 
+  gap: 1rem; 
+  width: clamp(5.938rem, 25.694vw, 23.125rem); 
+  height: clamp(9.375rem, 41.667vw, 37.5rem); 
 }
 
 .box-small img {
   width: 100%;
   height: 100%;
-  border-radius: clamp(16px, 2.222vw, 32px);
+  border-radius: clamp(1rem, 2.222vw, 2rem); 
   object-fit: cover;
 }
 
 .box-small p {
   font-family: 'PPMori-Regular';
   color: var(--white-color);
-  font-size: clamp(16px, 1.944vw, 28px);
+  font-size: clamp(1rem, 1.944vw, 1.75rem); 
   font-style: normal;
   line-height: normal;
 }
@@ -86,14 +86,14 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
-  width: clamp(95px, 26.042vw, 375px);
-  height: clamp(150px, 41.667vw, 600px);
+  width: clamp(5.938rem, 26.042vw, 23.438rem);
+  height: clamp(9.375, 41.667vw, 37.5rem);
 }
 
 .box-equal img {
   width: 100%;
   height: 100%;
-  border-radius: clamp(16px, 2.222vw, 32px);
+  border-radius: clamp(1rem, 2.222vw, 2rem);
   object-fit: cover;
 }
 
@@ -105,7 +105,7 @@
   .box-main {
     flex-direction: column;
     width: 100%;
-    gap: clamp(8px, 5.556vw, 80px);
+    gap: clamp(0.5rem, 5.556vw, 5rem); 
   }
 
   .box-big,
@@ -116,7 +116,7 @@
 
   .box-big p,
   .box-big-right p {
-    font-size: clamp(12px, 1.111vw, 16px);
+    font-size: clamp(0.75rem, 1.111vw, 1rem); 
   }
 
   .box-small,
@@ -128,7 +128,7 @@
 
   .box-small p,
   .box-small-right p {
-    font-size: clamp(12px, 2.222vw, 16px);
+    font-size: clamp(0.75rem, 2.222vw, 1rem);
   }
 
   .box-equal {
@@ -141,7 +141,7 @@
   .box-main {
     flex-direction: column;
     width: 100%;
-    gap: clamp(8px, 5.556vw, 80px);
+    gap: clamp(0.5rem, 5.556vw, 5rem);
   }
 
   .box-big ,
@@ -151,7 +151,7 @@
   }
 
   .box-big p {
-    font-size: clamp(12px, 2.222vw, 16px);
+    font-size: clamp(0.75rem, 2.222vw, 1rem);
   }
 
   .box-small,
@@ -163,7 +163,7 @@
 
   .box-small p,
   .box-small-right p {
-    font-size: clamp(12px, 1.111vw, 16px);
+    font-size: clamp(0.75rem, 1.111vw, 1rem);
   }
 
   .box-equal {
