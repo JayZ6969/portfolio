@@ -12,7 +12,7 @@ function App() {
   const [showPreLoader, setShowPreLoader] = useState(true);
 
   useEffect(() => {
-    // Hide the preloader after it has been shown once
+    // Show PreLoader only on reload
     const timer = setTimeout(() => {
       setShowPreLoader(false);
     }, 5000); 
