@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
+import LocomotiveScroll from 'locomotive-scroll';
 import PreLoader from "./components/PreLoader/PreLoader.js";
 import Landing from "./components/Landing/Landing.js";
 import Engineer from "./components/Engineer/Engineer.js";
@@ -18,6 +19,8 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
+
+  const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <div className="App">
