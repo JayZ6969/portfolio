@@ -16,7 +16,6 @@ import image19 from '../../assets/images/19.JPG'
 const Musician = () => {
   const header1 = "Experience";
   const points1 = [
-    "Pianist, 2010-present",
     "Pianist, Music Band-Euphony; 2022-present",
     "Finalist at KVS “Ek Bharat Shresht Bharat” Parv; 2019 ",
     "Digital Audio Workstations/Music Production; 2019-present"
@@ -52,13 +51,13 @@ const Musician = () => {
       box1ClassName: "box-big",
       box1Content: image18,
       box2ClassName: "box-small",
-      box2Content: "An energetic<br>performance with<br>Neha Shastri,<br>SaReGaMaPa<br>finalist, at the<br>annual<br>HARMONICS<br>‘23, REVA<br>University",
+      box2Content: "An energetic<br>performance with<br>Neha Shastri,<br>SaReGaMaPa<br>finalist, at the<br>Harmonics<br>Music Fest‘23,<br> REVA University",
       box2ContentType: "video",
       box3ClassName: "display-none",
     },
     {
       box1ClassName: "box-small box-small-right",
-      box1Content: "A mesmerizing<br>performance with<br>Asha Bhat,<br>SaReGaMaPa<br>finalist, at the<br>annual<br>HARMONICS<br>‘24, REVA<br>University",
+      box1Content: "A mesmerizing<br>performance with<br>Asha Bhat,<br>SaReGaMaPa<br>finalist, at the<br>Harmonics<br>Music Fest‘24,<br> REVA University",
       box1ContentType: "text",
       box2ClassName: "box-big",
       box2Content: image19,
