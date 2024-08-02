@@ -7,7 +7,7 @@ import './Landing.css'
 
 const Landing = () => {
   return (
-    <div className="landing-container">
+    <div data-scroll data-scroll-speed="-0.8" className="landing-container">
       {/* <BG /> */}
       <Navbar />
       <div className="landing-content">

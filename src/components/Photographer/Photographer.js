@@ -4,6 +4,7 @@ import BoxContainer from '../BoxContainer/BoxContainer'
 import SectionsNavbar from '../SectionsNavbar/SectionsNavbar'
 import TextComponent1 from '../TextComponent1/TextComponent1'
 import SocialsComponent from '../SocialsComponent/SocialsComponent'
+import CopyrightFooter from '../CopyrightFooter/CopyrightFooter'
 import linkedin from '../../assets/icons/linkedin.svg'
 import google from '../../assets/icons/google.svg'
 import instagram from '../../assets/icons/instagram.svg'
@@ -178,6 +179,7 @@ const Photographer = () => {
           }/>
         </div>
       </div>
+      <CopyrightFooter ColorBG="copyright-footer-container white"/>
     </div>
   )
 }

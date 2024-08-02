@@ -5,10 +5,10 @@
     align-items: center;
     padding-top: clamp(1.875rem, 3.472vw, 3.75rem); 
     padding-left: clamp(1.875rem, 4.167vw, 3.75rem); 
-    padding-right: clamp(1.875rem, 4.167vw, 3.75rem);
+    padding-right: clamp(1.875rem, 4.167vw, 3.75rem);   
 }
 
-h1 {
+.navbar-container h1 {
     font-family: 'PPMori-Regular';
     color: var(--white-color);
     font-size: clamp(1.125rem, 1.667vw, 1.5rem); 

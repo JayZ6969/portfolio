@@ -56,7 +56,6 @@ const Navbar = () => {
   ]
 
   return (
-    <nav>
       <div className='navbar-container'>
         <h1>My Portfolio</h1>
         <div className='navbar-links'>
@@ -100,7 +99,6 @@ const Navbar = () => {
           </Box>
         </Drawer>
       </div>
-    </nav>
   )
 }
 

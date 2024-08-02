@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   position: relative;
   padding-top: clamp(5rem, 10.417vw, 9.375rem); 
   padding-bottom: clamp(1.125rem, 4.861vw, 4.375rem); 
@@ -19,6 +20,7 @@
   align-items: stretch;
   justify-content: space-between;
   gap: clamp(0.75rem, 1.667vw, 1.5rem); /* 12px to 24px */
+  padding-bottom: clamp(2rem, 4.444vw, 4rem);
 }
 
 .content-main h1 {
@@ -36,6 +38,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  width: 100%;
   padding-bottom: clamp(1rem, 2.222vw, 2rem); 
   gap: clamp(1rem, 5.556vw, 5rem); 
 }

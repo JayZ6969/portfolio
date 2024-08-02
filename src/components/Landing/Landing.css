@@ -5,6 +5,8 @@
   justify-content: space-between;
   position: relative;
   height: 100svh;
+  width: 100%;
+  max-width: 1440px;
 }
 
 .landing-content {
@@ -36,6 +38,7 @@
 
 .landing-content .title-container h1 {
   font-family: 'PPEditorialNew-Itlaic';
+  color: var(--white-color);
   font-size: clamp(7.75rem, 13.333vw, 12rem);
   font-style: italic;
   font-weight: 400;

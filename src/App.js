@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import LocomotiveScroll from 'locomotive-scroll';
 import PreLoader from "./components/PreLoader/PreLoader.js";
 import Landing from "./components/Landing/Landing.js";
+import About from "./components/About/About.js";
 import Engineer from "./components/Engineer/Engineer.js";
 import Photographer from "./components/Photographer/Photographer.js";
 import Musician from "./components/Musician/Musician.js";
 
 function App() {
   const [showPreLoader, setShowPreLoader] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
     // Show PreLoader only on reload
@@ -20,7 +23,22 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  const locomotiveScroll = new LocomotiveScroll();
+  useEffect(() => {
+    if (showPreLoader) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [showPreLoader]);
+
+  useEffect(() => {
+    if (!showPreLoader) {
+      const locomotiveScroll = new LocomotiveScroll();
+      locomotiveScroll.scrollTo(0, { duration: 0, disableLerp: true });
+
+      return () => locomotiveScroll.destroy();
+    }
+  }, [location, showPreLoader]);
 
   return (
     <div className="App">
@@ -31,6 +49,7 @@ function App() {
             <>
               {showPreLoader && <PreLoader />}
               <Landing />
+              <About />
             </>
           }
         ></Route>
