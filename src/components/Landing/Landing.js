@@ -1,13 +1,23 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import React, { useEffect } from "react";
+import { Link, useLocation} from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 // import BG from '../BG/BG'
 import './Landing.css'
 
 const Landing = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const div = document.querySelector('.landing-container');
+    if (div) {
+      div.setAttribute('data-scroll', '');
+      div.setAttribute('data-scroll-speed', '-0.8');
+    }
+  }, [location]);
+
   return (
-    <div data-scroll data-scroll-speed="-0.8" className="landing-container">
+    <div className="landing-container">
       {/* <BG /> */}
       <Navbar />
       <div className="landing-content">
