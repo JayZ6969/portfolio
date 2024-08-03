@@ -26,6 +26,8 @@ import image14 from '../../assets/images/14.JPG'
 import image15 from '../../assets/images/15.JPG'
 import image16 from '../../assets/images/16.JPG'
 import image17 from '../../assets/images/17.JPG'
+import image18 from '../../assets/images/23.JPG'
+import image19 from '../../assets/images/24.JPG'
 
 const Photographer = () => {
 
@@ -109,6 +111,22 @@ const Photographer = () => {
       box1Content: image7,
       box2ClassName: "box-small",
       box2Content: "Sri Lankan<br>Classical<br>Dance Form;<br>NAAC Cultural<br>Performance,<br>REVA University",
+      box2ContentType: "text",
+      box3ClassName: "display-none"
+    },
+    {
+      box2ClassName: "box-big",
+      box2Content: image18,
+      box1ClassName: "box-small box-small-right",
+      box1Content: "Raj B Shetty, Actor<br>& Film Director;<br>at the Toby<br>Movie Promotion,<br>REVA University",
+      box1ContentType: "text",
+      box3ClassName: "display-none"
+    },
+    {
+      box1ClassName: "box-big",
+      box1Content: image19,
+      box2ClassName: "box-small",
+      box2Content: "Chaitra J Achar,<br>Actress & Singer;<br>at the Toby<br>Movie Promotion,<br>REVA University",
       box2ContentType: "text",
       box3ClassName: "display-none"
     },
