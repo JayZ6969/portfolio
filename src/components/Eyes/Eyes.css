@@ -4,7 +4,7 @@
     justify-content: end;
     align-items: center;
     width: 100vw;
-    height: clamp(17.5rem, 38.889vw, 35rem);
+    height: clamp(7.5rem, 38.889vw, 35rem);
     background-color: var(--orange-color);
     z-index: 1;
 }

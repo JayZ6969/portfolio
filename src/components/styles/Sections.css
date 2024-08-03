@@ -6,8 +6,7 @@
   align-items: center;
   width: 100%;
   position: relative;
-  padding-top: clamp(5rem, 10.417vw, 9.375rem); 
-  padding-bottom: clamp(1.125rem, 4.861vw, 4.375rem); 
+  padding-top: clamp(5rem, 10.417vw, 9.375rem);   
   padding-left: clamp(1.125rem, 4.861vw, 4.375rem);
   padding-right: clamp(1.125rem, 4.861vw, 4.375rem); 
   gap: clamp(0.5rem, 1.111vw, 1rem); 
