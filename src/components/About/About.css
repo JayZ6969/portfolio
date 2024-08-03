@@ -1,4 +1,4 @@
-.about-container {
+.about-bg {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,10 +11,9 @@
 
 .about-content {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: clamp(2rem, 2.222vw, 4rem);
+    justify-content: space-between;
+    gap: clamp(2.5rem, 5.556vw, 5rem);
     width: 100%;
     max-width: 1440px;
     padding-top: clamp(1.875rem, 4.167vw, 3.75rem);
@@ -23,15 +22,23 @@
     padding-bottom: clamp(1.875rem, 4.167vw, 3.75rem);
 }
 
-.about-content-1 {
+.about-me {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: clamp(2rem, 2.222vw, 4rem);
+    
 }
 
+.about-content img {
+    width: clamp(17.5rem, 38.889vw, 35rem);;
+    height: auto;
+    border-radius: clamp(1.5rem, 3.333vw, 3rem);
+    object-fit: cover;
+}
 
-.about-container h1 {
+.about-bg h1 {
     width: 100%;
     font-family: 'Inter';
     font-size: clamp(3rem, 6.667vw, 6rem);
@@ -42,7 +49,7 @@
     line-height: 90%
 }
 
-.about-container p {
+.about-bg p {
     font-family: 'PPMori-SemiBold';
     font-size: clamp(1.125rem, 2.5vw, 2.25rem);
     text-align: justify;
@@ -56,7 +63,7 @@
     padding-bottom: clamp(1.875rem, 4.167vw, 3.75rem);
 }
 
-.button-container button {
+.button-container {
     font-family: 'PPMori-SemiBold';
     font-size: clamp(1.125rem, 2.5vw, 2.25rem);
     color: var(--white-color);
