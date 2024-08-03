@@ -32,7 +32,7 @@
 }
 
 .about-content img {
-    width: clamp(17.5rem, 38.889vw, 35rem);;
+    width: clamp(17.5rem, 38.889vw, 34rem);;
     height: auto;
     border-radius: clamp(1.5rem, 3.333vw, 3rem);
     object-fit: cover;

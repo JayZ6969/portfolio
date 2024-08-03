@@ -1,9 +1,8 @@
 .copyright-footer-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100vw;
-    bottom: 0;
     padding-top: clamp(1rem, 2.222vw, 1.5rem);
     padding-bottom: clamp(1rem, 2.222vw, 1.5rem);
     padding-left: clamp(1.875rem, 4.167vw, 3.75rem);
@@ -20,6 +19,11 @@
    background: var(--white-color); 
    color: var(--black-color);
    font-family: 'PPMori-SemiBold';
+}
+
+.copyright-footer-container a {
+    text-decoration: none;
+    color: var(--black-color);
 }
 
 .copyright-footer-container p {
