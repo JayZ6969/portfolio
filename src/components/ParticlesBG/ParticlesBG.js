@@ -35,7 +35,7 @@ const ParticlesBG = (props) => {
       autoPlay: true,
       background: {
         color: {
-          value: "#000"
+          value: "#101010"
         },
         image: "",
         position: "",

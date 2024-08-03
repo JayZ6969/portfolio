@@ -6,7 +6,7 @@
     background: var(--black-color);
     border-top-left-radius: clamp(1.5rem, 3.333vw, 3rem);
     border-top-right-radius: clamp(1.5rem, 3.333vw, 3rem);
-    z-index: 2; 
+    z-index: 2;
 }
 
 .contact-content {
@@ -59,27 +59,31 @@
 .contact-info,
 .sub-contact-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    gap: clamp(1rem, 2.222vw, 4rem);
+    gap: clamp(1rem, 2.222vw, 2rem);
+}
+
+.sub-contact-info {
+    flex-direction: column;
 }
 
 .flex-row {
     display: flex;
-    align-items: center; 
+    align-items: center;
     gap: clamp(0.75rem, 1.667vw, 1.5rem);
     text-decoration: none;
-  }
+}
 
 .flex-row img {
-    width: clamp(1.875rem, 4.167vw, 3.75rem);
-    height: clamp(1.875rem, 4.167vw, 3.75rem);
+    width: clamp(1.75rem, 3.333vw, 3rem);
+    height: clamp(1.75rem, 3.333vw, 3rem);
 }
 
 .flex-row p {
     font-family: 'PPMori-SemiBold';
-    font-size: clamp(1.3125rem, 2.917vw, 2.625rem);
+    font-size: clamp(1.25rem, 2.222vw, 2rem);
     color: var(--white-color);
     font-style: normal;
     font-weight: 600;
@@ -87,28 +91,29 @@
 }
 
 @media screen and (min-width: 1024px) {
+
     .contact-info img,
     .contact-info p {
         transition: transform 0.15s ease-out;
     }
-    
+
     .contact-info img:hover,
     .contact-info p:hover {
-        transform: translateY(-5px); 
+        transform: translateY(-5px);
     }
-  }
+}
 
 @media screen and (max-width: 580px) {
     .contact-content {
         flex-direction: column;
-        gap: clamp(2rem, 2.222vw, 4rem);
-    }
-
-    .contact-info {
-        flex-direction: row;
     }
 
     .contact-me {
         align-items: flex-start;
     }
+
+    .hide {
+        display: none;
+    }
+
 }
