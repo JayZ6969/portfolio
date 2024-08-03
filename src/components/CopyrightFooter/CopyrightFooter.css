@@ -11,6 +11,7 @@
     border-top-right-radius: clamp(1.5rem, 3.333vw, 3rem);
     background: var(--black-color);
     font-family: 'PPMori-Regular';
+    font-size: clamp(0.75rem, 1.667vw, 1.125rem);
     color: var(--white-color);
     z-index: 2;
 }
@@ -26,7 +27,7 @@
     color: var(--black-color);
 }
 
-.copyright-footer-container p a {
+.copyright-footer-container a {
     font-size: clamp(0.75rem, 1.667vw, 1.125rem);
     font-style: normal;
     font-weight: 400;

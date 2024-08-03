@@ -23,9 +23,9 @@ const Contact = () => {
         </div>
         <div className="contact-me">
           <h1>
-            Contact-
+            Let's
             <br />
-            Me
+            Connect
           </h1>
           <div className="contact-info">
             <div className="sub-contact-info">
