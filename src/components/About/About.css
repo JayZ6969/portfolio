@@ -59,7 +59,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-bottom: clamp(4.5rem, 9.999vw, 8.25rem); */
     padding-bottom: clamp(1.875rem, 4.167vw, 3.75rem);
 }
 
@@ -75,4 +74,10 @@
     padding-right: clamp(1.5rem, 2.222vw, 2.5rem);
     border-radius: clamp(2.5rem, 5.5556vw , 5rem);
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .about-content img {
+        display: none;
+    }
 }
