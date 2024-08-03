@@ -23,27 +23,47 @@ const Contact = () => {
         </div>
         <div className="contact-me">
           <h1>
-            CONTACT
+            Contact-
             <br />
-            ME
+            Me
           </h1>
           <div className="contact-info">
-            <Link to="https://www.linkedin.com/in/jayasheelvinayj/" target="_blank" className="flex-row">
-              <img src={linkedin} alt="" />
-              <p>Linkedin</p>
-            </Link>
-            <Link to="https://www.instagram.com/jayasheel.vinay/" target="_blank" className="flex-row">
-              <img src={instagram} alt="" />
-              <p>Instagram</p>
-            </Link>
-            <Link to="mailto:jayasheelvinayj.work@gmail.com" target="_blank" className="flex-row">
-              <img src={google} alt="" />
-              <p>Gmail</p>
-            </Link>
-            <Link to="ttps://www.behance.net/jayasheelvinayj" target="_blank" className="flex-row">
-              <img src={behance} alt="" />
-              <p>Behance</p>
-            </Link>
+            <div className="sub-contact-info">
+              <Link
+                to="https://www.linkedin.com/in/jayasheelvinayj/"
+                target="_blank"
+                className="flex-row"
+              >
+                <img src={linkedin} alt="" />
+                <p>Linkedin</p>
+              </Link>
+              <Link
+                to="https://www.instagram.com/jayasheel.vinay/"
+                target="_blank"
+                className="flex-row"
+              >
+                <img src={instagram} alt="" />
+                <p>Instagram</p>
+              </Link>
+            </div>
+            <div className="sub-contact-info">
+              <Link
+                to="mailto:jayasheelvinayj.work@gmail.com"
+                target="_blank"
+                className="flex-row"
+              >
+                <img src={google} alt="" />
+                <p>Gmail</p>
+              </Link>
+              <Link
+                to="ttps://www.behance.net/jayasheelvinayj"
+                target="_blank"
+                className="flex-row"
+              >
+                <img src={behance} alt="" />
+                <p>Behance</p>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
