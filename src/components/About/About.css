@@ -16,10 +16,10 @@
     gap: clamp(2.5rem, 5.556vw, 5rem);
     width: 100%;
     max-width: 1440px;
-    padding-top: clamp(1.875rem, 4.167vw, 3.75rem);
+    padding-top: clamp(2.5rem, 5.556vw, 5rem);
     padding-left: clamp(2.5rem, 5.556vw, 5rem);
     padding-right: clamp(2.5rem, 5.556vw, 5rem);
-    padding-bottom: clamp(1.875rem, 4.167vw, 3.75rem);
+    padding-bottom: clamp(2.5rem, 5.556vw, 5rem);
 }
 
 .about-me {
