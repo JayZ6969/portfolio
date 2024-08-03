@@ -6,8 +6,8 @@ const Eyes = () => {
 
   useEffect(() => {
     window.addEventListener("mousemove", (e) => {
-      let mouseX = e.pageX;
-      let mouseY = e.pageY;
+      let mouseX = e.clientX;
+      let mouseY = e.clientY;
 
       let deltaX = mouseX - window.innerWidth / 2;
       let deltaY = mouseY - window.innerHeight / 2;

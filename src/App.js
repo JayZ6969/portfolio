@@ -6,6 +6,9 @@ import LocomotiveScroll from 'locomotive-scroll';
 import PreLoader from "./components/PreLoader/PreLoader.js";
 import Landing from "./components/Landing/Landing.js";
 import About from "./components/About/About.js";
+import Eyes from "./components/Eyes/Eyes.js";
+import Contact from "./components/Contact/Contact.js";
+import CopyrightFooter from "./components/CopyrightFooter/CopyrightFooter.js";
 import Engineer from "./components/Engineer/Engineer.js";
 import Photographer from "./components/Photographer/Photographer.js";
 import Musician from "./components/Musician/Musician.js";
@@ -50,6 +53,9 @@ function App() {
               {showPreLoader && <PreLoader />}
               <Landing />
               <About />
+              <Eyes />
+              <Contact />
+              <CopyrightFooter ColorBG="copyright-footer-container white"/>
             </>
           }
         ></Route>
