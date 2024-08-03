@@ -6,7 +6,7 @@
     background: var(--white-color);
     border-top-left-radius: clamp(1.5rem, 3.333vw, 3rem);
     border-top-right-radius: clamp(1.5rem, 3.333vw, 3rem);
-    z-index: 1; 
+    z-index: 2; 
 }
 
 .about-content {
