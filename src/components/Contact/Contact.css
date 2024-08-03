@@ -74,7 +74,7 @@
     align-items: center;
     gap: clamp(0.75rem, 1.667vw, 1.5rem);
     text-decoration: none;
-  }
+}
 
 .flex-row img {
     width: clamp(1.75rem, 3.333vw, 3rem);
@@ -91,6 +91,7 @@
 }
 
 @media screen and (min-width: 1024px) {
+
     .contact-info img,
     .contact-info p {
         transition: transform 0.15s ease-out;
@@ -100,7 +101,7 @@
     .contact-info p:hover {
         transform: translateY(-5px);
     }
-  }
+}
 
 @media screen and (max-width: 580px) {
     .contact-content {
@@ -110,4 +111,9 @@
     .contact-me {
         align-items: flex-start;
     }
+
+    .hide {
+        display: none;
+    }
+
 }
