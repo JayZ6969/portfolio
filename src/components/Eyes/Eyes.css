@@ -52,9 +52,9 @@
 }
 
 .iris {
-    width: clamp(0.75rem, 2.222vw, 2rem);
-    height: clamp(0.75rem, 2.222vw, 2rem);
-    border-radius: clamp(0.75rem, 2.222vw, 2rem);
+    width: clamp(0.75rem, 2.222vw, 2.25rem);
+    height: clamp(0.75rem, 2.222vw, 2.25rem);
+    border-radius: clamp(0.75rem, 2.222vw, 2.25rem);
     background-color: var(--white-color);
 }
 

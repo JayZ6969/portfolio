@@ -4,6 +4,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import LocomotiveScroll from 'locomotive-scroll';
 import PreLoader from "./components/PreLoader/PreLoader.js";
+import ParticlesBG from "./components/ParticlesBG/ParticlesBG.js";
 import Landing from "./components/Landing/Landing.js";
 import About from "./components/About/About.js";
 import Eyes from "./components/Eyes/Eyes.js";
@@ -51,6 +52,7 @@ function App() {
           element={
             <>
               {showPreLoader && <PreLoader />}
+              <ParticlesBG /> 
               <Landing />
               <About />
               <Eyes />
