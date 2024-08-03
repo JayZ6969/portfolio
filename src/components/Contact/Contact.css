@@ -85,6 +85,18 @@
     line-height: normal;
 }
 
+@media screen and (min-width: 1024px) {
+    .contact-info img,
+    .contact-info p {
+        transition: transform 0.15s ease-out;
+    }
+    
+    .contact-info img:hover,
+    .contact-info p:hover {
+        transform: translateY(-5px); 
+    }
+  }
+
 @media screen and (max-width: 580px) {
     .contact-content {
         flex-direction: column;
