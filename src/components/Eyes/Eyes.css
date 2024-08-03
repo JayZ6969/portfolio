@@ -4,7 +4,7 @@
     justify-content: end;
     align-items: center;
     width: 100vw;
-    height: 35rem;
+    height: clamp(17.5rem, 38.889vw, 35rem);
     background-color: var(--orange-color);
     z-index: 1;
 }
@@ -22,25 +22,24 @@
     position: relative;
     bottom: 0;
     transform: translateY(25%);
-    gap: 10rem;
-    padding: 0 2.5rem;
+    gap: clamp(5rem, 11.111vw, 10rem);
 }
 
 .eye {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 18.75rem;
-    height: 18.75rem;
-    border-radius:18.75rem;
+    width: clamp(3rem, 20.833vw, 18.75rem);
+    height: clamp(3rem, 20.833vw, 18.75rem);
+    border-radius: clamp(3rem, 20.833vw, 18.75rem);
     background-color: var(--white-color);
 }
 
 .pupil {
     position: relative;
-    width: 12.1875rem;
-    height: 12.1875rem;
-    border-radius: 12.1875rem;
+    width: clamp(2rem, 13.542vw, 12.1875rem);
+    height: clamp(2rem, 13.542vw, 12.1875rem);
+    border-radius: clamp(2rem, 13.542vw, 12.1875rem);
     background-color: var(--black-color);
 }
 
@@ -53,9 +52,9 @@
 }
 
 .iris {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
+    width: clamp(0.75rem, 2.222vw, 2rem);
+    height: clamp(0.75rem, 2.222vw, 2rem);
+    border-radius: clamp(0.75rem, 2.222vw, 2rem);
     background-color: var(--white-color);
 }
 
@@ -70,17 +69,17 @@
 }
 
 .mouth-1 {
-    height: 4rem;
+    height: clamp(2rem, 4.444vw, 4rem);
     width: 80%;
     background-color: var(--light-blue);
-    border-top-left-radius: 3rem;
-    border-top-right-radius: 3rem;
+    border-top-left-radius: clamp(1.5rem, 3.333vw, 3rem);
+    border-top-right-radius: clamp(1.5rem, 3.333vw, 3rem);
 }
 
 .mouth-2 {
-    height: 3.5rem;
+    height: clamp(1.75rem, 3.889vw, 3.5rem);
     width: 90%;
     background-color: var(--dark-blue);
-    border-top-left-radius: 3rem;
-    border-top-right-radius: 3rem;
+    border-top-left-radius: clamp(1.5rem, 3.333vw, 3rem);
+    border-top-right-radius: clamp(1.5rem, 3.333vw, 3rem);
 }
