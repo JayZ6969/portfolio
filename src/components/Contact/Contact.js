@@ -54,7 +54,7 @@ const Contact = () => {
                 <p>Gmail</p>
               </Link>
               <Link
-                to="ttps://www.behance.net/jayasheelvinayj"
+                to="https://www.behance.net/jayasheelvinayj"
                 target="_blank"
                 className="flex-row"
               >
