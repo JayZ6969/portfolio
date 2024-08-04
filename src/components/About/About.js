@@ -24,7 +24,9 @@ const About = () => {
             and commitment to my craft, which is a blend of technical expertise
             and artistic vision.
           </p>
-          <button className="button-container">RESUME</button>
+          <a href="https://revaedu-my.sharepoint.com/:b:/g/personal/ugcet220791_reva_edu_in/EUvS78wQDC9EqQoQygyiTM0BquHcUtXQrEv-j9ovCgFTZw?e=TZEok1" target="_blank" rel="noreferrer">
+            <button className="button-container">RESUME</button>
+          </a>
         </div>
         <img src={ME} alt="" />
       </div>

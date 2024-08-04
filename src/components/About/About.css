@@ -76,6 +76,16 @@
     cursor: pointer;
 }
 
+@media screen and (min-width: 1024px) {
+    .about-me button {
+        transition: transform 0.15s ease-out;
+    }
+    
+    .about-me button:hover{
+        transform: translateY(-5px); 
+    }
+  }
+
 @media screen and (max-width: 768px) {
     .about-content img {
         display: none;
