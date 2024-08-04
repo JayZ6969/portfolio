@@ -53,16 +53,26 @@ const Eyes = () => {
       <div className="eyes-main">
         <div className="eye-wrapper">
           <div className="eye" ref={leftEyeRef}>
-            <div className="pupil">
+            <div className="pupil-container">
               <div style={{transform: `translate(-50%, -50%) rotate(${rotateLeft}deg)`}} className="line">
-                <div className="iris"></div>
+                <div className="pupil">
+                  <div className="line">
+                    <div className="placeholder"></div>
+                    <div className="iris"></div> 
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div className="eye" ref={rightEyeRef}>
-            <div className="pupil">
+            <div className="pupil-container">
               <div style={{transform: `translate(-50%, -50%) rotate(${rotateRight}deg)`}} className="line">
-                <div className="iris"></div>
+                <div className="pupil">
+                  <div  className="line">
+                    <div className="placeholder"></div>
+                    <div className="iris"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
