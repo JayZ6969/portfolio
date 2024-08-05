@@ -14,6 +14,7 @@ This portfolio website is designed to showcase my skills and projects across var
   - React.js
 - **Tools and Libraries:**
   - tsParticles - Particles BG
+  - MUI - Navbar
   - GSAP - Animations
   - Locomotive - Scrolling
   - Figma - Design
