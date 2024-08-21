@@ -1,5 +1,9 @@
 # Web-Folio Project
 
+## Public Deployment
+
+<a href="https://jayasheelportfolio.vercel.app">https://jayasheelportfolio.vercel.app</a>
+
 Welcome to my Web-Folio project! This repository contains the code for my personal portfolio website where I showcase my work as an engineer, photographer, and musician. 
 
 ## About
@@ -47,8 +51,3 @@ This portfolio website is designed to showcase my skills and projects across var
 ## License
 
 Distributed under the MIT License. See LICENSE for more information.
-
-## Public Deployment
-
-<a href="https://jayasheelportfolio.vercel.app">https://jayasheelportfolio.vercel.app</a>
-
