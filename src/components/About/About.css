@@ -31,6 +31,10 @@
     
 }
 
+.about-me .sm-img {
+    display: none;
+}
+
 .about-content img {
     width: clamp(17.5rem, 38.889vw, 34rem);;
     height: auto;
@@ -87,6 +91,18 @@
   }
 
 @media screen and (max-width: 768px) {
+    .about-me .sm-img {
+        display: block;
+        width: clamp(17.5rem, 80.889vw, 35rem);
+        height: auto;
+        border-radius: clamp(1.5rem, 3.333vw, 3rem);
+        object-fit: cover;
+    }
+
+    .about-content  {
+        flex-direction: column;
+    }
+
     .about-content img {
         display: none;
     }
