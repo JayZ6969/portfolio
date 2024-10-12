@@ -12,7 +12,7 @@ const About = () => {
             <br />
             <span>ME</span>
           </h1>
-          <img class="sm-img" src={ME} alt="" />
+          <img className="sm-img" src={ME} alt="" />
           <p>
             I'm a front-end developer passionate about UI/UX design and
             currently diving into Data Structures and Algorithms. I enjoy making
