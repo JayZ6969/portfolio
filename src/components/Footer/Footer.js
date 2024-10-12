@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="recent-experience">
         <img src={suitcase} alt="" />
         <p className='p1'>Recent Experience</p>
-        <p className='p2'>Vice-President @ FORCE</p>
+        <p className='p2'>Vice President @ FORCE</p>
       </div>
       <div className="location">
         <img src={location} alt="" />
