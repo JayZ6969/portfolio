@@ -1,0 +1,96 @@
+/* NAVBAR */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: clamp(1.875rem, 3.472vw, 3.75rem); 
+    padding-left: clamp(1.875rem, 4.167vw, 3.75rem); 
+    padding-right: clamp(1.875rem, 4.167vw, 3.75rem);   
+}
+
+.navbar-container h1 {
+    font-family: 'PPMori-Regular';
+    color: var(--white-color);
+    font-size: clamp(1.125rem, 1.667vw, 1.5rem); 
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(2rem, 2.917vw, 2.625rem); 
+}
+
+.navbar-links a img {
+    width: clamp(2rem, 2.917vw, 2.625rem); 
+    height: clamp(2rem, 2.917vw, 2.625rem); 
+}
+
+.ham-btn {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-menu-container {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar-links a img {
+        transition: transform 0.15s ease-out;
+    }
+    
+    .navbar-container a:hover img {
+        transform: translateY(-5px); 
+    }
+}
+
+@media screen and (min-width: 430px) and (max-width: 768px) {
+    .ham-btn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+
+    .ham-btn {
+        width: clamp(1.5rem, 2.222vw, 2rem);
+        height: clamp(1.5rem, 2.222vw, 2rem);
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    .ham-btn {
+        display: block;
+        cursor: pointer;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+}
+
+.ham-menu-items {
+    text-decoration: none;
+}
+
+.ham-menu-items img {
+    width: clamp(2rem, 2.917vw, 3rem);
+    height: clamp(2rem, 2.917vw, 3rem);
+}
