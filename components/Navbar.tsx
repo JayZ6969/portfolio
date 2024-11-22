@@ -2,7 +2,6 @@
 
 import React, { FC } from 'react';
 import Image from 'next/image';
-import './Navbar.css';
 import {
   Box,
   Drawer,
@@ -81,7 +80,7 @@ const Navbar: FC = () => {
         <a href='https://developers.google.com/profile/u/JayZ6969' target="_blank" rel="noreferrer"><Image className={classes.navbarIcons} src={google} alt="" /></a>
         <a href='https://www.instagram.com/jayasheel.vinay/' target="_blank" rel="noreferrer"><Image className={classes.navbarIcons} src={instagram} alt="" /></a>
       </div>
-      <div className="navbar-menu-container">
+      <div className={classes.navbarMenuContainer}>
         <Image src={hamburgermenu} className={classes.hamBtn} alt="Menu" onClick={() => setOpenMenu(true)} />
       </div>
       <Drawer
