@@ -55,7 +55,9 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  line-height: 0;
   text-decoration: none;
+  font-family: PPEditorialNew-Itlaic, sans-serif;
 }
 
 main {

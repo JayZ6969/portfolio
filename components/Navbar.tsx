@@ -20,10 +20,10 @@ import leetcode from '../public/assets/icons/leetcode.svg';
 import hamburgermenu from '../public/assets/icons/hamburgermenu.svg';
 
 const classes = {
-  navbarContainer: 'flex items-center justify-between w-full md:p-10 sm:p-8 p-6',
+  navbarContainer: 'flex items-center justify-between w-full md:px-10 md:pt-10 sm:px-8 sm:pt-8 px-6 pt-6',
   navbarHeader: 'md:text-2xl text-xl font-pp-mori-regular text-white',
-  navbarLinks: 'md:flex hidden items-center justify-between gap-10',
-  navbarIcons: 'w-9 hover:-translate-y-1.5 transition-transform duration-300 ease-in-out',
+  navbarLinks: 'md:flex hidden items-center justify-between lg:gap-10 gap-8',
+  navbarIcons: 'xl:w-12 lg:w-11 md:w-10 hover:-translate-y-1.5 transition-transform duration-300 ease-in-out',
   navbarMenuContainer: 'md:hidden block',
   hamBtn: 'block md:hidden w-6',
   hamMenuItems: 'text-decoration-none',

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "../components/Navbar";
 
 export const metadata: Metadata = {
   title: "My Portfolio",
@@ -16,7 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
         <main>{children}</main>
       </body>
     </html>
