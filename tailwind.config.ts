@@ -1,3 +1,4 @@
+import { light } from "@mui/material/styles/createPalette";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -11,6 +12,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        black: "var(--black-color)",
+        white: "var(--white-color)",
+        grey: "car(--grey-color)",
+        lightBlue: "var(--light-blue)",
+        darkBlue: "var(--dark-blue)",
+        orange: "var(--orange-color)",
       },
     },
     fontFamily: {
@@ -19,6 +26,7 @@ export default {
       'pp-editorial-italic': ['PPEditorialNew-Italic', 'serif'],
       'inter': ['Inter', 'sans-serif'],
     },
+
   },
   plugins: [],
 } satisfies Config;
