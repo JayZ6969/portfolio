@@ -80,7 +80,7 @@ const Experience: FC = () => {
           </div>
         </div>
         <div className={classes.SubContainer}>
-          <h1 className={classes.Header}>Activities</h1>
+          <h1 className={classes.Header}>Achievements</h1>
           <div className={classes.SubContainer_1}>
             <div className={classes.SubContainer_3}>
               <Image className={classes.Star} src={star} alt="" />
@@ -139,7 +139,7 @@ const Experience: FC = () => {
           </div>
         </div>
         <div className={classes.SubContainer}>
-          <h1 className={classes.Header}>Experience</h1>
+          <h1 className={classes.Header}>Extra Curricular</h1>
           <div className={classes.SubContainer_1}>
             <div className={classes.SubContainer_3}>
               <Image className={classes.Star} src={star} alt="" />
