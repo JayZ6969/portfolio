@@ -20,10 +20,10 @@ import leetcode from '../public/assets/icons/leetcode.svg';
 import hamburgermenu from '../public/assets/icons/hamburgermenu.svg';
 
 const classes = {
-  navbarContainer: 'flex items-center justify-between w-full md:px-10 md:pt-10 sm:px-8 sm:pt-8 px-6 pt-6',
-  navbarHeader: 'md:text-2xl text-xl font-pp-mori-regular text-white',
-  navbarLinks: 'md:flex hidden items-center justify-between lg:gap-10 gap-8',
-  navbarIcons: 'xl:w-12 lg:w-11 md:w-10 hover:-translate-y-1.5 transition-transform duration-300 ease-in-out',
+  navbarContainer: 'flex items-center justify-between w-full min-[1921px]:px-[2.082vw] min-[1921px]:pt-[2.082vw] md:px-10 md:pt-10 sm:px-8 sm:pt-8 px-6 pt-6',
+  navbarHeader: 'min-[1921px]:text-[1.562vw]/[1.874vw] min-[1440px]:text-3xl md:text-2xl text-xl font-pp-mori-regular text-white',
+  navbarLinks: 'md:flex hidden items-center justify-between min-[1921px]:gap-[2.082vw] min-[1440px]:gap-10 gap-8',
+  navbarIcons: 'min-[1921px]:w-[2.499vw] min-[1440px]:w-12 xl:w-11 lg:w-10 md:w-9 hover:-translate-y-1.5 transition-transform duration-300 ease-in-out',
   navbarMenuContainer: 'md:hidden block',
   hamBtn: 'block md:hidden w-6',
   hamMenuItems: 'text-decoration-none',
@@ -73,7 +73,7 @@ const Navbar: FC = () => {
 
   return (
     <div className={classes.navbarContainer}>
-      <h1 className={classes.navbarHeader}>My Portfolio</h1>
+      <h1 className={classes.navbarHeader}>Portfolio</h1>
       <div className={classes.navbarLinks}>
         <a href='https://www.linkedin.com/in/jayasheelvinayj/' target="_blank" rel="noreferrer"><Image className={classes.navbarIcons} src={linkedin} alt="" /></a>
         <a href='https://github.com/JayZ6969/' target="_blank" rel="noreferrer"><Image className={classes.navbarIcons} src={github} alt="" /></a>

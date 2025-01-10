@@ -3,8 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "My Portfolio",
+  title: "Jayasheel's Portfolio",
+  description: "Jayasheel's Portfolio",
 };
 
 export default function RootLayout({
