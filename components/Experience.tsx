@@ -1,11 +1,18 @@
 import React, { FC } from "react";
 import Image from 'next/image';
 import star from '../public/assets/icons/star.svg';
+import premiere from '../public/assets/icons/premiere.svg';
+import aftereffects from '../public/assets/icons/aftereffects.svg';
+import photoshop from '../public/assets/icons/photoshop.svg';
+import lightroom from '../public/assets/icons/lightroom.svg';
+import illustrator from '../public/assets/icons/illustrator.svg';
+import blender from '../public/assets/icons/blender.svg';
+import figma from '../public/assets/icons/figma.svg';
 
 const classes = {
   Container: 'flex md:flex-row flex-col min-[1921px]:w-[74.961vw] max-[1920px]:max-w-[1440px] items-center w-screen bg-black in-[1921px]:p-[4.164vw] xl:p-20 lg:p-16 md:p-12 p-10 md:gap-8 gap-6',
   leftContainer: 'flex flex-col md:gap-12 gap-8 md:w-[50%] w-full',
-  rightContainer: 'flex flex-col flex-end md:w-[50%] w-full',
+  rightContainer: 'flex flex-col md:gap-12 gap-8 md:w-[50%] w-full',
   SubContainer: 'flex flex-col gap-4 w-full',
   SubContainer_1: 'flex flex-row items-start gap-4 w-full',
   SubContainer_2: 'flex flex-col items-start gap-2 w-full',
@@ -15,6 +22,7 @@ const classes = {
   ParaText: 'font-inter font-normal text-gray-400 min-[1440px]:text-[1.25rem] xl:text-[1.05rem] min-[425px]:text-[0.75rem] text-[0.5rem] leading-none',
   ParaTextSmall: 'font-inter font-semibold text-gray-400 min-[1440px]:text-[1rem] xl:text-[0.8rem] min-[425px]:text-[0.75rem] text-[0.5rem] leading-none',
   Star: 'w-8 h-8',
+  SkillIcons: 'w-12 h-12',
 }
 
 const Experience: FC = () => {
@@ -106,14 +114,59 @@ const Experience: FC = () => {
         </div>
       </div>
       <div className={classes.rightContainer}>
-        <div className={classes.SubContainer}></div>
-        <div className={classes.SubContainer}></div>
+        <div className={classes.SubContainer}>
+          <h1 className={classes.Header}>Technical Skills</h1>
+          <div className={classes.SubContainer_1}>
+            <div className={classes.SubContainer_2}>
+              <h2 className={classes.SubHeader}>Software Tools</h2>
+              <div className={classes.SubContainer_3}>
+                <Image className={classes.SkillIcons} src={premiere} alt="" />
+                <Image className={classes.SkillIcons} src={aftereffects} alt="" />
+                <Image className={classes.SkillIcons} src={photoshop} alt="" />
+                <Image className={classes.SkillIcons} src={illustrator} alt="" />
+              </div>
+              <div className={classes.SubContainer_3}>
+                <Image className={classes.SkillIcons} src={lightroom} alt="" />
+                <Image className={classes.SkillIcons} src={blender} alt="" />
+                <Image className={classes.SkillIcons} src={figma} alt="" />
+              </div>
+            </div>
+            <div className={classes.SubContainer_2}>
+              <h2 className={classes.SubHeader}>Programming Skills</h2>
+              <p className={classes.ParaTextSmall}>C/C++, Python, Matlab, MySQL</p>
+              <p className={classes.ParaTextSmall}>HTML, CSS, JavaScript, TypeScript, ReactJS, NextJS, TailwindCSS</p>
+            </div>
+          </div>
+        </div>
+        <div className={classes.SubContainer}>
+          <h1 className={classes.Header}>Experience</h1>
+          <div className={classes.SubContainer_1}>
+            <div className={classes.SubContainer_3}>
+              <Image className={classes.Star} src={star} alt="" />
+              <p className={classes.SubHeader}>2022-25</p>
+            </div>
+            <div className={classes.SubContainer_2}>
+              <h2 className={classes.SubHeader}>FORCE - Forum of REVA for Communication & Electronics</h2>
+              <p className={classes.ParaText}>Vice-President</p>
+            </div>
+          </div>
+          <div className={classes.SubContainer_1}>
+            <div className={classes.SubContainer_3}>
+              <Image className={classes.Star} src={star} alt="" />
+              <p className={classes.SubHeader}>2023-24</p>
+            </div>
+            <div className={classes.SubContainer_2}>
+              <h2 className={classes.SubHeader}>GDSC - REVA University</h2>
+              <p className={classes.ParaText}>Media Team</p>
+            </div>
+          </div>
+        </div>
         <div className={classes.SubContainer}>
           <h1 className={classes.Header}>Hobbies</h1>
           <div className={classes.SubContainer_1}>
             <div className={classes.SubContainer_2}>
               <h2 className={classes.SubHeader}>Photography</h2>
-              <p className={classes.ParaTextSmall}>2+ Years of Experience</p>
+              <p className={classes.ParaTextSmall}>Semi-Pro</p>
             </div>
             <div className={classes.SubContainer_2}>
               <h2 className={classes.SubHeader}>Keyboard</h2>
