@@ -10,7 +10,7 @@ import blender from '../public/assets/icons/blender.svg';
 import figma from '../public/assets/icons/figma.svg';
 
 const classes = {
-  Container: 'flex md:flex-row flex-col min-[1921px]:w-[74.961vw] max-[1920px]:max-w-[1440px] items-center w-screen bg-black in-[1921px]:p-[4.164vw] xl:p-20 lg:p-16 md:p-12 p-10 md:gap-8 gap-6',
+  Container: 'flex md:flex-row flex-col min-[1921px]:w-[74.961vw] max-[1920px]:max-w-[1440px] items-center w-screen bg-black in-[1921px]:p-[4.164vw] xl:p-20 lg:p-16 md:p-12 p-10 md:gap-8 gap-6 z-10',
   leftContainer: 'flex flex-col md:gap-12 gap-8 md:w-[50%] w-full',
   rightContainer: 'flex flex-col md:gap-12 gap-8 md:w-[50%] w-full',
   SubContainer: 'flex flex-col gap-4 w-full',
@@ -18,7 +18,7 @@ const classes = {
   SubContainer_2: 'flex flex-col items-start gap-2 w-full',
   SubContainer_3: 'flex flex-row gap-2 w-[60%]',
   SubContainer_4: 'flex md:flex-row flex-col items-start gap-4 w-full',
-  Header: 'font-inter font-bold text-white min-[1921px]:text-[4.373vw] min-[1440px]:text-[4.25rem] xl:text-[4rem] lg:text-[3.5rem] md:text-[3rem] min-[425px]:text-[2.5rem] text-[2rem] leading-none',
+  Header: 'font-inter font-bold text-white border-b-2 border-white pb-6 min-[1921px]:text-[4.373vw] min-[1440px]:text-[4.25rem] xl:text-[4rem] lg:text-[3.5rem] md:text-[3rem] min-[425px]:text-[2.5rem] text-[2rem] leading-none',
   SubHeader: 'font-inter font-semibold text-white min-[1921px]:text-[1.666vw] min-[1440px]:text-[2rem] xl:text-[1.8rem] min-[425px]:text-[1.5rem] text-[1.25rem] leading-none',
   ParaText: 'font-inter font-normal text-gray-400 min-[1440px]:text-[1.25rem] xl:text-[1.05rem] min-[425px]:text-[0.75rem] text-[0.5rem] leading-none',
   ParaTextSmall: 'font-inter font-semibold text-gray-400 min-[1440px]:text-[1rem] xl:text-[0.8rem] min-[425px]:text-[0.75rem] text-[0.5rem] leading-none',
@@ -28,7 +28,7 @@ const classes = {
 
 const Experience: FC = () => {
   return (
-    <div data-scroll data-scroll-speed="0.1" className={classes.Container}>
+    <div className={classes.Container}>
       <div className={classes.leftContainer}>
         <div className={classes.SubContainer}>
           <h1 className={classes.Header}>Education</h1>

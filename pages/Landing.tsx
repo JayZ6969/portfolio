@@ -1,13 +1,14 @@
 'use client'
 
-import React, { FC, useEffect, useRef } from 'react';
-import dynamic from 'next/dynamic';
+import React, { FC } from 'react';
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
-import Footer from '../components/LandingFooter';
+import LandingFooter from '../components/LandingFooter';
 import About from '../components/About';
 import Experience from '../components/Experience';
 import Featured from '../components/Featured';
+import Connect from '../components/Connect';
+import Footer from '../components/Footer';
 
 const classes = {
   HomeContainer: 'flex flex-col items-center justify-around w-screen',
@@ -36,11 +37,13 @@ const Landing: FC = () => {
             <Link href="/Musician"><button className={classes.sectionsContainerButton}>Musician</button></Link>
           </div>
         </div>
-        <Footer />
+        <LandingFooter />
       </div>
       <About />
       <Experience />
       <Featured />
+      <Connect />
+      <Footer />
     </div>
   );
 }
