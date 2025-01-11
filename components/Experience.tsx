@@ -17,6 +17,7 @@ const classes = {
   SubContainer_1: 'flex flex-row items-start gap-4 w-full',
   SubContainer_2: 'flex flex-col items-start gap-2 w-full',
   SubContainer_3: 'flex flex-row gap-2 w-[60%]',
+  SubContainer_4: 'flex md:flex-row flex-col items-start gap-4 w-full',
   Header: 'font-inter font-bold text-white min-[1921px]:text-[4.373vw] min-[1440px]:text-[4.25rem] xl:text-[4rem] lg:text-[3.5rem] md:text-[3rem] min-[425px]:text-[2.5rem] text-[2rem] leading-none',
   SubHeader: 'font-inter font-semibold text-white min-[1921px]:text-[1.666vw] min-[1440px]:text-[2rem] xl:text-[1.8rem] min-[425px]:text-[1.5rem] text-[1.25rem] leading-none',
   ParaText: 'font-inter font-normal text-gray-400 min-[1440px]:text-[1.25rem] xl:text-[1.05rem] min-[425px]:text-[0.75rem] text-[0.5rem] leading-none',
@@ -27,7 +28,7 @@ const classes = {
 
 const Experience: FC = () => {
   return (
-    <div data-scroll data-scroll-speed="0.2" className={classes.Container}>
+    <div data-scroll data-scroll-speed="0.1" className={classes.Container}>
       <div className={classes.leftContainer}>
         <div className={classes.SubContainer}>
           <h1 className={classes.Header}>Education</h1>
@@ -37,7 +38,7 @@ const Experience: FC = () => {
               <p className={classes.SubHeader}>2022-2026</p>
             </div>
             <div className={classes.SubContainer_2}>
-              <h2 className={classes.SubHeader}>Electronics and Communication</h2>
+              <h2 className={classes.SubHeader}>Electronics and Communication Engg.</h2>
               <p className={classes.ParaText}>REVA University</p>
             </div>
           </div>
@@ -116,7 +117,7 @@ const Experience: FC = () => {
       <div className={classes.rightContainer}>
         <div className={classes.SubContainer}>
           <h1 className={classes.Header}>Technical Skills</h1>
-          <div className={classes.SubContainer_1}>
+          <div className={classes.SubContainer_4}>
             <div className={classes.SubContainer_2}>
               <h2 className={classes.SubHeader}>Software Tools</h2>
               <div className={classes.SubContainer_3}>
@@ -133,7 +134,7 @@ const Experience: FC = () => {
             </div>
             <div className={classes.SubContainer_2}>
               <h2 className={classes.SubHeader}>Programming Skills</h2>
-              <p className={classes.ParaTextSmall}>C/C++, Python, Matlab, MySQL</p>
+              <p className={classes.ParaTextSmall}>C/C++, Python, Matlab, Verilog, MySQL</p>
               <p className={classes.ParaTextSmall}>HTML, CSS, JavaScript, TypeScript, ReactJS, NextJS, TailwindCSS</p>
             </div>
           </div>
@@ -163,7 +164,7 @@ const Experience: FC = () => {
         </div>
         <div className={classes.SubContainer}>
           <h1 className={classes.Header}>Hobbies</h1>
-          <div className={classes.SubContainer_1}>
+          <div className={classes.SubContainer_4}>
             <div className={classes.SubContainer_2}>
               <h2 className={classes.SubHeader}>Photography</h2>
               <p className={classes.ParaTextSmall}>Semi-Pro</p>

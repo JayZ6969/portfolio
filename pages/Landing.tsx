@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/LandingFooter';
 import About from '../components/About';
 import Experience from '../components/Experience';
+import Featured from '../components/Featured';
 
 const classes = {
   HomeContainer: 'flex flex-col items-center justify-around w-screen',
@@ -39,6 +40,7 @@ const Landing: FC = () => {
       </div>
       <About />
       <Experience />
+      <Featured />
     </div>
   );
 }
