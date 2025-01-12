@@ -21,6 +21,30 @@
   src: url(../public/assets/fonts/Inter-VariableFont_opsz\,wght.ttf);
 }
 
+@font-face {
+  font-family: 'FoundersGrotesk-Bold';
+  src: url(../public/assets/fonts/FoundersGrotesk-Bold.otf);
+}
+
+@font-face {
+  font-family: 'FoundersGrotesk-Medium';
+  src: url(../public/assets/fonts/FoundersGrotesk-Medium.otf);
+}
+
+@font-face {
+  font-family: 'FoundersGrotesk-Regular';
+  src: url(../public/assets/fonts/FoundersGrotesk-Regular.otf);
+}
+
+@font-face {
+  font-family: 'FoundersGrotesk-Semibold';
+  src: url(../public/assets/fonts/FoundersGrotesk-Semibold.otf);
+}
+
+@font-face {
+  font-family: 'FoundersGrotesk-XCondensed-Bold';
+  src: url(../public/assets/fonts/FoundersGroteskXCond-Bold.otf);
+}
 
 /* Disable Scrollbar  */
 ::-webkit-scrollbar {

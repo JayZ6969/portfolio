@@ -25,6 +25,11 @@ export default {
       'pp-mori-semibold': ['PPMori-SemiBold', 'sans-serif'],
       'pp-editorial-italic': ['PPEditorialNew-Italic', 'serif'],
       'inter': ['Inter', 'sans-serif'],
+      'founders-grotesk-bold' : ['FoundersGrotesk-Bold', 'sans-serif'],
+      'founders-grotesk-medium' : ['FoundersGrotesk-Medium', 'sans-serif'],
+      'founders-grotesk-regular' : ['FoundersGrotesk-Regular', 'sans-serif'],
+      'founders-grotesk-semibold' : ['FoundersGrotesk-Semibold', 'sans-serif'],
+      'founders-grotesk-xcond-bold' : ['FoundersGrotesk-XCondensed-Bold', 'sans-serif'],
     },
 
   },
