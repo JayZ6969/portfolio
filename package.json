@@ -9,16 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",
     "@gsap/react": "^2.1.1",
     "@mui/material": "^6.1.8",
+    "dotenv": "^16.4.7",
+    "emailjs": "^4.0.3",
     "locomotive-scroll": "^5.0.0-beta.21",
     "motion": "^11.17.0",
     "next": "15.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.28.0"
+    "react-hot-toast": "^2.5.1",
+    "react-router-dom": "^6.28.0",
+    "react-spinners": "^0.15.0"
   },
   "devDependencies": {
     "@types/locomotive-scroll": "^4.1.4",

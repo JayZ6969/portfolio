@@ -1,14 +1,16 @@
 import React, { FC } from "react";
+import Link from 'next/link';
 import Image from 'next/image';
-import ME from '../public/assets/images/ME-1.png';
+import ME from '../public/assets/images/ME.jpg';
 
 const classes = {
   aboutContainer: 'flex flex-col items-center justify-center w-screen bg-white z-10 ',
-  aboutContent: 'flex items-center min-[1921px]:w-[74.961vw] max-[1920px]:max-w-[1440px] w-full justify-between border-b-2 border-black min-[1921px]:gap-[4.164vw] xl:gap-20 lg:gap-16 md:gap-14 sm:gap-12  min-[1921px]:p-[4.164vw] xl:p-20 lg:p-16 md:p-12 p-10 ',
+  aboutContent: 'flex items-center min-[1921px]:w-[74.961vw] max-[1920px]:max-w-[1440px] border-b-2 border-black w-full justify-between  min-[1921px]:gap-[4.164vw] xl:gap-20 lg:gap-16 md:gap-14 sm:gap-12 min-[1921px]:p-[4.164vw] xl:p-20 lg:p-16 md:p-12 p-10 ',
   aboutMe: 'flex flex-col items-center justify-center w-full min-[1921px]:gap-[2.082vw] min-[1440px]:gap-10 sl:gap-8 gap-6',
-  aboutHeader: 'font-inter font-bold text-left  min-[1921px]:text-[4.997vw] min-[1440px]:text-[6.25rem] xl:text-[6rem] lg:text-[5.5rem] md:text-[4rem] min-[430px]:text-[4rem] text-[3.5rem] leading-none',
-  aboutPara: 'font-inter font-semibold text-justify min-[1921px]:text-[1.666vw] min-[1440px]:text-[2rem] xl:text-[1.8rem] min-[430px]:text-[1.5rem] text-[1.25rem] leading-none',
-  buttonContainer: 'bg-black text-white font-pp-mori-semibold min-[1921px]:text-[1.874vw] min-[1440px]:text-[2.25rem] lg:text-[2rem] md:text-[1.75rem] min-[430px]:text-[1.5rem] text-[1.25rem] min-[1921px]:px-[1.666vw] min-[1921px]:py-[1.458vw] lg:px-8 lg:py-7 md:py-6 md:px-7 sm:py-6 sm:px-6 py-6 px-6 rounded-full transition-colors hover:bg-[#DFFF00] hover:text-black duration-300 ease-in-out',
+  aboutHeader: 'font-inter font-bold text-left text-black min-[1921px]:text-[4.997vw] min-[1440px]:text-[6.25rem] xl:text-[6rem] lg:text-[5.5rem] md:text-[4rem] min-[430px]:text-[4rem] text-[3.5rem] leading-none',
+  aboutPara: 'font-inter font-semibold text-black text-justify min-[1921px]:text-[1.666vw] min-[1440px]:text-[2rem] xl:text-[1.8rem] min-[430px]:text-[1.5rem] text-[1.25rem] leading-none',
+  buttonContainer: 'flex items-center justify-center bg-black rounded-full gap-2 p-4 cursor-pointer transition-transform transform hover:scale-[1.025] duration-300 ease-in-out',
+  buttonContainerText: 'text-white font-pp-mori-semibold min-[1921px]:text-[1.874vw] md:text-[1.75rem] min-[430px]:text-[1.35rem] text-[1rem] min-[1921px]:px-[1.666vw] min-[1921px]:py-[1.458vw] lg:px-4 lg:py-3 md:py-3 md:px-3 min-[430px]:py-2 min-[430px]:px-3 min-[320px]:py-[0.1rem] min-[320px]:px-[0.5rem]',
   Img: 'min-[1921px]:w-[28.319vw] min-[1440px]:w-[34rem] xl:w-[32rem] min-[1100px]:w-[30rem] lg:w-[28rem] min-[850px]:w-[26rem] md:w-[20rem] sm:w-[24rem] min-[1921px]:rounded-[1.666vw] rounded-[2rem] md:block hidden',
   smImg: 'md:hidden md:rounded-xl sm:rounded-[2rem] rounded-[1.5rem]',
 }
@@ -18,7 +20,7 @@ const About: FC = () => {
     <div className={classes.aboutContainer}>
       <div className={classes.aboutContent}>
         <div className={classes.aboutMe}>
-          <div className="w-full border-b-2 border-black pb-6">
+          <div className="w-full border-b-2 border-black md:pb-6 sm:pb-4 pb-3">
             <h1 className='w-full' >
               <span className={classes.aboutHeader}>About Me</span>
             </h1>
@@ -36,9 +38,9 @@ const About: FC = () => {
             and commitment to my craft, which is a blend of technical expertise
             and artistic vision.
           </p>
-          <a href="https://revaedu-my.sharepoint.com/:b:/g/personal/ugcet220791_reva_edu_in/EXGcPi8JK5pPmNKCeS5kSBoBPYfOLPuvBFy3tU0t-tVW8g?e=R3m8Ar" target="_blank" rel="noreferrer">
-            <button className={classes.buttonContainer}>RESUME ↗</button>
-          </a>
+          <Link className={classes.buttonContainer} href="https://revaedu-my.sharepoint.com/:b:/g/personal/ugcet220791_reva_edu_in/EXGcPi8JK5pPmNKCeS5kSBoBPYfOLPuvBFy3tU0t-tVW8g?e=R3m8Ar" target="_blank" rel="noreferrer">
+            <p className={classes.buttonContainerText}>RESUME ↗</p>
+          </Link>
         </div>
         <Image src={ME} className={classes.Img} alt="" />
       </div>

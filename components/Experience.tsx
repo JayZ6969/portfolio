@@ -18,7 +18,7 @@ const classes = {
   SubContainer_2: 'flex flex-col items-start gap-2 w-full',
   SubContainer_3: 'flex flex-row gap-2 w-[60%]',
   SubContainer_4: 'flex md:flex-row flex-col items-start gap-4 w-full',
-  Header: 'font-inter font-bold text-black border-b-2 border-black pb-6 min-[1921px]:text-[3.54vw] min-[1440px]:text-[4.25rem] xl:text-[4rem] lg:text-[3.5rem] md:text-[3rem] min-[430px]:text-[2.5rem] text-[2rem] leading-none',
+  Header: 'font-inter font-bold text-black border-b-2 border-black md:pb-6 sm:pb-4 pb-3 min-[1921px]:text-[3.54vw] min-[1440px]:text-[4.25rem] xl:text-[4rem] lg:text-[3.5rem] md:text-[3rem] min-[430px]:text-[2.5rem] text-[2rem] leading-none',
   SubHeader: 'font-inter font-semibold text-black min-[1921px]:text-[1.666vw] min-[1440px]:text-[2rem] xl:text-[1.8rem] min-[430px]:text-[1.5rem] text-[1.25rem] leading-none',
   ParaText: 'font-inter font-[600] text-gray-600 min-[1921px]:text-[1.041vw] min-[1440px]:text-[1.25rem] xl:text-[1.05rem] min-[430px]:text-[1rem] text-[0.85rem] leading-none',
   Star: 'w-8 h-8',

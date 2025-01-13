@@ -1,8 +1,9 @@
 import { FC, useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
+import Start from './ConnectPopUp';
 
 const classes = {
-  Container: 'relative flex items-center h-[100vh] min-[1921px]:h-[90vh] min-[1921px]:max-h-[1440px] xl:max-h-[900px] md:max-h-[768px] sm:max-h-[560px] min-[320px]:max-h-[450px] justify-center w-full bg-[#cee968]',
+  Container: 'relative flex items-center lg:max-h-[1080px] md:max-h-[768px] sm:max-h-[600px] min-[430px]:max-h-[430px] min-[320px]:max-h-[400px] h-svh justify-center w-full bg-[#cee968]',
   eyesContainer: 'flex items-center justify-center w-full',
   eyesMain: 'absolute flex flex-col -translate-y-[80%] justify-center',
   eyeWrapper: 'relative bottom-0 flex items-center justify-center min-[1921px]:gap-[4.164vw] xl:gap-20 lg:gap-16 md:gap-12 sm:gap-10 gap-8 ',
@@ -71,10 +72,7 @@ const Connect: FC = () => {
     <div className={classes.Container}>
       <div className={classes.ConnectContainer}>
         <h1 className={classes.ConnectTagline}>READY<br />TO START<br />A PROJECT?</h1>
-        <button className={classes.StartButton}>
-          <p className={classes.StartButtonText}>START A PROJECT</p>
-          <div className={classes.dot}></div>
-        </button>
+        <Start />
       </div>
       <div  data-scroll data-scroll-speed="0.1" className={classes.eyesContainer}>
         <div className={classes.eyesMain}>

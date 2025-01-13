@@ -8,7 +8,7 @@ import FORCE from '../public/assets/images/FORCE.png';
 const classes = {
   Container: 'flex items-center justify-center w-full bg-white z-10',
   FeaturedContainer: 'flex flex-col min-[1921px]:w-[74.961vw] max-[1920px]:max-w-[1440px] w-screen min-[1921px]:px-[4.164vw] min-[1921px]:py-[2.915vw] xl:px-20 xl:py-14 lg:px-16 lg:py-10 md:px-12 md:py-6 px-10 py-4 md:gap-8 gap-6',
-  FeaturedHeader: 'border-b-2 border-black py-6 w-full font-inter font-bold tracking-tight text-black min-[1921px]:text-[3.54vw] min-[1440px]:text-[4.25rem] xl:text-[4rem] lg:text-[3.5rem] md:text-[3rem] min-[430px]:text-[2.5rem] text-[2rem] leading-none',
+  FeaturedHeader: 'border-b-2 border-black md:py-6 sm:py-4 py-3 w-full font-inter font-bold tracking-tight text-black min-[1921px]:text-[3.54vw] min-[1440px]:text-[4.25rem] xl:text-[4rem] lg:text-[3.5rem] md:text-[3rem] min-[430px]:text-[2.5rem] text-[2rem] leading-none',
   CardsContainer: 'flex md:flex-row flex-col gap-6 w-full',
   CardHeaderContainer: 'flex items-center xl:gap-4 lg:gap-3 gap-2 w-full',
   dot: 'xl:w-4 xl:h-4 lg:h-3 lg:w-3 h-2 w-2 bg-black rounded-full',
