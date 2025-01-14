@@ -2,8 +2,8 @@ import { FC, useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Power4 } from 'gsap';
 import { motion } from 'framer-motion';
-import IEEE from '../public/assets/images/IEEE.png';
-import FORCE from '../public/assets/images/FORCE.png';
+import IEEE from '../public/assets/images/IEEE.webp';
+import FORCE from '../public/assets/images/FORCE.webp';
 
 const classes = {
   Container: 'flex items-center justify-center w-full bg-white z-10',
@@ -92,7 +92,7 @@ const Featured: FC = () => {
             </div>
             <div onMouseEnter={handleMouseEnter1} onMouseLeave={handleMouseLeave1} className={classes.ImageContainer}>
               <h1 className={` ${classes.CardImageHeader} -translate-x-1/2 md:left-full left-1/2`}>
-                {"FULL-STACK".split('').map((letter, index) => <motion.span key={index} initial={{y: "100%"}} animate={isHovering1 ? ({y: "0"}) : ({y: "100%"})} transition={{ease: Power4.easeInOut, delay: index * 0.025}} className={classes.CardImageHeaderTagline}>{letter}</motion.span>)}
+                {"FULL-STACK".split('').map((letter, index) => <motion.span key={index} initial={{y: "100%"}} animate={isHovering1 ? ({y: "0"}) : ({y: "100%"})} transition={{ease: [0.22, 1, 0.36, 1], delay: index * 0.025}} className={classes.CardImageHeaderTagline}>{letter}</motion.span>)}
               </h1>
               <div className={`${classes.CardImage} bg-gray-400`}>
                 <Image className={classes.Image} src={IEEE} alt="IEEE - ICAECC Website" />
@@ -106,7 +106,7 @@ const Featured: FC = () => {
             </div>
             <div onMouseEnter={handleMouseEnter2} onMouseLeave={handleMouseLeave2} className={classes.ImageContainer}>
               <h1 className={` ${classes.CardImageHeader} translate-x-1/2 md:right-full right-1/2`}>
-                {"FRONT-END".split('').map((letter, index) => <motion.span key={index} initial={{y: "100%"}} animate={isHovering2 ? ({y: "0"}) : ({y: "100%"})} transition={{ease: Power4.easeInOut, delay: index * 0.025}} className={classes.CardImageHeaderTagline}>{letter}</motion.span>)}
+                {"FRONT-END".split('').map((letter, index) => <motion.span key={index} initial={{y: "100%"}} animate={isHovering2 ? ({y: "0"}) : ({y: "100%"})} transition={{ease: [0.22, 1, 0.36, 1], delay: index * 0.025}} className={classes.CardImageHeaderTagline}>{letter}</motion.span>)}
               </h1>
               <div className={`${classes.CardImage} bg-gray-400`}>
                 <Image className={classes.Image} src={FORCE} alt="FORCE - Forum Website" />
@@ -122,7 +122,7 @@ const Featured: FC = () => {
             </div>
             <div onMouseEnter={handleMouseEnter3} onMouseLeave={handleMouseLeave3} className={classes.ImageContainer}>
               <h1 className={` ${classes.CardImageHeader} -translate-x-1/2 md:left-full left-1/2`}>
-                {"FRONT-END".split('').map((letter, index) => <motion.span key={index} initial={{y: "100%"}} animate={isHovering3 ? ({y: "0"}) : ({y: "100%"})} transition={{ease: Power4.easeInOut, delay: index * 0.025}} className={classes.CardImageHeaderTagline}>{letter}</motion.span>)}
+                {"FRONT-END".split('').map((letter, index) => <motion.span key={index} initial={{y: "100%"}} animate={isHovering3 ? ({y: "0"}) : ({y: "100%"})} transition={{ease: [0.22, 1, 0.36, 1], delay: index * 0.025}} className={classes.CardImageHeaderTagline}>{letter}</motion.span>)}
               </h1>
               <div className={`${classes.CardImage} bg-gray-400`}>
                 <Image className={classes.Image} src={FORCE} alt="FORCE - Forum Website" />
@@ -136,7 +136,7 @@ const Featured: FC = () => {
             </div>
             <div onMouseEnter={handleMouseEnter4} onMouseLeave={handleMouseLeave4} className={classes.ImageContainer}>  
               <h1 className={` ${classes.CardImageHeader} translate-x-1/2 md:right-full right-1/2`}>
-                {"FULL-STACK".split('').map((letter, index) => <motion.span key={index} initial={{y: "100%"}} animate={isHovering4 ? ({y: "0"}) : ({y: "100%"})} transition={{ease: Power4.easeInOut, delay: index * 0.025}} className={classes.CardImageHeaderTagline}>{letter}</motion.span>)}
+                {"FULL-STACK".split('').map((letter, index) => <motion.span key={index} initial={{y: "100%"}} animate={isHovering4 ? ({y: "0"}) : ({y: "100%"})} transition={{ease: [0.22, 1, 0.36, 1], delay: index * 0.025}} className={classes.CardImageHeaderTagline}>{letter}</motion.span>)}
               </h1>
               <div className={`${classes.CardImage} bg-gray-400`}>
                 <Image className={classes.Image} src={IEEE} alt="IEEE - ICAECC Website" />

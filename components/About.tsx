@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Link from 'next/link';
 import Image from 'next/image';
-import ME from '../public/assets/images/ME.jpg';
+import ME from '../public/assets/images/ME.webp';
 
 const classes = {
   aboutContainer: 'flex flex-col items-center justify-center w-screen bg-white z-10 ',
