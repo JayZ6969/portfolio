@@ -7,7 +7,7 @@ import LandingFooter from '../components/LandingFooter';
 import About from '../components/About';
 import Experience from '../components/Experience';
 import Featured from '../components/Featured';
-import Connect from '../components/Connect';
+import Start from '../components/Start';
 import Footer from '../components/Footer';
 
 const classes = {
@@ -17,8 +17,12 @@ const classes = {
   titleContainer: 'flex flex-col items-start',
   header3: 'font-pp-mori-regular font-semibold text-white min-[1921px]:text-[2.915vw] min-[1440px]:text-[3.5rem] xl:text-[3rem] lg:text-[2.5rem] md:text-[2rem] min-[430px]:text-[1.5rem] text-[1rem] leading-loose',
   header1: 'text-white min-[1921px]:text-[9.995vw] min-[1440px]:text-[12rem] xl:text-[11rem] lg:text-[9rem] md:text-[7rem] sm:text-[6.5rem] min-[430px]:text-[5.5rem] text-[4.75rem] leading-none',
+  NavLink: 'relative group',
+  NavLinkHover: 'hover:text-zinc-900',
+  NavLinkUnderline: 'absolute bottom-0 left-0 w-full h-0.5 bg-zinc-900 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100',
   sectionsContainer: 'flex md:flex-row flex-col items-center min-[1921px]:gap-[0.625vw] sm:gap-3 gap-2',
-  sectionsContainerButton: 'bg-white text-black font-pp-mori-regular font-semibold min-[1921px]:text-[2.499vw] min-[1440px]:text-[3rem] xl:text-[2.75rem] lg:text-4xl md:text-3xl sm:text-2xl text-2xl max-[430px]:text-xl min-[1921px]:px-[2.499vw] min-[1921px]:py-[0.833vw] min-[1440px]:px-12 min-[1440px]:py-4 xl:px-10 xl:py-3 lg:px-8 lg:py-2 px-8 py-[0.4rem] md:w-full grow rounded-full transition-colors duration-300 ease-in-out transform hover:bg-[#cee968] ',
+  sectionsContainerButton: 'bg-white  min-[1921px]:px-[2.499vw] min-[1921px]:py-[0.833vw] min-[1440px]:px-12 min-[1440px]:py-4 xl:px-10 xl:py-3 lg:px-8 lg:py-2 px-8 py-[0.4rem] md:w-full grow rounded-full transition-colors duration-300 ease-in-out transform hover:bg-[#cee968] ',
+  sectionsText: 'font-pp-mori-regular font-semibold min-[1921px]:text-[2.499vw] min-[1440px]:text-[3rem] xl:text-[2.75rem] lg:text-4xl md:text-3xl sm:text-2xl text-2xl max-[430px]:text-xl',
 }
 
 const Home: FC = () => {
@@ -32,17 +36,17 @@ const Home: FC = () => {
             <h1 className={classes.header1}>Jayasheel</h1>
           </div>
           <div className={classes.sectionsContainer}>
-            <Link href="/Engineer"><button className={classes.sectionsContainerButton}>Engineer</button></Link>
-            <Link href="/Photographer"><button className={classes.sectionsContainerButton}>Photographer</button></Link>
-            <Link href="/Musician"><button className={classes.sectionsContainerButton}>Musician</button></Link>
+            <Link className={`${classes.sectionsContainerButton} ${classes.NavLink} ${classes.NavLinkHover}`} href="/Engineer"><p className={classes.sectionsText}>Engineer</p><span className={classes.NavLinkUnderline}></span></Link>
+            <Link className={`${classes.sectionsContainerButton} ${classes.NavLink} ${classes.NavLinkHover}`} href="/Photographer"><p className={classes.sectionsText}>Photographer</p><span className={classes.NavLinkUnderline}></span></Link>
+            <Link className={`${classes.sectionsContainerButton} ${classes.NavLink} ${classes.NavLinkHover}`} href="/Musician"><p className={classes.sectionsText}>Musician</p><span className={classes.NavLinkUnderline}></span></Link>
           </div>
         </div>
         <LandingFooter />
       </div>
       <About />
-      <Experience />
       <Featured />
-      <Connect />
+      <Experience /> 
+      <Start />
       <Footer />
     </div>
   );

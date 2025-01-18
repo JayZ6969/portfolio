@@ -1,10 +1,5 @@
 import { FC } from 'react';
-import Image from 'next/image';
-import Link from 'next/link'
-import linkedin from '../public/assets/icons/linkedin-1.svg';
-import instagram from '../public/assets/icons/instagram-1.svg';
-import github from '../public/assets/icons/github-1.svg';
-import behance from '../public/assets/icons/behance-1.svg';
+import Link from 'next/link';
 
 const classes = {
   Container: 'flex flex-col items-center justify-center w-full h-full bg-white z-20',
@@ -15,10 +10,36 @@ const classes = {
   SocialsMainContainer: 'flex w-full h-full items-start justify-center min-[1921px]:gap-[0.833vw] gap-4',
   SocialsContainer: 'flex flex-col w-full h-full items-start justify-center min-[1921px]:gap-[0.833vw] md:gap-4 gap-3',
   FooterContainer: 'border-t-2 border-gray-300 flex w-screen items-center justify-center lg:justify-between',
-  Socials: 'flex items-center justify-center min-[1921px]:gap-[4.164vw] gap-20',
+  Socials: 'flex items-center justify-center min-[1921px]:gap-[4.164vw] gap-20 ',
+  NavLink: 'relative group',
+  NavLinkHover: 'hover:text-zinc-900',
+  NavLinkUnderline: 'absolute bottom-0 left-0 w-full h-0.5 bg-zinc-900 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100',
   SocialsText: 'font-pp-mori-semibold text-black min-[1921px]:text-[1.249vw] min-[1440px]:text-[2rem] xl:text-[1.75rem] md:text-[1.5rem] min-[430px]:text-[1.25rem] text-[1rem] leading-none',
   FooterText: 'font-pp-mori-semibold font-[600] text-black min-[1921px]:text-[0.833vw] min-[430px]:text-[1rem] text-[0.75rem] min-[1921px]:p-[1.249vw] md:py-6 md:px-8 py-4 px-2 leading-none',
-}
+};
+
+const socialLinks = [
+  { href: "https://www.linkedin.com/in/jayasheelvinayj/", text: "LinkedIn ↗" },
+  { href: "https://www.youtube.com/@JayZ6969", text: "YouTube ↗" },
+  { href: "https://www.instagram.com/jayasheel.vinay/", text: "Instagram ↗" },
+  { href: "https://www.behance.net/jayasheelvinayj/", text: "Behance ↗" },
+  { href: "https://www.github.com/jayz6969/", text: "GitHub ↗" },
+  { href: "https://developers.google.com/profile/u/JayZ6969", text: "Google Dev ↗" },
+  { href: "https://www.codechef.com/users/jayasheelvinayj", text: "CodeChef ↗" },
+  { href: "https://leetcode.com/u/jayz6969/", text: "LeetCode ↗" },
+  { href: "https://www.geeksforgeeks.org/user/jayz6969/", text: "GFG ↗" },
+];
+
+const moreLinks = [
+  { href: "#", text: "Home ↗" },
+  { href: "#", text: "About Me ↗" },
+  { href: "#", text: "Resume ↗" },
+  { href: "#", text: "Experience ↗" },
+  { href: "#", text: "Start a Project ↗" },
+  { href: "#", text: "Photography Work ↗" },
+  { href: "#", text: "Engineering Projects ↗" },
+  { href: "#", text: "Music Work ↗" },
+];
 
 const Footer: FC = () => {
   return (
@@ -30,35 +51,20 @@ const Footer: FC = () => {
           </div>
           <div className={classes.SocialsMainContainer}>
             <div className={classes.SocialsContainer}>
-              <Link className={classes.Socials} href="https://www.linkedin.com/in/jayasheelvinayj/" target="_blank" rel="noreferrer">
-                <p className={classes.SocialsText}>LinkedIn ↗</p>
-              </Link>
-              <Link className={classes.Socials} href="https://www.youtube.com/@JayZ6969" target="_blank" rel="noreferrer">
-                <p className={classes.SocialsText}>YouTube ↗</p>
-              </Link>
-              <Link className={classes.Socials} href="https://www.instagram.com/jayasheel.vinay/" target="_blank" rel="noreferrer">
-                <p className={classes.SocialsText}>Instagram ↗</p>
-              </Link>
-              <Link className={classes.Socials} href="https://www.behance.net/jayasheelvinayj/" target="_blank" rel="noreferrer">
-                <p className={classes.SocialsText}>Behance ↗</p>
-              </Link>
+              {socialLinks.slice(0, 4).map((link, index) => (
+                <Link key={index} className={`${classes.Socials} ${classes.NavLink} ${classes.NavLinkHover}`} href={link.href} target="_blank" rel="noreferrer">
+                  <p className={classes.SocialsText}>{link.text}</p>
+                  <span className={classes.NavLinkUnderline}></span>
+                </Link>
+              ))}
             </div>
             <div className={classes.SocialsContainer}>
-              <Link className={classes.Socials} href="https://www.github.com/jayz6969/" target="_blank" rel="noreferrer">
-                <p className={classes.SocialsText}>GitHub ↗</p>
-              </Link>
-              <Link className={classes.Socials} href="https://developers.google.com/profile/u/JayZ6969" target="_blank" rel="noreferrer">
-                <p className={classes.SocialsText}>Google Dev ↗</p>
-              </Link>
-              <Link className={classes.Socials} href="https://www.codechef.com/users/jayasheelvinayj" target="_blank" rel="noreferrer">
-                <p className={classes.SocialsText}>CodeChef ↗</p>
-              </Link>
-              <Link className={classes.Socials} href="https://leetcode.com/u/jayz6969/" target="_blank" rel="noreferrer">
-                <p className={classes.SocialsText}>LeetCode ↗</p>
-              </Link>
-              <Link className={classes.Socials} href="https://www.geeksforgeeks.org/user/jayz6969/" target="_blank" rel="noreferrer">
-                <p className={classes.SocialsText}>GFG ↗</p>
-              </Link>
+              {socialLinks.slice(4).map((link, index) => (
+                <Link key={index} className={`${classes.Socials} ${classes.NavLink} ${classes.NavLinkHover}`} href={link.href} target="_blank" rel="noreferrer">
+                  <p className={classes.SocialsText}>{link.text}</p>
+                  <span className={classes.NavLinkUnderline}></span>
+                </Link>
+              ))}
             </div>
           </div>
         </div>
@@ -68,30 +74,12 @@ const Footer: FC = () => {
           </div>
           <div className={classes.SocialsMainContainer}>
             <div className={classes.SocialsContainer}>
-              <Link className={classes.Socials} href="#" target="_blank" rel="noreferrer">
-                <p className={classes.SocialsText}>Home ↗</p>
-              </Link>
-              <Link className={classes.Socials} href="#" target="_blank" rel="noreferrer">
-                <p className={classes.SocialsText}>About Me↗</p>
-              </Link>
-              <Link className={classes.Socials} href="#" target="_blank" rel="noreferrer">
-                <p className={classes.SocialsText}>Resume ↗</p>
-              </Link>
-              <Link className={classes.Socials} href="#" target="_blank" rel="noreferrer">
-                <p className={classes.SocialsText}>Experience ↗</p>
-              </Link>
-              <Link className={classes.Socials} href="#" target="_blank" rel="noreferrer">
-                <p className={classes.SocialsText}>Start a Project ↗</p>
-              </Link>
-              <Link className={classes.Socials} href="#" target="_blank" rel="noreferrer">
-                <p className={classes.SocialsText}>Photography Work ↗</p>
-              </Link>
-              <Link className={classes.Socials} href="#" target="_blank" rel="noreferrer">
-                <p className={classes.SocialsText}>Engineering Projects ↗</p>
-              </Link>
-              <Link className={classes.Socials} href="#" target="_blank" rel="noreferrer">
-                <p className={classes.SocialsText}>Music Work ↗</p>
-              </Link>
+              {moreLinks.map((link, index) => (
+                <Link key={index} className={`${classes.Socials} ${classes.NavLink} ${classes.NavLinkHover}`} href={link.href} target="_blank" rel="noreferrer">
+                  <p className={classes.SocialsText}>{link.text}</p>
+                  <span className={classes.NavLinkUnderline}></span>
+                </Link>
+              ))}
             </div>
           </div>
         </div>

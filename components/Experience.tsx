@@ -10,7 +10,7 @@ import blender from '../public/assets/icons/blender-1.svg';
 import figma from '../public/assets/icons/figma-1.svg';
 
 const classes = {
-  Container: 'flex md:flex-row flex-col min-[1921px]:w-[74.961vw] max-[1920px]:max-w-[1440px] items-center w-screen bg-white in-[1921px]:p-[4.164vw] xl:p-20 lg:p-16 md:p-12 p-10 md:gap-8 gap-6 z-10 border-b-2 border-black',
+  Container: 'flex md:flex-row flex-col min-[1921px]:w-[74.961vw] max-[1920px]:max-w-[1440px] items-center w-screen bg-white in-[1921px]:p-[4.164vw] xl:p-20 lg:p-16 md:p-12 p-10 md:gap-8 gap-6 z-10',
   leftContainer: 'flex flex-col md:gap-12 gap-8 md:w-[50%] w-full',
   rightContainer: 'flex flex-col md:gap-12 gap-8 md:w-[50%] w-full',
   SubContainer: 'flex flex-col gap-4 w-full',
@@ -23,7 +23,51 @@ const classes = {
   ParaText: 'font-inter font-[600] text-gray-600 min-[1921px]:text-[1.041vw] min-[1440px]:text-[1.25rem] xl:text-[1.05rem] min-[430px]:text-[1rem] text-[0.85rem] leading-none',
   Star: 'w-8 h-8',
   SkillIcons: 'w-12 h-12',
-}
+};
+
+const educationData = [
+  { year: "2022-2026", degree: "Electronics and Communication Engg.", institution: "REVA University" },
+  { year: "2019-2021", degree: "PCMCS", institution: "Kendriya Vidyalaya No.2 AFS Jalahalli (East), Bengaluru" },
+  { year: "2009-2019", degree: "CBSE - X", institution: "Kendriya Vidyalaya No.2 AFS Jalahalli (East), Bengaluru" },
+];
+
+const languagesData = [
+  { language: "English", proficiency: "Fluent" },
+  { language: "Hindi", proficiency: "Intermediate" },
+  { language: "Kannada", proficiency: "Native" },
+];
+
+const achievementsData = [
+  { year: "2024-25", title: "InSPACE ISRO CanSat India Competition", description: "Team Avinya: Team Lead" },
+  { year: "2024-25", title: "Smart India Hackathon", description: "Project Title: Smart AI based Traffic Management System" },
+  { year: "2024", title: "D/T Designation", description: "Project Title: A DApp UI for a Global Deep Tech Events Calendar" },
+];
+
+const softwareToolsData = [
+  { src: premiere, alt: "Premiere" },
+  { src: aftereffects, alt: "After Effects" },
+  { src: photoshop, alt: "Photoshop" },
+  { src: illustrator, alt: "Illustrator" },
+  { src: lightroom, alt: "Lightroom" },
+  { src: blender, alt: "Blender" },
+  { src: figma, alt: "Figma" },
+];
+
+const programmingSkillsData = [
+  "C/C++, Python, Matlab, Verilog, MySQL",
+  "HTML, CSS, JavaScript, TypeScript, ReactJS, NextJS, TailwindCSS",
+];
+
+const extraCurricularData = [
+  { year: "2022-25", title: "FORCE - Forum of REVA for Communication & Electronics", role: "Vice-President" },
+  { year: "2023-24", title: "GDSC - REVA University", role: "Media Team" },
+];
+
+const hobbiesData = [
+  { hobby: "Photography", level: "Semi-Pro" },
+  { hobby: "Keyboard", level: "Intermediate" },
+  { hobby: "Cycling", level: "Wanderlust" },
+];
 
 const Experience: FC = () => {
   return (
@@ -32,86 +76,44 @@ const Experience: FC = () => {
         <div className={classes.leftContainer}>
           <div className={classes.SubContainer}>
             <h1 className={classes.Header}>Education</h1>
-            <div className={classes.SubContainer_1}>
-              <div className={classes.SubContainer_3}>
-                <Image className={classes.Star} src={star} alt="" />
-                <p className={classes.SubHeader}>2022-2026</p>
+            {educationData.map((item, index) => (
+              <div key={index} className={classes.SubContainer_1}>
+                <div className={classes.SubContainer_3}>
+                  <Image className={classes.Star} src={star} alt="" />
+                  <p className={classes.SubHeader}>{item.year}</p>
+                </div>
+                <div className={classes.SubContainer_2}>
+                  <h2 className={classes.SubHeader}>{item.degree}</h2>
+                  <p className={classes.ParaText}>{item.institution}</p>
+                </div>
               </div>
-              <div className={classes.SubContainer_2}>
-                <h2 className={classes.SubHeader}>Electronics and Communication Engg.</h2>
-                <p className={classes.ParaText}>REVA University</p>
-              </div>
-            </div>
-            <div className={classes.SubContainer_1}>
-              <div className={classes.SubContainer_3}>
-                <Image className={classes.Star} src={star} alt="" />
-                <p className={classes.SubHeader}>2019-2021</p>
-              </div>
-              <div className={classes.SubContainer_2}>
-                <h2 className={classes.SubHeader}>PCMCS</h2>
-                <p className={classes.ParaText}>Kendriya Vidyalaya No.2 AFS Jalahalli (East), Bengaluru</p>
-              </div>
-            </div>
-            <div className={classes.SubContainer_1}>
-              <div className={classes.SubContainer_3}>
-                <Image className={classes.Star} src={star} alt="" />
-                <p className={classes.SubHeader}>2009-2019</p>
-              </div>
-              <div className={classes.SubContainer_2}>
-                <h2 className={classes.SubHeader}>CBSE - X</h2>
-                <p className={classes.ParaText}>Kendriya Vidyalaya No.2 AFS Jalahalli (East), Bengaluru</p>
-              </div>
-            </div>
+            ))}
           </div>
           <div className={classes.SubContainer}>
             <h1 className={classes.Header}>Languages</h1>
             <div className={classes.SubContainer_1}>
-              <div className={classes.SubContainer_2}>
-                <h2 className={classes.SubHeader}>English</h2>
-                <p className={classes.ParaText}>Fluent</p>
-              </div>
-              <div className={classes.SubContainer_2}>
-                <h2 className={classes.SubHeader}>Hindi</h2>
-                <p className={classes.ParaText}>Intermediate</p>
-              </div>
-              <div className={classes.SubContainer_2}>
-                <h2 className={classes.SubHeader}>Kannada</h2>
-                <p className={classes.ParaText}>Native</p>
-              </div>
+              {languagesData.map((item, index) => (
+                <div key={index} className={classes.SubContainer_2}>
+                  <h2 className={classes.SubHeader}>{item.language}</h2>
+                  <p className={classes.ParaText}>{item.proficiency}</p>
+                </div>
+              ))}
             </div>
           </div>
           <div className={classes.SubContainer}>
             <h1 className={classes.Header}>Achievements</h1>
-            <div className={classes.SubContainer_1}>
-              <div className={classes.SubContainer_3}>
-                <Image className={classes.Star} src={star} alt="" />
-                <p className={classes.SubHeader}>2024-25</p>
+            {achievementsData.map((item, index) => (
+              <div key={index} className={classes.SubContainer_1}>
+                <div className={classes.SubContainer_3}>
+                  <Image className={classes.Star} src={star} alt="" />
+                  <p className={classes.SubHeader}>{item.year}</p>
+                </div>
+                <div className={classes.SubContainer_2}>
+                  <h2 className={classes.SubHeader}>{item.title}</h2>
+                  <p className={classes.ParaText}>{item.description}</p>
+                </div>
               </div>
-              <div className={classes.SubContainer_2}>
-                <h2 className={classes.SubHeader}>InSPACE ISRO CanSat India Competition</h2>
-                <p className={classes.ParaText}>Team Avinya: Team Lead</p>
-              </div>
-            </div>
-            <div className={classes.SubContainer_1}>
-              <div className={classes.SubContainer_3}>
-                <Image className={classes.Star} src={star} alt="" />
-                <p className={classes.SubHeader}>2024-25</p>
-              </div>
-              <div className={classes.SubContainer_2}>
-                <h2 className={classes.SubHeader}>Smart India Hackathon</h2>
-                <p className={classes.ParaText}>Project Title: Smart AI based Traffic Management System</p>
-              </div>
-            </div>
-            <div className={classes.SubContainer_1}>
-              <div className={classes.SubContainer_3}>
-                <Image className={classes.Star} src={star} alt="" />
-                <p className={classes.SubHeader}>2024</p>
-              </div>
-              <div className={classes.SubContainer_2}>
-                <h2 className={classes.SubHeader}>D/T Designation</h2>
-                <p className={classes.ParaText}>Project Title: A DApp UI for a Global Deep Tech Events Calendar</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
         <div className={classes.rightContainer}>
@@ -121,62 +123,48 @@ const Experience: FC = () => {
               <div className={classes.SubContainer_2}>
                 <h2 className={classes.SubHeader}>Software Tools</h2>
                 <div className={classes.SubContainer_3}>
-                  <Image className={classes.SkillIcons} src={premiere} alt="" />
-                  <Image className={classes.SkillIcons} src={aftereffects} alt="" />
-                  <Image className={classes.SkillIcons} src={photoshop} alt="" />
-                  <Image className={classes.SkillIcons} src={illustrator} alt="" />
+                  {softwareToolsData.slice(0, 4).map((tool, index) => (
+                    <Image key={index} className={classes.SkillIcons} src={tool.src} alt={tool.alt} />
+                  ))}
                 </div>
                 <div className={classes.SubContainer_3}>
-                  <Image className={classes.SkillIcons} src={lightroom} alt="" />
-                  <Image className={classes.SkillIcons} src={blender} alt="" />
-                  <Image className={classes.SkillIcons} src={figma} alt="" />
+                  {softwareToolsData.slice(4).map((tool, index) => (
+                    <Image key={index} className={classes.SkillIcons} src={tool.src} alt={tool.alt} />
+                  ))}
                 </div>
               </div>
               <div className={classes.SubContainer_2}>
                 <h2 className={classes.SubHeader}>Programming Skills</h2>
-                <p className={classes.ParaText}>C/C++, Python, Matlab, Verilog, MySQL</p>
-                <p className={classes.ParaText}>HTML, CSS, JavaScript, TypeScript, ReactJS, NextJS, TailwindCSS</p>
+                {programmingSkillsData.map((skill, index) => (
+                  <p key={index} className={classes.ParaText}>{skill}</p>
+                ))}
               </div>
             </div>
           </div>
           <div className={classes.SubContainer}>
             <h1 className={classes.Header}>Extra Curricular</h1>
-            <div className={classes.SubContainer_1}>
-              <div className={classes.SubContainer_3}>
-                <Image className={classes.Star} src={star} alt="" />
-                <p className={classes.SubHeader}>2022-25</p>
+            {extraCurricularData.map((item, index) => (
+              <div key={index} className={classes.SubContainer_1}>
+                <div className={classes.SubContainer_3}>
+                  <Image className={classes.Star} src={star} alt="" />
+                  <p className={classes.SubHeader}>{item.year}</p>
+                </div>
+                <div className={classes.SubContainer_2}>
+                  <h2 className={classes.SubHeader}>{item.title}</h2>
+                  <p className={classes.ParaText}>{item.role}</p>
+                </div>
               </div>
-              <div className={classes.SubContainer_2}>
-                <h2 className={classes.SubHeader}>FORCE - Forum of REVA for Communication & Electronics</h2>
-                <p className={classes.ParaText}>Vice-President</p>
-              </div>
-            </div>
-            <div className={classes.SubContainer_1}>
-              <div className={classes.SubContainer_3}>
-                <Image className={classes.Star} src={star} alt="" />
-                <p className={classes.SubHeader}>2023-24</p>
-              </div>
-              <div className={classes.SubContainer_2}>
-                <h2 className={classes.SubHeader}>GDSC - REVA University</h2>
-                <p className={classes.ParaText}>Media Team</p>
-              </div>
-            </div>
+            ))}
           </div>
           <div className={classes.SubContainer}>
             <h1 className={classes.Header}>Hobbies</h1>
             <div className={classes.SubContainer_4}>
-              <div className={classes.SubContainer_2}>
-                <h2 className={classes.SubHeader}>Photography</h2>
-                <p className={classes.ParaText}>Semi-Pro</p>
-              </div>
-              <div className={classes.SubContainer_2}>
-                <h2 className={classes.SubHeader}>Keyboard</h2>
-                <p className={classes.ParaText}>Intermediate</p>
-              </div>
-              <div className={classes.SubContainer_2}>
-                <h2 className={classes.SubHeader}>Cycling</h2>
-                <p className={classes.ParaText}>Wanderlust</p>
-              </div>
+              {hobbiesData.map((item, index) => (
+                <div key={index} className={classes.SubContainer_2}>
+                  <h2 className={classes.SubHeader}>{item.hobby}</h2>
+                  <p className={classes.ParaText}>{item.level}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
