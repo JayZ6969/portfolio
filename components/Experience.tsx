@@ -71,7 +71,7 @@ const hobbiesData = [
 
 const Experience: FC = () => {
   return (
-    <div className="flex items-center justify-center bg-white w-screen z-10">
+    <div className="flex items-center justify-center bg-white w-screen z-10" id='experience'>
       <div className={classes.Container}>
         <div className={classes.leftContainer}>
           <div className={classes.SubContainer}>

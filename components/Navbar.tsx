@@ -85,7 +85,7 @@ const Navbar: FC<NavbarProps> = ({ title }) => {
       <div className={classes.navbarLinks}>
         <a className={`${classes.navbarHeader} ${classes.NavLink} ${classes.NavLinkHover}`} href='/' rel="noreferrer">Home<span className={classes.NavLinkUnderline}></span></a>
         <a className={`${classes.navbarHeader} ${classes.NavLink} ${classes.NavLinkHover}`} href='/#about' rel="noreferrer">About<span className={classes.NavLinkUnderline}></span></a>
-        <a className={`${classes.navbarHeader} ${classes.NavLink} ${classes.NavLinkHover}`} href='/#featured' rel="noreferrer">Featured<span className={classes.NavLinkUnderline}></span></a>
+        <a className={`${classes.navbarHeader} ${classes.NavLink} ${classes.NavLinkHover}`} href='#projects' rel="noreferrer">Projects<span className={classes.NavLinkUnderline}></span></a>
         <Message><p className={`${classes.navbarHeader} ${classes.NavLink} ${classes.NavLinkHover}`}>Contact<span className={classes.NavLinkUnderline}></span></p></Message>
       </div>
       <div className={classes.navbarMenuContainer}>

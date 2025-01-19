@@ -2,14 +2,18 @@
 
 import React, { FC, useEffect } from 'react';
 import Link from 'next/link';
-import ParticlesBG from '../components/ParticlesBG';
-import Navbar from '../components/Navbar';
-import LandingFooter from '../components/LandingFooter';
-import About from '../components/About';
-import Experience from '../components/Experience';
-import Featured from '../components/Featured';
-import Start from '../components/Start';
-import Footer from '../components/Footer';
+import ParticlesBG from '@/components/ParticlesBG';
+import Navbar from '@/components/Navbar';
+import LandingFooter from '@/components/LandingFooter';
+import About from '@/components/About';
+import Experience from '@/components/Experience';
+import FeaturedCard from '@/components/FeaturedCard';
+import IEEE from '@/public/assets/images/IEEE.webp';
+import FORCE from '@/public/assets/images/FORCE.webp';
+import PHOTOGRAPHY from '@/public/assets/images/PHOTOGRAPHY.webp';
+import MUSIC from '@/public/assets/images/MUSIC.webp';
+import Start from '@/components/Start';
+import Footer from '@/components/Footer';
 
 const classes = {
   HomeContainer: 'flex flex-col items-center justify-around w-screen',
@@ -26,6 +30,40 @@ const classes = {
   sectionsText: 'font-pp-mori-regular font-semibold min-[1921px]:text-[2.499vw] min-[1440px]:text-[3rem] xl:text-[2.75rem] lg:text-4xl md:text-3xl sm:text-2xl text-2xl max-[430px]:text-xl',
 }
 
+const projectData = [
+  {
+    title: 'ICAECC - Website',
+    imageSrc: IEEE,
+    alt: 'IEEE - ICAECC Website',
+    headerText: 'FULL-STACK',
+    link: 'https://github.com/JayZ6969/ieee-icaecc-website',
+    cardImageBgColor: '#F3F4F6'
+  },
+  {
+    title: 'FORCE - Forum Website',
+    imageSrc: FORCE,
+    alt: 'FORCE - Forum Website',
+    headerText: 'FRONT-END',
+    link: 'https://github.com/EventsAtForce/eventsatforce-website',
+    cardImageBgColor: '#F3F4F6'
+  },
+  {
+    title: 'Photography Work',
+    imageSrc: PHOTOGRAPHY,
+    alt: 'PhotoGraphy - Work',
+    headerText: 'PHOTOGRAPHY',
+    link: 'https://www.behance.net/jayasheelvinayj/',
+    cardImageBgColor: '#5AC7F9'
+  },
+  {
+    title: 'Music Performances',
+    imageSrc: MUSIC,
+    alt: 'Music Performances',
+    headerText: 'MUSIC',
+    link: 'https://www.youtube.com/@JayZ6969',
+    cardImageBgColor: '#EDDECB'
+  },
+];
 
 const Home: FC = () => {
 
@@ -49,15 +87,15 @@ const Home: FC = () => {
             <h1 className={classes.header1}>Jayasheel</h1>
           </div>
           <div className={classes.sectionsContainer}>
-            <Link className={`${classes.sectionsContainerButton} ${classes.NavLink} ${classes.NavLinkHover}`} href="/Engineer"><p className={classes.sectionsText}>Engineer</p><span className={classes.NavLinkUnderline}></span></Link>
-            <Link className={`${classes.sectionsContainerButton} ${classes.NavLink} ${classes.NavLinkHover}`} href="/Photographer"><p className={classes.sectionsText}>Photographer</p><span className={classes.NavLinkUnderline}></span></Link>
-            <Link className={`${classes.sectionsContainerButton} ${classes.NavLink} ${classes.NavLinkHover}`} href="/Musician"><p className={classes.sectionsText}>Musician</p><span className={classes.NavLinkUnderline}></span></Link>
+            <Link className={`${classes.sectionsContainerButton} ${classes.NavLink} ${classes.NavLinkHover}`} href="https://www.linkedin.com/in/jayasheelvinayj/" target='_blank'><p className={classes.sectionsText}>Engineer</p><span className={classes.NavLinkUnderline}></span></Link>
+            <Link className={`${classes.sectionsContainerButton} ${classes.NavLink} ${classes.NavLinkHover}`} href="https://www.behance.net/jayasheelvinayj/" target='_blank'><p className={classes.sectionsText}>Photographer</p><span className={classes.NavLinkUnderline}></span></Link>
+            <Link className={`${classes.sectionsContainerButton} ${classes.NavLink} ${classes.NavLinkHover}`} href="https://www.youtube.com/@JayZ6969" target='_blank'><p className={classes.sectionsText}>Musician</p><span className={classes.NavLinkUnderline}></span></Link>
           </div>
         </div>
         <LandingFooter />
       </div>
-      <About />
-      <Featured />
+      <About /> =
+      <FeaturedCard header="Projects" projects={projectData} />
       <Experience />
       <Start />
       <Footer />

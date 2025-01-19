@@ -7,10 +7,12 @@
   font-family: 'PPMori-Regular';
   src: url(../public/assets/fonts/PPMori-Regular.otf);
 }
+
 @font-face {
   font-family: 'PPMori-SemiBold';
   src: url(../public/assets/fonts/PPMori-SemiBold.otf);
 }
+
 @font-face {
   font-family: 'PPEditorialNew-Itlaic';
   src: url(../public/assets/fonts/PPEditorialNew-Italic.otf);

@@ -23,7 +23,7 @@ const socialLinks = [
   { href: "https://www.youtube.com/@JayZ6969", text: "YouTube ↗" },
   { href: "https://www.instagram.com/jayasheel.vinay/", text: "Instagram ↗" },
   { href: "https://www.behance.net/jayasheelvinayj/", text: "Behance ↗" },
-  { href: "https://www.github.com/jayz6969/", text: "GitHub ↗" },
+  { href: "https://www.behance.net/jayasheelvinayj/", text: "GitHub ↗" },
   { href: "https://developers.google.com/profile/u/JayZ6969", text: "Google Dev ↗" },
   { href: "https://www.codechef.com/users/jayasheelvinayj", text: "CodeChef ↗" },
   { href: "https://leetcode.com/u/jayz6969/", text: "LeetCode ↗" },
@@ -31,13 +31,13 @@ const socialLinks = [
 ];
 
 const moreLinks = [
-  { href: "#", text: "Home ↗" },
-  { href: "#", text: "About Me ↗" },
-  { href: "#", text: "Resume ↗" },
-  { href: "#", text: "Experience ↗" },
-  { href: "#", text: "Photography Work ↗" },
-  { href: "#", text: "Engineering Projects ↗" },
-  { href: "#", text: "Music Work ↗" },
+  { href: "#", text: "Home ↗", },
+  { href: "#about", text: "About Me ↗" },
+  { href: "https://revaedu-my.sharepoint.com/:b:/g/personal/ugcet220791_reva_edu_in/EXGcPi8JK5pPmNKCeS5kSBoBPYfOLPuvBFy3tU0t-tVW8g?e=R3m8Ar", text: "Resume ↗" },
+  { href: "#experience", text: "Experience ↗" },
+  { href: "https://www.behance.net/jayasheelvinayj/", text: "Photography Work ↗" },
+  { href: "https://www.behance.net/jayasheelvinayj/", text: "Engineering Projects ↗" },
+  { href: "https://www.youtube.com/@JayZ6969", text: "Music Work ↗" },
 ];
 
 const Footer: FC = () => {
