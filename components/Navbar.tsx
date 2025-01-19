@@ -13,12 +13,6 @@ import {
   ListItemButton,
   ListItemText,
 } from '@mui/material';
-import linkedin from '../public/assets/icons/linkedin.svg';
-import github from '../public/assets/icons/github.svg';
-import google from '../public/assets/icons/google.svg';
-import instagram from '../public/assets/icons/instagram.svg';
-import codechef from '../public/assets/icons/codechef.svg';
-import leetcode from '../public/assets/icons/leetcode.svg';
 import hamburgermenu from '../public/assets/icons/hamburgermenu.svg';
 
 const classes = {
