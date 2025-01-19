@@ -11,7 +11,6 @@ import {
   List,
   ListItem,
   ListItemButton,
-  ListItemIcon,
   ListItemText,
 } from '@mui/material';
 import linkedin from '../public/assets/icons/linkedin.svg';
