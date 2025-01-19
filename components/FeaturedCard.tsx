@@ -33,7 +33,7 @@ interface FeaturedProps {
   projects: Project[];
 }
 
-const FeaturedCard: FC<FeaturedProps> = ({ header, projects}) => {
+const FeaturedCard: FC<FeaturedProps> = ({ header, projects }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const useMediaQuery = (query: string) => {
@@ -67,7 +67,7 @@ const FeaturedCard: FC<FeaturedProps> = ({ header, projects}) => {
   };
 
   const handleCardClick = (link: string) => {
-    window.open(link, '_blank')
+    window.open(link, '_blank');
   };
 
   return (
@@ -78,12 +78,12 @@ const FeaturedCard: FC<FeaturedProps> = ({ header, projects}) => {
           {projects.map((project, index) => (
             <div key={index} className={classes.Card}>
               <div className={classes.CardHeaderContainer}>
-                <div className={classes.dot} ></div>
-                <h1 className={classes.CardHeader} >{project.title}</h1>
+                <div className={classes.dot}></div>
+                <h1 className={classes.CardHeader}>{project.title}</h1>
               </div>
               <div
                 onMouseEnter={() => handleMouseEnter(index)}
-                onMouseLeave={() => handleMouseLeave}
+                onMouseLeave={handleMouseLeave}
                 className={classes.ImageContainer}
                 onClick={() => handleCardClick(project.link)}
               >
