@@ -32,8 +32,6 @@ const classes = {
 
 const Message: FC<{ children: React.ReactNode }> = ({ children }) => {
 
-  motion
-
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -43,7 +41,6 @@ const Message: FC<{ children: React.ReactNode }> = ({ children }) => {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [body, setBody] = useState('');
-  const [project, setProject] = useState('');
 
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();

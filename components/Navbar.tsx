@@ -2,7 +2,9 @@
 
 import React, { FC } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Message from './Message';
+import { StaticImageData } from 'next/image';
 import {
   Box,
   Drawer,
@@ -37,7 +39,7 @@ const classes = {
 interface MenuOption {
   name: string;
   link: string;
-  icon: string;
+  icon?: StaticImageData;
 }
 
 interface NavbarProps {
@@ -46,47 +48,38 @@ interface NavbarProps {
 
 const Navbar: FC<NavbarProps> = ({ title }) => {
   const [openMenu, setOpenMenu] = React.useState<boolean>(false);
+
   const menuOptions: MenuOption[] = [
-    {
-      name: 'LinkedIn',
-      link: 'https://www.linkedin.com/in/jayasheelvinayj/',
-      icon: linkedin,
-    },
-    {
-      name: 'GitHub',
-      link: 'https://github.com/JayZ6969/',
-      icon: github,
-    },
-    {
-      name: 'Google',
-      link: 'https://developers.google.com/profile/u/JayZ6969',
-      icon: google,
-    },
-    {
-      name: 'Instagram',
-      link: 'https://www.instagram.com/jayasheel.vinay/',
-      icon: instagram,
-    },
-    {
-      name: 'CodeChef',
-      link: 'https://www.codechef.com/users/jayasheelvinayj',
-      icon: codechef,
-    },
-    {
-      name: 'LeetCode',
-      link: 'https://leetcode.com/JayZ6969/',
-      icon: leetcode,
-    },
+    { name: 'Home', link: '/' },
+    { name: 'About', link: '/#about' },
+    { name: 'Projects', link: '#projects' },
+  ];
+
+  const socialLinks: MenuOption[] = [
+    { name: 'LinkedIn', link: 'https://www.linkedin.com/in/jayasheelvinayj/', icon: linkedin },
+    { name: 'GitHub', link: 'https://github.com/JayZ6969/', icon: github },
+    { name: 'Google', link: 'https://developers.google.com/profile/u/JayZ6969', icon: google },
+    { name: 'Instagram', link: 'https://www.instagram.com/jayasheel.vinay/', icon: instagram },
+    { name: 'CodeChef', link: 'https://www.codechef.com/users/jayasheelvinayj', icon: codechef },
+    { name: 'LeetCode', link: 'https://leetcode.com/JayZ6969/', icon: leetcode },
   ];
 
   return (
     <div className={classes.navbarContainer}>
       <h1 className={classes.navbarHeader}>{title}</h1>
       <div className={classes.navbarLinks}>
-        <a className={`${classes.navbarHeader} ${classes.NavLink} ${classes.NavLinkHover}`} href='/' rel="noreferrer">Home<span className={classes.NavLinkUnderline}></span></a>
-        <a className={`${classes.navbarHeader} ${classes.NavLink} ${classes.NavLinkHover}`} href='/#about' rel="noreferrer">About<span className={classes.NavLinkUnderline}></span></a>
-        <a className={`${classes.navbarHeader} ${classes.NavLink} ${classes.NavLinkHover}`} href='#projects' rel="noreferrer">Projects<span className={classes.NavLinkUnderline}></span></a>
-        <Message><p className={`${classes.navbarHeader} ${classes.NavLink} ${classes.NavLinkHover}`}>Contact<span className={classes.NavLinkUnderline}></span></p></Message>
+        {menuOptions.map((option) => (
+          <Link key={option.name} className={`${classes.navbarHeader} ${classes.NavLink} ${classes.NavLinkHover}`} href={option.link} rel="noreferrer">
+            {option.name}
+            <span className={classes.NavLinkUnderline}></span>
+          </Link>
+        ))}
+        <Message>
+          <p className={`${classes.navbarHeader} ${classes.NavLink} ${classes.NavLinkHover}`}>
+            Contact
+            <span className={classes.NavLinkUnderline}></span>
+          </p>
+        </Message>
       </div>
       <div className={classes.navbarMenuContainer}>
         <Image src={hamburgermenu} className={classes.hamBtn} alt="Menu" onClick={() => setOpenMenu(true)} />
@@ -103,20 +96,17 @@ const Navbar: FC<NavbarProps> = ({ title }) => {
           onKeyDown={() => setOpenMenu(false)}
         >
           <List>
-            {menuOptions.map((option: MenuOption) => (
+            {menuOptions.map((option) => (
               <ListItem key={option.name}>
-                <a className={classes.hamMenuItems} href={option.link} target="_blank" rel="noreferrer">
+                <Link className={classes.hamMenuItems} href={option.link} rel="noreferrer">
                   <ListItemButton>
-                    <ListItemIcon>
-                      <Image className={classes.hamMenuItemsImage} src={option.icon} alt="" />
-                    </ListItemIcon>
                     <ListItemText primary={option.name}
                       sx={{
                         color: 'white',
                         fontSize: '20px'
                       }} />
                   </ListItemButton>
-                </a>
+                </Link>
               </ListItem>
             ))}
           </List>

@@ -60,7 +60,7 @@ const FeaturedCard: FC<FeaturedProps> = ({ header, projects}) => {
     }
   };
 
-  const handleMouseLeave = (index: number) => {
+  const handleMouseLeave = () => {
     if (isMdUp) {
       setHoveredIndex(null);
     }
@@ -83,7 +83,7 @@ const FeaturedCard: FC<FeaturedProps> = ({ header, projects}) => {
               </div>
               <div
                 onMouseEnter={() => handleMouseEnter(index)}
-                onMouseLeave={() => handleMouseLeave(index)}
+                onMouseLeave={() => handleMouseLeave}
                 className={classes.ImageContainer}
                 onClick={() => handleCardClick(project.link)}
               >

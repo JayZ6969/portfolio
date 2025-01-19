@@ -46,7 +46,7 @@ const Footer: FC = () => {
       <div className={classes.ContactContainer}>
         <div className={classes.Contacts}>
           <div className={classes.SocialsHeaderContainer}>
-            <h1 className={classes.SocialsHeader}>Let's Connect</h1>
+            <h1 className={classes.SocialsHeader}>Let&apos;s Connect</h1>
           </div>
           <div className={classes.SocialsMainContainer}>
             <div className={classes.SocialsContainer}>

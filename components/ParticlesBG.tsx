@@ -1,8 +1,8 @@
 'use client'
 
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import type { ISourceOptions, Container } from "@tsparticles/engine";
+import type { ISourceOptions } from "@tsparticles/engine";
 
 // Define the props interface
 interface ParticlesBGProps {
@@ -10,14 +10,10 @@ interface ParticlesBGProps {
 }
 
 const ParticlesBG: React.FC<ParticlesBGProps> = (props) => {
-  const [init, setInit] = useState(false);
-
   // Initialize the particles engine
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       await import("@tsparticles/slim").then((module) => module.loadSlim(engine));
-    }).then(() => {
-      setInit(true);
     });
   }, []);
 

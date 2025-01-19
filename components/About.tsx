@@ -27,7 +27,7 @@ const About: FC = () => {
           </div>
           <Image className={classes.smImg} src={ME} alt="" />
           <p className={classes.aboutPara}>
-            I'm a front-end developer passionate about UI/UX design and
+            I&apos;m a front-end developer passionate about UI/UX design and
             currently diving into Data Structures and Algorithms. I enjoy making
             creative projects that combine style and utility.
             <br />

@@ -53,7 +53,7 @@ const projectData = [
     alt: 'PhotoGraphy - Work',
     headerText: 'PHOTOGRAPHY',
     link: 'https://www.behance.net/jayasheelvinayj/',
-    cardImageBgColor: '#5AC7F9'
+    cardImageBgColor: '#F3F4F6'
   },
   {
     title: 'Music Performances',
@@ -61,7 +61,7 @@ const projectData = [
     alt: 'Music Performances',
     headerText: 'MUSIC',
     link: 'https://www.youtube.com/@JayZ6969',
-    cardImageBgColor: '#EDDECB'
+    cardImageBgColor: '#F3F4F6'
   },
 ];
 
@@ -71,7 +71,7 @@ const Home: FC = () => {
     (
       async () => {
         const LocomotiveScroll = (await import('locomotive-scroll')).default;
-        const locomotiveScroll = new LocomotiveScroll();
+        new LocomotiveScroll();
       }
     )()
   }, []);
