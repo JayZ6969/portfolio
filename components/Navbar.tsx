@@ -54,15 +54,6 @@ const Navbar: FC<NavbarProps> = ({ title }) => {
     { name: 'Projects', link: '#projects' },
   ];
 
-  const socialLinks: MenuOption[] = [
-    { name: 'LinkedIn', link: 'https://www.linkedin.com/in/jayasheelvinayj/', icon: linkedin },
-    { name: 'GitHub', link: 'https://github.com/JayZ6969/', icon: github },
-    { name: 'Google', link: 'https://developers.google.com/profile/u/JayZ6969', icon: google },
-    { name: 'Instagram', link: 'https://www.instagram.com/jayasheel.vinay/', icon: instagram },
-    { name: 'CodeChef', link: 'https://www.codechef.com/users/jayasheelvinayj', icon: codechef },
-    { name: 'LeetCode', link: 'https://leetcode.com/JayZ6969/', icon: leetcode },
-  ];
-
   return (
     <div className={classes.navbarContainer}>
       <h1 className={classes.navbarHeader}>{title}</h1>
