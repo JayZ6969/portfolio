@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import React, { useState, FormEvent } from 'react';
 import Image from 'next/image';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
@@ -14,8 +15,6 @@ const classes = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   p: 4,
-  StartButton: 'flex items-center justify-center bg-black rounded-full gap-2 p-4 cursor-pointer transition-transform transform hover:scale-[1.025] duration-300 ease-in-out',
-  StartButtonText: 'font-pp-mori-semibold text-white font-pp-mori-semibold min-[1921px]:text-[1.874vw] md:text-[1.75rem] min-[430px]:text-[1.35rem] text-[1rem] min-[1921px]:px-[1.666vw] min-[1921px]:py-[1.458vw] lg:px-4 lg:py-5 md:py-5 md:px-6 sm:py-4 sm:px-5 py-2 px-3',
   dot: 'min-[1921px]:w-[1.041vw] min-[1921px]:h-[1.041vw] xl:h-5 xl:w-5 md:h-4 md:w-4 w-3 h-3 min-[1921px]:mr-[0.833vw] xl:mr-4 sm:mr-3 mr-1 bg-white rounded-full',
   Container: 'flex flex-col p-8 lg:max-w-[600px] sm:max-w-[500px] w-[90vw] h-auto items-center bg-black rounded-[2rem] border-solid border-2 border-zinc-800',
   CloseBtnContainer: 'flex flex-row justify-end w-full',
@@ -31,7 +30,8 @@ const classes = {
   Spinner: 'flex justify-center items-center w-[100%] h-[100%] bg-black bg-opacity-50 fixed top-0 left-0 z-[100]',
 };
 
-const Message: React.FC = () => {
+const Message: FC<{ children: React.ReactNode }> = ({ children }) => {
+
   motion
 
   const [open, setOpen] = useState(false);
@@ -96,9 +96,8 @@ const Message: React.FC = () => {
   return (
     <div>
       <Toaster position='top-center' />
-      <motion.button onClick={handleOpen} className={classes.StartButton}>
-        <p className={classes.StartButtonText}>START A PROJECT</p>
-        <div className={classes.dot}></div>
+      <motion.button onClick={handleOpen}>
+        {children}
       </motion.button>
       <Modal open={open} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
         <Box sx={classes} id='about' className={classes.Container}>
@@ -110,22 +109,22 @@ const Message: React.FC = () => {
           <form onSubmit={sendEmail} className={classes.Form}>
             <div className={classes.FieldContainer1}>
               <label className={classes.Label}>Name</label>  
-              <input type='text' id='input' value={name} onChange={(e) => setName(e.target.value)} placeholder='Your Name' className={classes.Input} required />
+              <input type='text' id='name' value={name} onChange={(e) => setName(e.target.value)} placeholder='Your Name' className={classes.Input} required autoComplete="on"/>
             </div>
             <div className={classes.FieldContainer1}>
               <label className={classes.Label}>Email</label>
-              <input type='email' id='input' value={email} onChange={(e) => setEmail(e.target.value)} placeholder='xyz@abc.com' className={classes.Input} required />
+              <input type='email' id='email' value={email} onChange={(e) => setEmail(e.target.value)} placeholder='xyz@abc.com' className={classes.Input} required autoComplete="on"/>
             </div>
             <div className={classes.FieldContainer1}>
               <label className={classes.Label}>Subject</label>
-              <input type='subject' id='input' value={subject} onChange={(e) => setSubject(e.target.value)} placeholder='Subject' className={classes.Input} required />
+              <input type='subject' id='subject' value={subject} onChange={(e) => setSubject(e.target.value)} placeholder='Subject' className={classes.Input} required />
             </div>
             <div className={classes.FieldContainer1}>
               <label className={classes.Label}>Message</label>
-              <textarea  rows={5} id='input' value={body} onChange={(e) => setBody(e.target.value)} className={classes.TextAreaInput} required />
+              <textarea  rows={5} id='message' value={body} onChange={(e) => setBody(e.target.value)} className={classes.TextAreaInput} required />
             </div>
             <motion.div whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} className={classes.SubmitBtnContainer} >
-              <input type='submit' id='input' placeholder='Submit' className={classes.SubmitBtn} required />
+              <input type='submit' id='submit' placeholder='Submit' className={classes.SubmitBtn} required />
             </motion.div>
             {loading && (
               <div className={classes.Spinner}>

@@ -80,7 +80,7 @@ const Featured: FC = () => {
   };
 
   return (
-    <div className={classes.Container}>
+    <div className={classes.Container} id='featured'>
       <div className={classes.FeaturedContainer}>
         <h1 className={classes.FeaturedHeader}>Featured</h1>
         <div className={classes.CardsContainer}>

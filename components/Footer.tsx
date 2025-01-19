@@ -35,7 +35,6 @@ const moreLinks = [
   { href: "#", text: "About Me ↗" },
   { href: "#", text: "Resume ↗" },
   { href: "#", text: "Experience ↗" },
-  { href: "#", text: "Start a Project ↗" },
   { href: "#", text: "Photography Work ↗" },
   { href: "#", text: "Engineering Projects ↗" },
   { href: "#", text: "Music Work ↗" },
