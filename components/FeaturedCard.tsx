@@ -15,7 +15,7 @@ const classes = {
   ImageContainer: 'relative w-full pb-[100%] rounded-xl cursor-pointer', // Maintain 1:1 aspect ratio
   CardImage: 'absolute top-0 left-0 w-full h-full flex items-center justify-center rounded-xl overflow-hidden', // Fill the container
   Image: 'w-[80%] rounded-lg h-auto shadow-lg',
-  CardImageHeader: 'absolute flex overflow-hidden w-[80vw] justify-center min-[1921px]:h-[4.997vw] xl:h-[6rem] md:h-[3.75rem] sm:h-[2.25rem] h-[1.875rem] text-[#CEE968] font-inter text-center font-bold leading-none tracking-tight min-[1921px]:text-[4.997vw] xl:text-8xl md:text-6xl sm:text-4xl text-3xl z-20 top-1/2 -translate-y-1/2 rounded-md',
+  CardImageHeader: 'absolute flex overflow-hidden w-[100vw] justify-center min-[1921px]:h-[4.997vw] xl:h-[6rem] md:h-[3.75rem] sm:h-[2.25rem] h-[1.875rem] text-[#CEE968] font-inter text-center font-bold leading-none tracking-tight min-[1921px]:text-[4.997vw] xl:text-8xl md:text-6xl sm:text-4xl text-3xl z-20 top-1/2 -translate-y-1/2 rounded-md',
   CardImageHeaderTagline: 'font-inter flex items-center justify-center h-full',
 };
 
