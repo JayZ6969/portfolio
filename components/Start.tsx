@@ -2,7 +2,7 @@ import { FC, useEffect, useState, useRef } from 'react';
 import Message from './Message';
 
 const classes = {
-  Container: 'relative flex items-center lg:max-h-[1080px] md:max-h-[768px] sm:max-h-[600px] min-[430px]:max-h-[430px] min-[320px]:max-h-[400px] h-svh justify-center w-full bg-[#cee968]',
+  Container: 'relative flex items-center lg:max-h-[1080px] md:max-h-[1000px] sm:max-h-[600px] min-[430px]:max-h-[430px] min-[320px]:max-h-[400px] h-[125svh] justify-center w-full bg-[#cee968]',
   eyesContainer: 'flex items-center justify-center w-full',
   eyesMain: 'absolute flex flex-col -translate-y-[80%] justify-center',
   eyeWrapper: 'relative bottom-0 flex items-center justify-center min-[1921px]:gap-[4.164vw] xl:gap-20 lg:gap-16 md:gap-12 sm:gap-10 gap-8 ',
