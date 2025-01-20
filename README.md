@@ -5,7 +5,12 @@ Visit here: https://www.jayasheel.tech
 
 ## Getting Started
 
-First, run the development server:
+First install all node packages:
+```bash
+npm i
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -23,15 +28,13 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 ## Tools & Technologies Used
 
-- **Next.js**: A React framework for building fast and user-friendly web applications.
-- **React**: A JavaScript library for building user interfaces.
+- **Next.JS** A React framework for building fast and user-friendly web applications.
 - **TypeScript**: A typed superset of JavaScript that helps catch errors early.
 - **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
-- **Vercel**: A platform for deploying and hosting web applications.
-- **ESLint**: A tool for identifying and fixing problems in JavaScript code.
-- **Prettier**: A code formatter to ensure consistent code style.
-- **Jest**: A testing framework for JavaScript.
-- **React Testing Library**: A library for testing React components.
+- **Framer Motion**: A library for creating animations in React.
+- **MUI**: A popular React UI framework.
+- **Email.JS**: A service to send emails directly from JavaScript.
+- **tsparticles**: A library to create particles animations.
 
 ## Learn More
 
