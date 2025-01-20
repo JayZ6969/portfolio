@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 import dotenv from 'dotenv';
 dotenv.config();
@@ -20,6 +21,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="./favicon.ico" />
         <Analytics />
+        <SpeedInsights />
       </head>
       <body>
         <main>{children}</main>
