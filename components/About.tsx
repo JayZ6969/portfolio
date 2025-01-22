@@ -5,7 +5,7 @@ import ME from '../public/assets/images/ME.webp';
 
 const classes = {
   aboutContainer: 'flex flex-col items-center justify-center w-screen bg-white z-10 min-[1921px]:rounded-t-[1.666vw] rounded-t-[2rem]',
-  aboutContent: 'flex items-center min-[1921px]:w-[74.961vw] max-[1920px]:max-w-[1440px] w-full justify-between  min-[1921px]:gap-[4.164vw] xl:gap-20 lg:gap-16 md:gap-14 sm:gap-12 min-[1921px]:p-[4.164vw] xl:p-20 lg:p-16 md:p-12 p-10',
+  aboutContent: 'flex items-center min-[1921px]:w-[74.961vw] max-[1920px]:max-w-[1440px] w-full justify-between  min-[1921px]:gap-[4.164vw] xl:gap-20 lg:gap-16 md:gap-14 sm:gap-12 min-[1921px]:p-[4.164vw] xl:p-20 lg:p-16 md:p-12 sm:px-10 min-[430px]:px-8 px-6 py-10',
   aboutMe: 'flex flex-col items-center justify-center w-full min-[1921px]:gap-[2.082vw] min-[1440px]:gap-10 sl:gap-8 gap-6',
   aboutHeader: 'font-inter font-bold text-left text-black min-[1921px]:text-[4.997vw] min-[1440px]:text-[6.25rem] xl:text-[6rem] lg:text-[5.5rem] md:text-[4rem] min-[430px]:text-[4rem] text-[3.5rem] leading-none',
   aboutPara: 'font-inter font-semibold text-black text-justify min-[1921px]:text-[1.666vw] min-[1440px]:text-[2rem] xl:text-[1.8rem] min-[430px]:text-[1.5rem] text-[1.25rem] leading-none',

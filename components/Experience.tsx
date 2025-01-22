@@ -10,7 +10,7 @@ import blender from '../public/assets/icons/blender-1.svg';
 import figma from '../public/assets/icons/figma-1.svg';
 
 const classes = {
-  Container: 'flex md:flex-row flex-col min-[1921px]:w-[74.961vw] max-[1920px]:max-w-[1440px] items-center w-screen bg-white in-[1921px]:p-[4.164vw] xl:p-20 lg:p-16 md:p-12 p-10 md:gap-8 gap-6 z-10',
+  Container: 'flex md:flex-row flex-col min-[1921px]:w-[74.961vw] max-[1920px]:max-w-[1440px] items-center w-screen bg-white in-[1921px]:p-[4.164vw] xl:p-20 lg:p-16 md:p-12 sm:px-10 min-[430px]:px-8 px-6 py-10 md:gap-8 gap-6 z-10',
   leftContainer: 'flex flex-col md:gap-12 gap-8 md:w-[50%] w-full',
   rightContainer: 'flex flex-col md:gap-12 gap-8 md:w-[50%] w-full',
   SubContainer: 'flex flex-col gap-4 w-full',

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const classes = {
   Container: 'flex flex-col items-center justify-center w-full h-full bg-white z-20',
-  ContactContainer: 'flex flex-col w-full h-full min-[1921px]:max-w-[74.961vw] max-w-[1440px] items-start justify-between min-[1921px]:px-[4.164vw] min-[1921px]:py-[2.915vw] xl:px-20 xl:py-14 lg:px-16 lg:py-10 md:px-12 md:py-10 px-10 py-6 xl:gap-20 lg:gap-10 gap-6',
+  ContactContainer: 'flex flex-col w-full h-full min-[1921px]:max-w-[74.961vw] max-w-[1440px] items-start justify-between min-[1921px]:px-[4.164vw] min-[1921px]:py-[2.915vw] xl:px-20 xl:py-14 lg:px-16 lg:py-10 md:px-12 md:py-10 min-[430px]:px-8 min-[430px]:py-8 px-6 py-6 xl:gap-20 lg:gap-10 gap-6',
   Contacts: 'flex md:flex-row flex-col w-full h-full items-start justify-between min-[1921px]:gap-[4.164vw] md:gap-20 gap-6',
   SocialsHeaderContainer: 'flex items-center justify-center w-full',
   SocialsHeader: 'border-b-2 border-black md:pb-6 sm:pb-4 pb-3 w-full font-inter font-bold tracking-tight text-black min-[1921px]:text-[4.373vw] min-[1440px]:text-[4.25rem] xl:text-[4rem] lg:text-[3.5rem] md:text-[3rem] min-[430px]:text-[2.5rem] text-[2rem] leading-none',
