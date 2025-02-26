@@ -38,7 +38,7 @@ const About: FC = () => {
             and commitment to my craft, which is a blend of technical expertise
             and artistic vision.
           </p>
-          <Link className={classes.buttonContainer} href="https://revaedu-my.sharepoint.com/:b:/g/personal/ugcet220791_reva_edu_in/EXGcPi8JK5pPmNKCeS5kSBoBPYfOLPuvBFy3tU0t-tVW8g?e=R3m8Ar" target="_blank" rel="noreferrer">
+          <Link className={classes.buttonContainer} href="https://revaedu-my.sharepoint.com/:b:/g/personal/ugcet220791_reva_edu_in/Ef6ZeWqdCf1FuWCTddUJyHQByM18J3UOlcSp3860VoO22Q?e=0SPgEr" target="_blank" rel="noreferrer">
             <p className={classes.buttonContainerText}>RESUME ↗</p>
           </Link>
         </div>

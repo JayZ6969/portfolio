@@ -44,7 +44,7 @@ const Navbar: FC<NavbarProps> = ({ title }) => {
 
   const menuOptions: MenuOption[] = [
     { name: 'Home', link: '/' },
-    { name: 'About', link: '/#about' },
+    { name: 'About', link: '#about' },
     { name: 'Projects', link: '#projects' },
   ];
 
