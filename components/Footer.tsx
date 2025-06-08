@@ -23,9 +23,8 @@ const socialLinks = [
   { href: "https://www.youtube.com/@JayZ6969", text: "YouTube ↗" },
   { href: "https://www.instagram.com/jayasheel.vinay/", text: "Instagram ↗" },
   { href: "https://www.behance.net/jayasheelvinayj/", text: "Behance ↗" },
-  { href: "https://www.behance.net/jayasheelvinayj/", text: "GitHub ↗" },
+  { href: "https://github.com/JayZ6969", text: "GitHub ↗" },
   { href: "https://developers.google.com/profile/u/JayZ6969", text: "Google Dev ↗" },
-  { href: "https://www.codechef.com/users/jayasheelvinayj", text: "CodeChef ↗" },
   { href: "https://leetcode.com/u/jayz6969/", text: "LeetCode ↗" },
   { href: "https://www.geeksforgeeks.org/user/jayz6969/", text: "GFG ↗" },
 ];
