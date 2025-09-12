@@ -19,7 +19,7 @@ const LandingFooter: FC = () => {
       <div className={classes.container}>
         <Image className={classes.Image} src={suitcase} alt="" />
         <p className={classes.p1}>Recent Experience</p>
-        <p className={classes.p2}>Vice President @ FORCE</p>
+        <p className={classes.p2}>SWE Intern @ Ruckus Networks, Commscope</p>
       </div>
       <div className={classes.container }>
         <Image className={classes.Image} src={location} alt="" />
