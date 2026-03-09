@@ -54,8 +54,8 @@ const softwareToolsData = [
 ];
 
 const programmingSkillsData = [
-  "C/C++, Python, Matlab, Verilog, MySQL",
-  "HTML, CSS, JavaScript, TypeScript, ReactJS, NextJS, TailwindCSS",
+  "C/C++, Python, Verilog, SQL, CMake, Buildroot, Embedded Linux, Docker, Bash",
+  "HTML, CSS, JavaScript, TypeScript, ReactJS, NextJS, TailwindCSS, ExpressJS, NodeJS, MongoDB",
 ];
 
 const extraCurricularData = [
