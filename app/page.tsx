@@ -8,7 +8,9 @@ import LandingFooter from '@/components/LandingFooter';
 import About from '@/components/About';
 import Experience from '@/components/Experience';
 import FeaturedCard from '@/components/FeaturedCard';
-import IEEE from '@/public/assets/images/IEEE.webp';
+import PACKET_ZERO from '@/public/assets/images/PACKET-ZERO.webp';
+import CANSAT from '@/public/assets/images/CANSAT.webp';
+import RISC_V from '@/public/assets/images/VLSI.webp';
 import FORCE from '@/public/assets/images/FORCE.webp';
 import PHOTOGRAPHY from '@/public/assets/images/PHOTOGRAPHY.webp';
 import MUSIC from '@/public/assets/images/MUSIC.webp';
@@ -32,18 +34,34 @@ const classes = {
 
 const projectData = [
   {
-    title: 'ICAECC - Website',
-    imageSrc: IEEE,
-    alt: 'IEEE - ICAECC Website',
-    headerText: 'FULL-STACK',
-    link: 'https://github.com/JayZ6969/ieee-icaecc-website',
+    title: 'CanSat (Can-Sized Satellite) ',
+    imageSrc: CANSAT,
+    alt: 'CANSAT',
+    headerText: 'CAN-SATELLITE',
+    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7395709252285366272',
+    cardImageBgColor: '#F3F4F6'
+  },
+  {
+    title: 'Packet-Zero',
+    imageSrc: PACKET_ZERO,
+    alt: 'PACKET_ZERO',
+    headerText: 'EMBEDDED-RTOS',
+    link: 'https://github.com/JayZ6969/packet-zero',
+    cardImageBgColor: '#F3F4F6'
+  },
+  {
+    title: 'Optimization of RISC-V CPU Core for edge AI',
+    imageSrc: RISC_V,
+    alt: 'RISC_V',
+    headerText: 'VLSI',
+    link: 'https://github.com/JayZ6969/picorv32',
     cardImageBgColor: '#F3F4F6'
   },
   {
     title: 'FORCE - Forum Website',
     imageSrc: FORCE,
     alt: 'FORCE - Forum Website',
-    headerText: 'FRONT-END',
+    headerText: 'FULL-STACK',
     link: 'https://github.com/EventsAtForce/eventsatforce-website',
     cardImageBgColor: '#F3F4F6'
   },

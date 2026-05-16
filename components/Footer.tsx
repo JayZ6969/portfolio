@@ -26,6 +26,7 @@ const socialLinks = [
   { href: "https://github.com/JayZ6969", text: "GitHub ↗" },
   { href: "https://developers.google.com/profile/u/JayZ6969", text: "Google Dev ↗" },
   { href: "https://leetcode.com/u/jayz6969/", text: "LeetCode ↗" },
+  { href: "https://www.codechef.com/users/jayz6969", text: "CodeChef ↗" },
   { href: "https://www.geeksforgeeks.org/user/jayz6969/", text: "GFG ↗" },
 ];
 
@@ -35,7 +36,7 @@ const moreLinks = [
   { href: "https://revaedu-my.sharepoint.com/:b:/g/personal/ugcet220791_reva_edu_in/EXGcPi8JK5pPmNKCeS5kSBoBPYfOLPuvBFy3tU0t-tVW8g?e=R3m8Ar", text: "Resume ↗" },
   { href: "#experience", text: "Experience ↗" },
   { href: "https://www.behance.net/jayasheelvinayj/", text: "Photography Work ↗" },
-  { href: "https://www.behance.net/jayasheelvinayj/", text: "Engineering Projects ↗" },
+  { href: "ttps://www.linkedin.com/in/jayasheelvinayj/", text: "Engineering Projects ↗" },
   { href: "https://www.youtube.com/@JayZ6969", text: "Music Work ↗" },
 ];
 
@@ -84,7 +85,7 @@ const Footer: FC = () => {
       </div>
       <div className={classes.FooterContainer}>
         <p className={`${classes.FooterText} hidden lg:block`}>Coded with ❣️</p>
-        <p className={classes.FooterText}> © 2025 Jayasheel Vinay J. All rights reserved.</p>
+        <p className={classes.FooterText}> © {new Date().getFullYear()} Jayasheel Vinay J. All rights reserved.</p>
         <Link href="https://github.com/JayZ6969/portfolio" target="_blank" rel="noreferrer" className={`${classes.FooterText} hidden lg:block`}>Source Code ↗</Link>
       </div>
     </div>
