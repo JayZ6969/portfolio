@@ -27,8 +27,13 @@ const classes = {
 
 const educationData = [
   { year: "2022-2026", degree: "Electronics and Communication Engg.", institution: "REVA University" },
-  { year: "2019-2021", degree: "PCMCS", institution: "Kendriya Vidyalaya No.2 AFS Jalahalli (East), Bengaluru" },
+  { year: "2019-2021", degree: "CBSE - PCM + CS", institution: "Kendriya Vidyalaya No.2 AFS Jalahalli (East), Bengaluru" },
   { year: "2009-2019", degree: "CBSE - X", institution: "Kendriya Vidyalaya No.2 AFS Jalahalli (East), Bengaluru" },
+];
+
+const experienceData = [
+  { year: "2026 - Present", role: "Software Engineer", company: "Ruckus Networks" },
+  { year: "2025 - 2026", role: "Software Engineer Intern", company: "Ruckus Networks" },
 ];
 
 const languagesData = [
@@ -64,59 +69,68 @@ const extraCurricularData = [
 ];
 
 const hobbiesData = [
-  { hobby: "Photography", level: "Semi-Pro" },
+  { hobby: "Photography", level: "Freelance" },
   { hobby: "Keyboard", level: "Intermediate" },
   { hobby: "Cycling", level: "Wanderlust" },
 ];
+
+type TimelineRowProps = {
+  year: string;
+  primary: string;
+  secondary: string;
+  isLast: boolean;
+};
+
+const TimelineRow: FC<TimelineRowProps> = ({ year, primary, secondary, isLast }) => (
+  <div className={classes.SubContainer_1}>
+    <div className={`${classes.SubContainer_3} self-stretch`}>
+      <div className="self-stretch relative flex flex-col items-center shrink-0">
+        <Image className={`${classes.Star} relative z-10 bg-white`} src={star} alt="" />
+        {!isLast && (
+          <div
+            className="absolute left-1/2 -translate-x-1/2 w-0.5 bg-black"
+            style={{ top: '2.375rem', height: 'calc(100% - 1.75rem)' }}
+          />
+        )}
+      </div>
+      <p className={classes.SubHeader}>{year}</p>
+    </div>
+    <div className={classes.SubContainer_2}>
+      <h2 className={classes.SubHeader}>{primary}</h2>
+      <p className={classes.ParaText}>{secondary}</p>
+    </div>
+  </div>
+);
 
 const Experience: FC = () => {
   return (
     <div className="flex items-center justify-center bg-white w-screen z-10" id='experience'>
       <div className={classes.Container}>
         <div className={classes.leftContainer}>
+        <div className={classes.SubContainer}>
+            <h1 className={classes.Header}>Experience</h1>
+            {experienceData.map((item, index) => (
+              <TimelineRow
+                key={index}
+                year={item.year}
+                primary={item.role}
+                secondary={item.company}
+                isLast={index === experienceData.length - 1}
+              />
+            ))}
+          </div>
           <div className={classes.SubContainer}>
             <h1 className={classes.Header}>Education</h1>
             {educationData.map((item, index) => (
-              <div key={index} className={classes.SubContainer_1}>
-                <div className={classes.SubContainer_3}>
-                  <Image className={classes.Star} src={star} alt="" />
-                  <p className={classes.SubHeader}>{item.year}</p>
-                </div>
-                <div className={classes.SubContainer_2}>
-                  <h2 className={classes.SubHeader}>{item.degree}</h2>
-                  <p className={classes.ParaText}>{item.institution}</p>
-                </div>
-              </div>
+              <TimelineRow
+                key={index}
+                year={item.year}
+                primary={item.degree}
+                secondary={item.institution}
+                isLast={index === educationData.length - 1}
+              />
             ))}
           </div>
-          <div className={classes.SubContainer}>
-            <h1 className={classes.Header}>Languages</h1>
-            <div className={classes.SubContainer_1}>
-              {languagesData.map((item, index) => (
-                <div key={index} className={classes.SubContainer_2}>
-                  <h2 className={classes.SubHeader}>{item.language}</h2>
-                  <p className={classes.ParaText}>{item.proficiency}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className={classes.SubContainer}>
-            <h1 className={classes.Header}>Achievements</h1>
-            {achievementsData.map((item, index) => (
-              <div key={index} className={classes.SubContainer_1}>
-                <div className={classes.SubContainer_3}>
-                  <Image className={classes.Star} src={star} alt="" />
-                  <p className={classes.SubHeader}>{item.year}</p>
-                </div>
-                <div className={classes.SubContainer_2}>
-                  <h2 className={classes.SubHeader}>{item.title}</h2>
-                  <p className={classes.ParaText}>{item.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className={classes.rightContainer}>
           <div className={classes.SubContainer}>
             <h1 className={classes.Header}>Technical Skills</h1>
             <div className={classes.SubContainer_4}>
@@ -141,19 +155,41 @@ const Experience: FC = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className={classes.rightContainer}>
           <div className={classes.SubContainer}>
             <h1 className={classes.Header}>Extra Curricular</h1>
             {extraCurricularData.map((item, index) => (
-              <div key={index} className={classes.SubContainer_1}>
-                <div className={classes.SubContainer_3}>
-                  <Image className={classes.Star} src={star} alt="" />
-                  <p className={classes.SubHeader}>{item.year}</p>
+              <TimelineRow
+                key={index}
+                year={item.year}
+                primary={item.title}
+                secondary={item.role}
+                isLast={index === extraCurricularData.length - 1}
+              />
+            ))}
+          </div>
+          <div className={classes.SubContainer}>
+            <h1 className={classes.Header}>Languages</h1>
+            <div className={classes.SubContainer_1}>
+              {languagesData.map((item, index) => (
+                <div key={index} className={classes.SubContainer_2}>
+                  <h2 className={classes.SubHeader}>{item.language}</h2>
+                  <p className={classes.ParaText}>{item.proficiency}</p>
                 </div>
-                <div className={classes.SubContainer_2}>
-                  <h2 className={classes.SubHeader}>{item.title}</h2>
-                  <p className={classes.ParaText}>{item.role}</p>
-                </div>
-              </div>
+              ))}
+            </div>
+          </div>
+          <div className={classes.SubContainer}>
+            <h1 className={classes.Header}>Achievements</h1>
+            {achievementsData.map((item, index) => (
+              <TimelineRow
+                key={index}
+                year={item.year}
+                primary={item.title}
+                secondary={item.description}
+                isLast={index === achievementsData.length - 1}
+              />
             ))}
           </div>
           <div className={classes.SubContainer}>

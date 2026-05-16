@@ -27,16 +27,10 @@ const About: FC = () => {
           </div>
           <Image className={classes.smImg} src={ME} alt="" />
           <p className={classes.aboutPara}>
-            I&apos;m a front-end developer passionate about UI/UX design and
-            currently diving into Data Structures and Algorithms. I enjoy making
-            creative projects that combine style and utility.
+            I&apos;m Jayasheel, working as a Software Engineer at Ruckus Networks. My work sits mostly at the lower layers (L2 /L3) closer to hardware. I work on Wi-Fi Driver and Embedded Linux. 
             <br />
             <br />
-            Beyond coding, I work as a professional photographer, documenting
-            special moments in life, and I play music, performing live on stages
-            with my band at events. Each project I work on reflects my passion
-            and commitment to my craft, which is a blend of technical expertise
-            and artistic vision.
+            Beyond coding, I work as a freelance photographer, documenting special moments in life, and I play music, performing live on stages as well as recording in my home studio. Each project I work on reflects my passion and commitment to my craft, which is a blend of technical expertise and artistic vision.
           </p>
           <Link className={classes.buttonContainer} href="https://revaedu-my.sharepoint.com/:b:/g/personal/ugcet220791_reva_edu_in/Ef6ZeWqdCf1FuWCTddUJyHQByM18J3UOlcSp3860VoO22Q?e=0SPgEr" target="_blank" rel="noreferrer">
             <p className={classes.buttonContainerText}>RESUME ↗</p>
