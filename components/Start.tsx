@@ -70,10 +70,10 @@ const Start: FC = () => {
   return (
     <div className={classes.Container}>
       <div className={classes.ConnectContainer}>
-        <h1 className={classes.ConnectTagline}>READY<br />TO START<br />A PROJECT?</h1>
+        <h1 className={classes.ConnectTagline}>IMPRESSED<br />WITH MY<br />PROJECTS ?</h1>
         <Message>
           <div className={classes.StartButton}>
-            <p className={classes.StartButtonText}>START A PROJECT</p>
+            <p className={classes.StartButtonText}>SEND A MESSAGE</p>
             <div className={classes.dot}></div>
           </div>
         </Message>
