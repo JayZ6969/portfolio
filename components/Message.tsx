@@ -60,7 +60,7 @@ const Message: FC<{ children: React.ReactNode }> = ({ children }) => {
     emailjs.send(serviceId, templateId, templateParams, publicKey)
       .then((response: EmailJSResponseStatus) => {
         console.log('SUCCESS!', response);
-        toast.success('Response submitted successfully.', {
+        toast.success('Message sent successfully.', {
           style: {
             borderRadius: '10px',
             padding: '10px',
