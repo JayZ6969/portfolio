@@ -73,7 +73,7 @@ const Start: FC = () => {
         <h1 className={classes.ConnectTagline}>IMPRESSED<br />WITH MY<br />PROJECTS ?</h1>
         <Message>
           <div className={classes.StartButton}>
-            <p className={classes.StartButtonText}>SEND A MESSAGE</p>
+            <p className={classes.StartButtonText}>LET'S COLLAB</p>
             <div className={classes.dot}></div>
           </div>
         </Message>
